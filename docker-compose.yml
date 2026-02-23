@@ -1,0 +1,93 @@
+services:
+  # 1. DATABASE (Custom Build to auto-download data)
+  postgres:
+    build: ./postgres
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+#   # 2. BACKEND (FastAPI / ML attached to DevContainer)
+#   backend:
+#     build: ./backend
+#     environment:
+#       - DATABASE_URL=${DATABASE_URL}
+#     ports:
+#       - "8000:8000"
+#     volumes:
+#       - ./backend:/app
+#     command: uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+#     depends_on:
+#       - postgres
+
+#   # 3. FRONTEND (React App)
+#   frontend:
+#     build: ./frontend
+#     ports:
+#       - "3000:3000"
+#     volumes:
+#       - ./frontend:/app
+#       - /app/node_modules # Protects local node_modules from container
+#     command: npm start
+#     depends_on:
+#       - backend
+
+# ---------------------------------------------------------
+  # 1. INITIALIZER (Runs once to set up the DB and your User, then dies)
+  # ---------------------------------------------------------
+  airflow-init:
+    build: ./airflow
+    user: "1000:0"
+    environment:
+      - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgresql+psycopg2://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/airflow_db
+      - _AIRFLOW_DB_MIGRATE=true
+      - _AIRFLOW_WWW_USER_CREATE=true
+      - _AIRFLOW_WWW_USER_USERNAME=${AIRFLOW_USER}
+      - _AIRFLOW_WWW_USER_PASSWORD=${AIRFLOW_PASSWORD}
+    depends_on:
+      - postgres
+    # The entrypoint sees this command, runs the DB migrations, creates your user, 
+    # prints the Airflow version, and gracefully exits.
+    command: version 
+
+  # ---------------------------------------------------------
+  # 2. SCHEDULER (The standard way)
+  # ---------------------------------------------------------
+  airflow-scheduler:
+    build: ./airflow
+    user: "1000:0"
+    environment:
+      - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgresql+psycopg2://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/airflow_db
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False
+    volumes:
+      - ./airflow:/code
+      - ./airflow/dags:/opt/airflow/dags
+    depends_on:
+      airflow-init:
+        condition: service_completed_successfully
+    command: scheduler
+
+  # ---------------------------------------------------------
+  # 3. WEBSERVER (The standard way)
+  # ---------------------------------------------------------
+  airflow-webserver:
+    build: ./airflow
+    user: "1000:0"
+    environment:
+      - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgresql+psycopg2://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/airflow_db
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./airflow/dags:/opt/airflow/dags
+    depends_on:
+      airflow-init:
+        condition: service_completed_successfully
+    command: webserver
+
+volumes:
+  postgres_data:
