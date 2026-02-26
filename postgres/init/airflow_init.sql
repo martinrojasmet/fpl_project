@@ -1,1 +1,0 @@
-create database airflow_db;
