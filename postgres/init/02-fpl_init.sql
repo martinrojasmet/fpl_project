@@ -1,212 +1,355 @@
--- CREATE SCHEMAS
-CREATE SCHEMA IF NOT EXISTS raw;
-CREATE SCHEMA IF NOT EXISTS staging;
-CREATE SCHEMA IF NOT EXISTS features;
+CREATE SCHEMA analytics;
 
--- CREATE RAW TABLES
-create table raw.understat_games
-(
-    id                   serial primary key,
-    understat_id         integer                                               not null,
-    date                 timestamp(3)                                          not null,
-    home                 text                                                  not null,
-    away                 text                                                  not null
+
+ALTER SCHEMA analytics OWNER TO postgres;
+
+--
+-- Name: features; Type: SCHEMA; Schema: -; Owner: postgres
+--
+
+CREATE SCHEMA features;
+
+
+ALTER SCHEMA features OWNER TO postgres;
+
+--
+-- Name: raw; Type: SCHEMA; Schema: -; Owner: postgres
+--
+
+CREATE SCHEMA raw;
+
+
+ALTER SCHEMA raw OWNER TO postgres;
+
+--
+-- Name: staging; Type: SCHEMA; Schema: -; Owner: postgres
+--
+
+CREATE SCHEMA staging;
+
+
+ALTER SCHEMA staging OWNER TO postgres;
+
+SET default_tablespace = '';
+
+SET default_table_access_method = heap;
+
+--
+-- Name: player_games; Type: TABLE; Schema: analytics; Owner: postgres
+--
+
+CREATE TABLE analytics.player_games (
+    id serial PRIMARY KEY,
+    fpl_element integer NOT NULL,
+    local_understat_id double precision,
+    fpl_price integer NOT NULL,
+    points integer NOT NULL,
+    minutes_played integer NOT NULL,
+    goals_scored integer NOT NULL,
+    expected_goals_understat double precision NOT NULL,
+    goals_conceded integer NOT NULL,
+    assists integer NOT NULL,
+    expected_assists_understat double precision NOT NULL,
+    yellow_cards integer NOT NULL,
+    red_card integer NOT NULL,
+    clean_sheet integer NOT NULL,
+    key_passes double precision NOT NULL,
+    own_goals integer NOT NULL,
+    penalties_missed integer NOT NULL,
+    penalties_saved integer NOT NULL,
+    saves integer NOT NULL,
+    bonus_points integer NOT NULL,
+    expected_assists_fpl double precision,
+    expected_goals_fpl double precision,
+    player_id integer,
+    game_id integer
 );
 
-create table raw.understat_players
-(
-    id             serial primary key,
-    name           text                                                  not null,
-    game_id        integer                                               not null,
-    team           text                                                  not null,
-    minutes        integer                                               not null,
-    shots          integer                                               not null,
-    goals          integer                                               not null,
-    assists        integer                                               not null,
-    xG             double precision                                     not null,
-    xA             double precision                                     not null,
-    key_passes     integer                                               not null
+
+ALTER TABLE analytics.player_games OWNER TO postgres;
+
+--
+-- Name: games; Type: TABLE; Schema: analytics; Owner: postgres
+--
+
+CREATE TABLE analytics.games (
+    id serial PRIMARY KEY,
+    short_date text NOT NULL,
+    gw integer NOT NULL,
+    home_goals double precision NOT NULL,
+    home_expected_goals_understat double precision NOT NULL,
+    home_assists double precision NOT NULL,
+    home_expected_assists_understat double precision NOT NULL,
+    home_team_id integer NOT NULL,
+    away_goals double precision NOT NULL,
+    away_expected_goals_understat double precision NOT NULL,
+    away_assists double precision NOT NULL,
+    away_expected_assists_understat double precision NOT NULL,
+    away_team_id integer NOT NULL,
+    result double precision NOT NULL,
+    season text,
+    fpl_datetime timestamp(3) without time zone,
+    understat_datetime timestamp(3) without time zone
 );
 
-create table raw.fpl_players 
-(
-    id                  serial primary key,
-    name                text                                                  not null,
-    position            integer                                               not null,
-    fpl_team_number     integer                                               not null,
-    assists             integer                                               not null,
-    bonus               integer                                               not null,
-    clean_sheets        integer                                               not null,
-    goals_conceded      integer                                               not null,
-    goals_scored        integer                                               not null,
-    fpl_kickoff_time    timestamp(3)                                          not null,
-    minutes             integer                                               not null,
-    opponent_fpl_team_number integer                                          not null,
-    own_goals           integer                                               not null,
-    penalties_missed    integer                                               not null,
-    penalties_saved     integer                                               not null,
-    red_cards           integer                                               not null,
-    saves               integer                                               not null,
-    team_a_score        integer                                               not null,
-    team_h_score        integer                                               not null,
-    points              integer                                               not null,
-    value               integer                                               not null,
-    was_home            boolean                                               not null,
-    yellow_cards        integer                                               not null,
-    gw                  integer                                               not null,
-    season              text                                                  not null,
-    expected_assists    double precision                                      not null,
-    expected_goals      double precision                                      not null,
-    bps                 integer                                               not null,
-    creativity          double precision                                      not null,
-    fixture             integer                                               not null,
-    ict_index           double precision                                      not null,
-    influence           double precision                                      not null,
-    round               integer                                               not null,
-    selected            integer                                               not null,
-    threat              double precision                                      not null,
-    transfers_balance   integer                                               not null,
-    transfers_in        integer                                               not null,
-    transfers_out       integer                                               not null,
-    expected_goal_involvements double precision                               not null,
-    expected_goals_conceded double precision                                  not null,
-    starts              integer                                               not null,
-    fpl_element         integer                                               not null,
-    fpl_date            timestamp(3)                                          not null
+
+ALTER TABLE analytics.games OWNER TO postgres;
+
+
+CREATE TABLE analytics.player_seasons (
+    id serial PRIMARY KEY,
+    player_id integer NOT NULL,
+    season text NOT NULL,
+    team_id integer,
+    "position" integer
 );
 
--- CREATE FEATURES TABLES
-create table features.double_gw
-(
-    id                   serial primary key,
-    home         text                                                  not null,
-    away         text                                                  not null,
-    gw           integer                                               not null,
-    original_gw  integer                                               not null,
-    understat_id integer                                               not null,
-    season       text                                                  not null
+
+ALTER TABLE analytics.player_seasons OWNER TO postgres;
+
+
+CREATE TABLE analytics.players (
+    id serial PRIMARY KEY,
+    name text NOT NULL,
+    is_active boolean DEFAULT true
 );
 
-alter table features.double_gw
-    owner to postgres;
 
-create table features.fixtures
-(
-    id                   serial primary key,
-    season                   text                                                 not null,
-    gw                       integer                                              not null,
-    fpl_element              integer                                              not null,
-    local_understat_id       double precision,
-    local_understat_fixture  double precision,
-    fpl_name                 text                                                 not null,
-    understat_name           text,
-    position                 integer                                              not null,
-    fpl_team                 integer                                              not null,
-    understat_team           text,
-    opponent_fpl_team_number integer                                              not null,
-    fpl_kickoff_time         timestamp(3)                                         not null,
-    understat_date           timestamp(3),
-    value                    integer                                              not null,
-    points                   integer                                              not null,
-    minutes                  integer                                              not null,
-    goals_scored             integer                                              not null,
-    "xG"                     double precision                                     not null,
-    goals_conceded           integer                                              not null,
-    assists                  integer                                              not null,
-    "xA"                     double precision                                     not null,
-    yellow_cards             integer                                              not null,
-    red_cards                integer                                              not null,
-    clean_sheets             integer                                              not null,
-    key_passes               double precision                                     not null,
-    own_goals                integer                                              not null,
-    penalties_missed         integer                                              not null,
-    penalties_saved          integer                                              not null,
-    saves                    integer                                              not null,
-    bonus                    integer                                              not null,
-    team_a_score             integer                                              not null,
-    team_h_score             integer                                              not null,
-    was_home                 boolean                                              not null,
-    expected_assists         double precision,
-    expected_goals           double precision
+ALTER TABLE analytics.players OWNER TO postgres;
+
+
+CREATE TABLE analytics.teams (
+    id serial PRIMARY KEY,
+    name text NOT NULL
 );
 
-alter table features.fixtures
-    owner to postgres;
 
-create table features.games
-(
-    id                   serial primary key,
-    understat_id         integer                                           not null,
-    date                 text                                              not null,
-    home                 text                                              not null,
-    gw                   integer                                           not null,
-    home_goals           double precision                                  not null,
-    "home_xG"            double precision                                  not null,
-    home_assists         double precision                                  not null,
-    "home_xA"            double precision                                  not null,
-    rolling_home_goals   double precision                                  not null,
-    "rolling_home_xG"    double precision                                  not null,
-    rolling_home_assists double precision                                  not null,
-    "rolling_home_xA"    double precision                                  not null,
-    home_team_code       integer                                           not null,
-    away                 text                                              not null,
-    away_goals           double precision                                  not null,
-    "away_xG"            double precision                                  not null,
-    away_assists         double precision                                  not null,
-    "away_xA"            double precision                                  not null,
-    rolling_away_goals   double precision                                  not null,
-    "rolling_away_xG"    double precision                                  not null,
-    rolling_away_assists double precision                                  not null,
-    "rolling_away_xA"    double precision                                  not null,
-    away_team_code       integer                                           not null,
-    result               double precision                                  not null
+ALTER TABLE analytics.teams OWNER TO postgres;
+
+
+CREATE TABLE raw.fpl_players (
+    id serial PRIMARY KEY,
+    name text NOT NULL,
+    "position" integer NOT NULL,
+    fpl_team_number integer NOT NULL,
+    assists integer NOT NULL,
+    bonus integer NOT NULL,
+    clean_sheets integer NOT NULL,
+    goals_conceded integer NOT NULL,
+    goals_scored integer NOT NULL,
+    fpl_kickoff_time timestamp(3) without time zone NOT NULL,
+    minutes integer NOT NULL,
+    opponent_fpl_team_number integer NOT NULL,
+    own_goals integer NOT NULL,
+    penalties_missed integer NOT NULL,
+    penalties_saved integer NOT NULL,
+    red_cards integer NOT NULL,
+    saves integer NOT NULL,
+    team_a_score integer NOT NULL,
+    team_h_score integer NOT NULL,
+    points integer NOT NULL,
+    value integer NOT NULL,
+    was_home boolean NOT NULL,
+    yellow_cards integer NOT NULL,
+    gw integer NOT NULL,
+    season text NOT NULL,
+    expected_assists double precision NOT NULL,
+    expected_goals double precision NOT NULL,
+    bps integer NOT NULL,
+    creativity double precision NOT NULL,
+    fixture integer NOT NULL,
+    ict_index double precision NOT NULL,
+    influence double precision NOT NULL,
+    round integer NOT NULL,
+    selected integer NOT NULL,
+    threat double precision NOT NULL,
+    transfers_balance integer NOT NULL,
+    transfers_in integer NOT NULL,
+    transfers_out integer NOT NULL,
+    expected_goal_involvements double precision NOT NULL,
+    expected_goals_conceded double precision NOT NULL,
+    starts integer NOT NULL,
+    fpl_element integer NOT NULL,
+    fpl_date timestamp(3) without time zone NOT NULL
 );
 
-alter table features.games
-    owner to postgres;
 
-create table features.players
-(
-    fpl_name       text             not null,
-    understat_name text,
-    fpl_202425     double precision not null,
-    opta_id        integer,
-    id             serial
-        primary key
+ALTER TABLE raw.fpl_players OWNER TO postgres;
+
+
+CREATE TABLE raw.understat_games (
+    id serial PRIMARY KEY,
+    understat_id integer NOT NULL,
+    date timestamp(3) without time zone NOT NULL,
+    home text NOT NULL,
+    away text NOT NULL
 );
 
-alter table features.players
-    owner to postgres;
 
-create unique index players_fpl_name_key
-    on features.players (fpl_name);
+ALTER TABLE raw.understat_games OWNER TO postgres;
 
-create table features.predictions
-(
-    id                   serial primary key,
-    understat_name            text                                                    not null,
-    opta_id                   integer                                                 not null,
-    gw                        integer                                                 not null,
-    opponent_team             integer                                                 not null,
-    global_predicted_points   double precision                                        not null,
-    opponent_predicted_points double precision                                        not null,
-    combined_predicted_points double precision                                        not null
+
+CREATE TABLE raw.understat_players (
+    id serial PRIMARY KEY,
+    name text NOT NULL,
+    raw_understat_game_id integer NOT NULL,
+    team text NOT NULL,
+    minutes integer NOT NULL,
+    shots integer NOT NULL,
+    goals integer NOT NULL,
+    assists integer NOT NULL,
+    xg double precision NOT NULL,
+    xa double precision NOT NULL,
+    key_passes integer NOT NULL
 );
 
-alter table features.predictions
-    owner to postgres;
 
-create table features.teams
-(
-    season               text    not null,
-    team                 integer not null,
-    team_name            text    not null,
-    definite_team_number integer not null,
-    understat_name       text    not null,
-    id                   serial
-        primary key
+ALTER TABLE raw.understat_players OWNER TO postgres;
+
+
+CREATE TABLE staging.fpl_player_mapping (
+    id serial PRIMARY KEY,
+    player_id integer NOT NULL,
+    season text NOT NULL,
+    fpl_seasonal_id integer,
+    name text,
+    opta_id text,
+    "position" integer
 );
 
-alter table features.teams
-    owner to postgres;
 
+ALTER TABLE staging.fpl_player_mapping OWNER TO postgres;
+
+
+CREATE TABLE staging.fpl_team_mapping (
+    id serial PRIMARY KEY,
+    season text NOT NULL,
+    fpl_team_id integer NOT NULL,
+    name text NOT NULL,
+    team_id integer
+);
+
+
+ALTER TABLE staging.fpl_team_mapping OWNER TO postgres;
+
+
+CREATE TABLE staging.raw_understat_game_mapping (
+    id serial PRIMARY KEY,
+    raw_understat_game_id integer NOT NULL,
+    game_id integer NOT NULL
+);
+
+
+ALTER TABLE staging.raw_understat_game_mapping OWNER TO postgres;
+
+
+CREATE TABLE staging.understat_player_mapping (
+    id serial PRIMARY KEY,
+    name text NOT NULL,
+    player_id integer NOT NULL
+);
+
+
+ALTER TABLE staging.understat_player_mapping OWNER TO postgres;
+
+
+CREATE TABLE staging.understat_team_mapping (
+    id serial PRIMARY KEY,
+    name text NOT NULL,
+    team_id integer
+);
+
+
+ALTER TABLE staging.understat_team_mapping OWNER TO postgres;
+
+
+ALTER TABLE ONLY staging.fpl_player_mapping
+    ADD CONSTRAINT fpl_player_mapping_player_master_id_season_key UNIQUE (player_id, season);
+
+
+ALTER TABLE ONLY staging.fpl_team_mapping
+    ADD CONSTRAINT fpl_team_mapping_season_fpl_team_id_key UNIQUE (season, fpl_team_id);
+
+
+ALTER TABLE ONLY staging.raw_understat_game_mapping
+    ADD CONSTRAINT raw_understat_game_mapping_raw_understat_game_id_key UNIQUE (raw_understat_game_id);
+
+
+ALTER TABLE ONLY staging.understat_player_mapping
+    ADD CONSTRAINT understat_player_mapping_understat_name_key UNIQUE (name);
+
+
+ALTER TABLE ONLY staging.understat_team_mapping
+    ADD CONSTRAINT understat_team_mapping_understat_name_key UNIQUE (name);
+
+
+--
+-- Name: games fk_games_away_team; Type: FK CONSTRAINT; Schema: analytics; Owner: postgres
+--
+
+ALTER TABLE ONLY analytics.games
+    ADD CONSTRAINT fk_games_away_team FOREIGN KEY (away_team_id) REFERENCES analytics.teams(id);
+
+
+--
+-- Name: games fk_games_home_team; Type: FK CONSTRAINT; Schema: analytics; Owner: postgres
+--
+
+ALTER TABLE ONLY analytics.games
+    ADD CONSTRAINT fk_games_home_team FOREIGN KEY (home_team_id) REFERENCES analytics.teams(id);
+
+
+--
+-- Name: player_seasons player_seasons_player_id_fkey; Type: FK CONSTRAINT; Schema: analytics; Owner: postgres
+--
+
+ALTER TABLE ONLY analytics.player_seasons
+    ADD CONSTRAINT player_seasons_player_id_fkey FOREIGN KEY (player_id) REFERENCES analytics.players(id);
+
+
+--
+-- Name: player_seasons player_seasons_team_id_fkey; Type: FK CONSTRAINT; Schema: analytics; Owner: postgres
+--
+
+ALTER TABLE ONLY analytics.player_seasons
+    ADD CONSTRAINT player_seasons_team_id_fkey FOREIGN KEY (team_id) REFERENCES analytics.teams(id);
+
+
+--
+-- Name: fpl_player_mapping fpl_player_mapping_player_master_id_fkey; Type: FK CONSTRAINT; Schema: staging; Owner: postgres
+--
+
+ALTER TABLE ONLY staging.fpl_player_mapping
+    ADD CONSTRAINT fpl_player_mapping_player_master_id_fkey FOREIGN KEY (player_id) REFERENCES analytics.players(id);
+
+
+--
+-- Name: fpl_team_mapping fpl_team_mapping_team_id_fkey; Type: FK CONSTRAINT; Schema: staging; Owner: postgres
+--
+
+ALTER TABLE ONLY staging.fpl_team_mapping
+    ADD CONSTRAINT fpl_team_mapping_team_id_fkey FOREIGN KEY (team_id) REFERENCES analytics.teams(id);
+
+
+--
+-- Name: raw_understat_game_mapping raw_understat_game_mapping_game_id_fkey; Type: FK CONSTRAINT; Schema: staging; Owner: postgres
+--
+
+ALTER TABLE ONLY staging.raw_understat_game_mapping
+    ADD CONSTRAINT raw_understat_game_mapping_game_id_fkey FOREIGN KEY (game_id) REFERENCES analytics.games(id);
+
+
+--
+-- Name: understat_player_mapping understat_player_mapping_player_id_fkey; Type: FK CONSTRAINT; Schema: staging; Owner: postgres
+--
+
+ALTER TABLE ONLY staging.understat_player_mapping
+    ADD CONSTRAINT understat_player_mapping_player_id_fkey FOREIGN KEY (player_id) REFERENCES analytics.players(id);
+
+
+--
+-- Name: understat_team_mapping understat_team_mapping_team_id_fkey; Type: FK CONSTRAINT; Schema: staging; Owner: postgres
+--
+
+ALTER TABLE ONLY staging.understat_team_mapping
+    ADD CONSTRAINT understat_team_mapping_team_id_fkey FOREIGN KEY (team_id) REFERENCES analytics.teams(id);
