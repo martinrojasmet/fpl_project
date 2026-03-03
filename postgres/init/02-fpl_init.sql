@@ -182,29 +182,30 @@ CREATE TABLE raw.understat_games (
     understat_id integer NOT NULL,
     date timestamp(3) without time zone NOT NULL,
     home text NOT NULL,
-    away text NOT NULL
+    away text NOT NULL,
+    is_processed boolean DEFAULT false
 );
 
 
 ALTER TABLE raw.understat_games OWNER TO postgres;
 
 
-CREATE TABLE raw.understat_players (
+CREATE TABLE raw.understat_player_games (
     id serial PRIMARY KEY,
     name text NOT NULL,
-    raw_understat_game_id integer NOT NULL,
+    understat_game_id integer NOT NULL,
     team text NOT NULL,
-    minutes integer NOT NULL,
+    minutes_played integer NOT NULL,
     shots integer NOT NULL,
     goals integer NOT NULL,
     assists integer NOT NULL,
-    xg double precision NOT NULL,
-    xa double precision NOT NULL,
+    expected_goals double precision NOT NULL,
+    expected_assists double precision NOT NULL,
     key_passes integer NOT NULL
 );
 
 
-ALTER TABLE raw.understat_players OWNER TO postgres;
+ALTER TABLE raw.understat_player_games OWNER TO postgres;
 
 
 CREATE TABLE staging.fpl_player_mapping (
@@ -233,14 +234,14 @@ CREATE TABLE staging.fpl_team_mapping (
 ALTER TABLE staging.fpl_team_mapping OWNER TO postgres;
 
 
-CREATE TABLE staging.raw_understat_game_mapping (
+CREATE TABLE staging.understat_game_mapping (
     id serial PRIMARY KEY,
-    raw_understat_game_id integer NOT NULL,
+    understat_game_id integer NOT NULL,
     game_id integer NOT NULL
 );
 
 
-ALTER TABLE staging.raw_understat_game_mapping OWNER TO postgres;
+ALTER TABLE staging.understat_game_mapping OWNER TO postgres;
 
 
 CREATE TABLE staging.understat_player_mapping (
@@ -271,8 +272,8 @@ ALTER TABLE ONLY staging.fpl_team_mapping
     ADD CONSTRAINT fpl_team_mapping_season_fpl_team_id_key UNIQUE (season, fpl_team_id);
 
 
-ALTER TABLE ONLY staging.raw_understat_game_mapping
-    ADD CONSTRAINT raw_understat_game_mapping_raw_understat_game_id_key UNIQUE (raw_understat_game_id);
+ALTER TABLE ONLY staging.understat_game_mapping
+    ADD CONSTRAINT understat_game_mapping_understat_game_id_key UNIQUE (understat_game_id);
 
 
 ALTER TABLE ONLY staging.understat_player_mapping
@@ -332,11 +333,11 @@ ALTER TABLE ONLY staging.fpl_team_mapping
 
 
 --
--- Name: raw_understat_game_mapping raw_understat_game_mapping_game_id_fkey; Type: FK CONSTRAINT; Schema: staging; Owner: postgres
+-- Name: understat_game_mapping understat_game_mapping_game_id_fkey; Type: FK CONSTRAINT; Schema: staging; Owner: postgres
 --
 
-ALTER TABLE ONLY staging.raw_understat_game_mapping
-    ADD CONSTRAINT raw_understat_game_mapping_game_id_fkey FOREIGN KEY (game_id) REFERENCES analytics.games(id);
+ALTER TABLE ONLY staging.understat_game_mapping
+    ADD CONSTRAINT understat_game_mapping_game_id_fkey FOREIGN KEY (game_id) REFERENCES analytics.games(id);
 
 
 --
@@ -353,3 +354,10 @@ ALTER TABLE ONLY staging.understat_player_mapping
 
 ALTER TABLE ONLY staging.understat_team_mapping
     ADD CONSTRAINT understat_team_mapping_team_id_fkey FOREIGN KEY (team_id) REFERENCES analytics.teams(id);
+
+
+ALTER TABLE ONLY raw.understat_games
+    ADD CONSTRAINT understat_id_key UNIQUE (understat_id);
+
+ALTER TABLE ONLY raw.understat_player_games
+    ADD CONSTRAINT understat_player_games_name_understat_game_id_key UNIQUE (name, understat_game_id);
