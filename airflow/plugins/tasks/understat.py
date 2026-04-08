@@ -41,14 +41,13 @@ def extract_players_data(table, understat_game_id, team):
     return pd.DataFrame(player_rows)
 
 @task
-def scrape_understat_data():
-
+def add_understat_data_task():
     with sync_playwright() as playwright:
         player_games_df = pd.DataFrame(columns=["name", "understat_game_id", "team", "minutes_played", "shots", "goals", "assists", "expected_goals", "expected_assists", "key_passes"])
         games_df = pd.DataFrame(columns=["understat_id", "date", "home", "away"])
 
         first_understat_game_id = get_last_understat_game_id() + 1
-        last_undertat_game_id = first_understat_game_id + 4
+        last_undertat_game_id = first_understat_game_id + 750*6
         current_understat_game_id = first_understat_game_id
 
         browser = playwright.chromium.launch(headless=True)
