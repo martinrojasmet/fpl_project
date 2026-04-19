@@ -130,6 +130,87 @@ def add_understat_player_games(player_games_df):
         if conn:
             conn.close()
 
+def add_understat_games_and_player_games(games_df, player_games_df, run_id):
+    if games_df.empty and player_games_df.empty:
+        logger.warning("Both understat chunk DataFrames are empty, skipping insert")
+        return {"games_inserted": 0, "games_total": 0, "players_inserted": 0, "players_total": 0}
+
+    conn = None
+    cursor = None
+    try:
+        conn = hook.get_conn()
+        cursor = conn.cursor()
+
+        games_inserted = 0
+        games_total = len(games_df)
+        players_inserted = 0
+        players_total = len(player_games_df)
+
+        if not games_df.empty:
+            game_sql = """INSERT INTO raw.understat_games
+                     (understat_id, date, home, away)
+                     VALUES (%s, %s, %s, %s)
+                     ON CONFLICT (understat_id) DO NOTHING"""
+
+            for _, row in games_df.iterrows():
+                cursor.execute(game_sql, (
+                    row['understat_id'],
+                    row['date'],
+                    row['home'],
+                    row['away']
+                ))
+                if cursor.rowcount > 0:
+                    games_inserted += 1
+
+        if not player_games_df.empty:
+            player_sql = """INSERT INTO raw.understat_player_games
+                     (name, understat_game_id, team, minutes_played, shots, goals, assists, expected_goals, expected_assists, key_passes, run_id)
+                     VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                     ON CONFLICT (understat_game_id, name) DO NOTHING"""
+
+            for _, row in player_games_df.iterrows():
+                cursor.execute(player_sql, (
+                    row['name'],
+                    row['understat_game_id'],
+                    row['team'],
+                    int(row['minutes_played']),
+                    int(row['shots']),
+                    int(row['goals']),
+                    int(row['assists']),
+                    float(row['expected_goals']),
+                    float(row['expected_assists']),
+                    int(row['key_passes']),
+                    run_id
+                ))
+                if cursor.rowcount > 0:
+                    players_inserted += 1
+
+        conn.commit()
+        logger.info(
+            "Persisted understat chunk: games %s/%s, players %s/%s",
+            games_inserted,
+            games_total,
+            players_inserted,
+            players_total,
+        )
+        return {
+            "games_inserted": games_inserted,
+            "games_total": games_total,
+            "players_inserted": players_inserted,
+            "players_total": players_total,
+        }
+
+    except Exception as e:
+        logger.error(f"Error in add_understat_games_and_player_games: {e}")
+        if conn:
+            conn.rollback()
+        raise
+    finally:
+        if cursor:
+            cursor.close()
+        if conn:
+            conn.close()
+
 def get_fpl_players():
     sql = """SELECT player_id, season, name, opta_id FROM staging.fpl_player_mapping;"""
     result = hook.get_records(sql)
