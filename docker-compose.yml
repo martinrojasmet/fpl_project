@@ -10,6 +10,12 @@ services:
       - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 120
+      start_period: 30s
 
 #   # 2. BACKEND (FastAPI / ML attached to DevContainer)
 #   backend:
@@ -49,8 +55,10 @@ services:
       - _AIRFLOW_WWW_USER_USERNAME=${AIRFLOW_USER}
       - _AIRFLOW_WWW_USER_PASSWORD=${AIRFLOW_PASSWORD}
       - AIRFLOW__WEBSERVER__SECRET_KEY=${AIRFLOW_SECRET_KEY}
+      - CONNECTION_CHECK_MAX_COUNT=120
     depends_on:
-      - postgres
+      postgres:
+        condition: service_healthy
     # The entrypoint sees this command, runs the DB migrations, creates your user, 
     # prints the Airflow version, and gracefully exits.
     command: version 

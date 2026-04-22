@@ -8,8 +8,10 @@ from utils.helpers import get_current_season, match_names_fuzzy
 from utils.postgres import (get_fpl_players, add_fpl_player_mapping, add_fpl_player_manual_review, 
                             get_fpl_players_seasonal_id_for_season, get_fpl_team_mapping, get_teams, 
                             add_team, add_fpl_team_mapping, get_last_gameweek_available_for_season,
-                            add_fpl_player_games
+                            add_fpl_player_games, add_fpl_games
 )
+from datetime import datetime
+
 @task
 def add_fpl_players_task():
     response = requests.get('https://fantasy.premierleague.com/api/bootstrap-static/')
@@ -98,8 +100,11 @@ def add_fpl_teams_task():
     matched_teams_df['season'] = get_current_season()
 
     if not matched_teams_df.empty:
+        print(matched_teams_df)
+        print(unmatched_teams_df)
         add_fpl_team_mapping(matched_teams_df)
     if not unmatched_teams_df.empty:
+        print(unmatched_teams_df)
         add_team(unmatched_teams_df['name'].tolist())
 
 @task
@@ -109,6 +114,7 @@ def add_fpl_player_games_task(**kwargs):
     run_id = kwargs.get("run_id")
     season = get_current_season()
     last_gameweek = get_last_gameweek_available_for_season(season)
+    current_datetime = datetime.now().isoformat()
 
     basic_response = requests.get(
         "https://fantasy.premierleague.com/api/bootstrap-static/",
@@ -153,13 +159,15 @@ def add_fpl_player_games_task(**kwargs):
 
             for element in history:
                 gw = element.get("round")
-                if gw is None or gw <= last_gameweek:
+                fpl_datetime = element.get("kickoff_time")
+                if gw is None or gw < last_gameweek or fpl_datetime > current_datetime:
                     continue
 
                 rows.append({
                     "season": season,
                     "gameweek": gw,
-                    "fpl_datetime": element.get("kickoff_time"),
+                    "fpl_game_id": element.get("fixture"),
+                    "fpl_datetime": fpl_datetime,
                     "fpl_player_id": player_id,
                     "opta_id": opta_id,
                     "fpl_team_id": fpl_team_id,
@@ -199,3 +207,37 @@ def add_fpl_player_games_task(**kwargs):
     player_games_df = pd.DataFrame.from_records(rows)
     add_fpl_player_games(player_games_df, run_id)
 
+@task
+def add_fpl_games_task(**kwargs):
+    run_id = kwargs.get("run_id")
+    season = get_current_season()
+
+    url = 'https://fantasy.premierleague.com/api/fixtures/?event='
+
+    games = []
+
+    for gw in range(1, 39):
+        response = requests.get(url + str(gw))
+        gameweek_data = response.json()
+        for game in gameweek_data:
+            finished = game.get('finished')
+            if finished:
+                row = {
+                    'run_id': run_id,
+                    'season': season,
+                    'gameweek': game.get('event'),
+                    'fpl_game_id': game.get('id'),
+                    'fpl_datetime': game.get('kickoff_time'),
+                    'home_fpl_team_id': game.get('team_h'),
+                    'away_fpl_team_id': game.get('team_a'),
+                    'home_goals': game.get('team_h_score'),
+                    'away_goals': game.get('team_a_score')
+                }
+        
+                games.append(row)
+
+    games_df = pd.DataFrame(games)
+
+
+
+    add_fpl_games(games_df, run_id)

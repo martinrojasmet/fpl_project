@@ -369,12 +369,13 @@ def add_fpl_player_games(player_games_df, run_id):
         cursor = conn.cursor()
         
         sql = """INSERT INTO raw.fpl_player_games
-                 (run_id, season, gameweek, fpl_datetime, fpl_player_id, opta_id, fpl_team_id, opponent_fpl_team_id, 
+                 (run_id, season, gameweek, fpl_game_id, fpl_datetime, fpl_player_id, opta_id, fpl_team_id, opponent_fpl_team_id, 
                   total_points, minutes_played, goals_scored, goals_conceded, own_goals, assists, penalties_missed, 
                   penalties_saved, clean_sheets, yellow_cards, red_cards, saves, expected_assists, expected_goals, 
                   bonus_points, value, fpl_element, bps, creativity, fixture, ict_index, influence, selected, threat, 
                   transfers_balance, transfers_in, transfers_out, expected_goal_involvements, expected_goals_conceded, starts)
-                 VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"""
+                 VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                 ON CONFLICT (season, gameweek, fpl_player_id, opponent_fpl_team_id) DO NOTHING;"""
         
         inserted_count = 0
         for idx, row in player_games_df.iterrows():
@@ -383,6 +384,7 @@ def add_fpl_player_games(player_games_df, run_id):
                     run_id,
                     row.get('season'),
                     row.get('gameweek'),
+                    row.get('fpl_game_id'),
                     row.get('fpl_datetime'),
                     row.get('fpl_player_id'),
                     row.get('opta_id'),
@@ -434,6 +436,59 @@ def add_fpl_player_games(player_games_df, run_id):
         
     except Exception as e:
         logger.error(f"Error in add_fpl_player_games: {e}")
+        if conn:
+            conn.rollback()
+        raise
+    finally:
+        if cursor:
+            cursor.close()
+        if conn:
+            conn.close()
+
+def add_fpl_games(fpl_games_df, run_id):
+    if fpl_games_df.empty:
+        logger.warning("FPL games DataFrame is empty, skipping insert")
+        return
+    
+    conn = None
+    cursor = None
+    try:
+        conn = hook.get_conn()
+        cursor = conn.cursor()
+        
+        sql = """INSERT INTO raw.fpl_games 
+                 (run_id, season, gameweek, fpl_game_id, fpl_datetime, home_fpl_team_id, away_fpl_team_id, home_goals, away_goals)
+                    VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
+                    ON CONFLICT (season, gameweek, fpl_game_id) DO NOTHING;"""
+        
+        inserted_count = 0
+        for idx, row in fpl_games_df.iterrows():
+            try:
+                cursor.execute(sql, (
+                    run_id,
+                    row.get('season'),
+                    row.get('gameweek'),
+                    row.get('fpl_game_id'),
+                    row.get('fpl_datetime'),
+                    row.get('home_fpl_team_id'),
+                    row.get('away_fpl_team_id'),
+                    row.get('home_goals'),
+                    row.get('away_goals')
+                ))
+                if cursor.rowcount > 0:
+                    inserted_count += 1
+                    logger.info(f"Inserted FPL game: fpl_game_id {row.get('fpl_game_id')}, season {row.get('season')}, gameweek {row.get('gameweek')}")
+                else:
+                    logger.info(f"Skipped duplicate FPL game: fpl_game_id {row.get('fpl_game_id')}, season {row.get('season')}, gameweek {row.get('gameweek')}")
+            except Exception as e:
+                logger.error(f"Error inserting FPL game for fpl_game_id {row.get('fpl_game_id')}: {e}")
+                logger.error(f"Row data: {row.to_dict()}")
+                raise
+        
+        conn.commit()
+        logger.info(f"Inserted {inserted_count} of {len(fpl_games_df)} FPL game records")
+    except Exception as e:
+        logger.error(f"Error in add_fpl_games: {e}")
         if conn:
             conn.rollback()
         raise

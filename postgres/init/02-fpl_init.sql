@@ -74,22 +74,12 @@ ALTER TABLE analytics.player_games OWNER TO postgres;
 
 CREATE TABLE analytics.games (
     id serial PRIMARY KEY,
-    short_date text NOT NULL,
-    gw integer NOT NULL,
-    home_goals double precision NOT NULL,
-    home_expected_goals_understat double precision NOT NULL,
-    home_assists double precision NOT NULL,
-    home_expected_assists_understat double precision NOT NULL,
-    home_team_id integer NOT NULL,
-    away_goals double precision NOT NULL,
-    away_expected_goals_understat double precision NOT NULL,
-    away_assists double precision NOT NULL,
-    away_expected_assists_understat double precision NOT NULL,
-    away_team_id integer NOT NULL,
-    result double precision NOT NULL,
     season text,
-    fpl_datetime timestamp(3) without time zone,
-    understat_datetime timestamp(3) without time zone
+    gameweek integer NOT NULL,
+    datetime timestamp(3) without time zone,
+    result text NOT NULL,
+    home_team_id integer NOT NULL,
+    away_team_id integer NOT NULL
 );
 
 
@@ -125,12 +115,28 @@ CREATE TABLE analytics.teams (
 
 ALTER TABLE analytics.teams OWNER TO postgres;
 
+CREATE TABLE raw.fpl_games (
+    id serial PRIMARY KEY,
+    run_id text NOT NULL,
+    season text NOT NULL,
+    gameweek integer NOT NULL,
+    fpl_game_id integer NOT NULL,
+    fpl_datetime timestamp(3) without time zone,
+    home_fpl_team_id integer NOT NULL,
+    away_fpl_team_id integer NOT NULL,
+    home_goals double precision NOT NULL,
+    away_goals double precision NOT NULL,
+    is_processed boolean DEFAULT false
+);
+
+ALTER TABLE raw.fpl_games OWNER TO postgres;
 
 CREATE TABLE raw.fpl_player_games (
     id serial PRIMARY KEY,
     run_id text NOT NULL,
     season text NOT NULL,
     gameweek integer NOT NULL,
+    fpl_game_id integer NOT NULL,
     fpl_datetime timestamp(3) without time zone,
     fpl_player_id integer NOT NULL,
     opta_id text,
@@ -165,7 +171,8 @@ CREATE TABLE raw.fpl_player_games (
     transfers_out integer,
     expected_goal_involvements double precision,
     expected_goals_conceded double precision,
-    starts integer
+    starts integer,
+    is_processed boolean DEFAULT false
 );
 
 ALTER TABLE raw.fpl_player_games OWNER TO postgres;
@@ -196,7 +203,8 @@ CREATE TABLE raw.understat_player_games (
     expected_goals double precision NOT NULL,
     expected_assists double precision NOT NULL,
     key_passes integer NOT NULL,
-    run_id text
+    run_id text,
+    is_processed boolean DEFAULT false
 );
 
 
@@ -275,6 +283,15 @@ CREATE TABLE raw.fpl_player_manual_review (
     "position" integer,
     is_processed boolean DEFAULT false
 );
+
+CREATE TABLE staging.fpl_game_mapping (
+    id serial PRIMARY KEY,
+    season text NOT NULL,
+    fpl_game_id integer NOT NULL,
+    game_id integer
+);
+
+ALTER TABLE staging.fpl_game_mapping OWNER TO postgres;
 
 -- CREATE TABLE analytics.player_teams (
 --     id serial PRIMARY KEY,
@@ -387,3 +404,15 @@ ALTER TABLE ONLY raw.understat_games
 
 ALTER TABLE ONLY raw.understat_player_games
     ADD CONSTRAINT understat_player_games_name_understat_game_id_key UNIQUE (name, understat_game_id);
+
+ALTER TABLE ONLY raw.fpl_player_games
+    ADD CONSTRAINT fpl_player_games_fpl_player_id_gameweek_season_key UNIQUE (season, gameweek, fpl_player_id, opponent_fpl_team_id);
+
+ALTER TABLE ONLY raw.fpl_games
+    ADD CONSTRAINT fpl_games_fpl_game_id_season_key UNIQUE (season, gameweek, fpl_game_id);
+
+ALTER TABLE ONLY staging.fpl_game_mapping
+    ADD CONSTRAINT fpl_game_mapping_season_fpl_game_id_key UNIQUE (season, fpl_game_id);
+
+ALTER TABLE ONLY staging.fpl_game_mapping
+    ADD CONSTRAINT fpl_game_mapping_game_id_fkey FOREIGN KEY (game_id) REFERENCES analytics.games(id);

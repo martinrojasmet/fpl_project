@@ -3,7 +3,7 @@
 
 from airflow.decorators import dag, task, task_group
 from tasks.understat import add_understat_data_task
-from tasks.fpl import add_fpl_players_task, add_fpl_teams_task, add_fpl_player_games_task
+from tasks.fpl import add_fpl_players_task, add_fpl_teams_task, add_fpl_player_games_task, add_fpl_games_task
 from datetime import datetime
 
 @dag(
@@ -16,11 +16,13 @@ def fpl_pipeline_dag():
     @task_group(group_id='extract_data')
     def extract_data():
         add_fpl_players = add_fpl_players_task()
-        add_understat_data = add_understat_data_task()
+        # add_understat_data = add_understat_data_task()
         add_fpl_player_games= add_fpl_player_games_task()
+        add_fpl_games = add_fpl_games_task()
 
-        add_fpl_players >> add_understat_data
+        # add_fpl_players >> add_understat_data
         add_fpl_players >> add_fpl_player_games
+        add_fpl_players >> add_fpl_games
 
     @task_group(group_id='transform_data')
     def transform_data():
