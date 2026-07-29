@@ -1,16 +1,16 @@
+CREATE SCHEMA core;
+
+
+ALTER SCHEMA core OWNER TO postgres;
+
+--
+-- Name: analytics; Type: SCHEMA; Schema: -; Owner: postgres
+--
+
 CREATE SCHEMA analytics;
 
 
 ALTER SCHEMA analytics OWNER TO postgres;
-
---
--- Name: features; Type: SCHEMA; Schema: -; Owner: postgres
---
-
-CREATE SCHEMA features;
-
-
-ALTER SCHEMA features OWNER TO postgres;
 
 --
 -- Name: raw; Type: SCHEMA; Schema: -; Owner: postgres
@@ -22,23 +22,23 @@ CREATE SCHEMA raw;
 ALTER SCHEMA raw OWNER TO postgres;
 
 --
--- Name: staging; Type: SCHEMA; Schema: -; Owner: postgres
+-- Name: intermediate; Type: SCHEMA; Schema: -; Owner: postgres
 --
 
-CREATE SCHEMA staging;
+CREATE SCHEMA intermediate;
 
 
-ALTER SCHEMA staging OWNER TO postgres;
+ALTER SCHEMA intermediate OWNER TO postgres;
 
 SET default_tablespace = '';
 
 SET default_table_access_method = heap;
 
 --
--- Name: player_games; Type: TABLE; Schema: analytics; Owner: postgres
+-- Name: player_games; Type: TABLE; Schema: core; Owner: postgres
 --
 
-CREATE TABLE analytics.player_games (
+CREATE TABLE core.player_games (
     id serial PRIMARY KEY,
     fpl_element integer NOT NULL,
     local_understat_id double precision,
@@ -66,13 +66,13 @@ CREATE TABLE analytics.player_games (
 );
 
 
-ALTER TABLE analytics.player_games OWNER TO postgres;
+ALTER TABLE core.player_games OWNER TO postgres;
 
 --
--- Name: games; Type: TABLE; Schema: analytics; Owner: postgres
+-- Name: games; Type: TABLE; Schema: core; Owner: postgres
 --
 
-CREATE TABLE analytics.games (
+CREATE TABLE core.games (
     id serial PRIMARY KEY,
     season text,
     gameweek integer NOT NULL,
@@ -83,10 +83,10 @@ CREATE TABLE analytics.games (
 );
 
 
-ALTER TABLE analytics.games OWNER TO postgres;
+ALTER TABLE core.games OWNER TO postgres;
 
 
-CREATE TABLE analytics.player_seasons (
+CREATE TABLE core.player_seasons (
     id serial PRIMARY KEY,
     player_id integer NOT NULL,
     season text NOT NULL,
@@ -94,26 +94,26 @@ CREATE TABLE analytics.player_seasons (
 );
 
 
-ALTER TABLE analytics.player_seasons OWNER TO postgres;
+ALTER TABLE core.player_seasons OWNER TO postgres;
 
 
-CREATE TABLE analytics.players (
+CREATE TABLE core.players (
     id serial PRIMARY KEY,
     name text NOT NULL,
     is_active boolean DEFAULT true
 );
 
 
-ALTER TABLE analytics.players OWNER TO postgres;
+ALTER TABLE core.players OWNER TO postgres;
 
 
-CREATE TABLE analytics.teams (
+CREATE TABLE core.teams (
     id serial PRIMARY KEY,
     name text NOT NULL
 );
 
 
-ALTER TABLE analytics.teams OWNER TO postgres;
+ALTER TABLE core.teams OWNER TO postgres;
 
 CREATE TABLE raw.fpl_games (
     id serial PRIMARY KEY,
@@ -125,8 +125,7 @@ CREATE TABLE raw.fpl_games (
     home_fpl_team_id integer NOT NULL,
     away_fpl_team_id integer NOT NULL,
     home_goals double precision NOT NULL,
-    away_goals double precision NOT NULL,
-    is_processed boolean DEFAULT false
+    away_goals double precision NOT NULL
 );
 
 ALTER TABLE raw.fpl_games OWNER TO postgres;
@@ -171,8 +170,7 @@ CREATE TABLE raw.fpl_player_games (
     transfers_out integer,
     expected_goal_involvements double precision,
     expected_goals_conceded double precision,
-    starts integer,
-    is_processed boolean DEFAULT false
+    starts integer
 );
 
 ALTER TABLE raw.fpl_player_games OWNER TO postgres;
@@ -183,8 +181,7 @@ CREATE TABLE raw.understat_games (
     understat_id integer NOT NULL,
     date timestamp(3) without time zone NOT NULL,
     home text NOT NULL,
-    away text NOT NULL,
-    is_processed boolean DEFAULT false
+    away text NOT NULL
 );
 
 
@@ -203,14 +200,13 @@ CREATE TABLE raw.understat_player_games (
     expected_goals double precision NOT NULL,
     expected_assists double precision NOT NULL,
     key_passes integer NOT NULL,
-    run_id text,
-    is_processed boolean DEFAULT false
+    run_id text
 );
 
 
 ALTER TABLE raw.understat_player_games OWNER TO postgres;
 
-CREATE TABLE analytics.player_teams (
+CREATE TABLE core.player_teams (
     id serial PRIMARY KEY,
     player_id integer NOT NULL,
     team_id integer NOT NULL,
@@ -218,9 +214,9 @@ CREATE TABLE analytics.player_teams (
     end_date timestamp(3) without time zone
 );
 
-ALTER TABLE analytics.player_teams OWNER TO postgres;
+ALTER TABLE core.player_teams OWNER TO postgres;
 
-CREATE TABLE staging.fpl_player_mapping (
+CREATE TABLE intermediate.fpl_player_mapping (
     id serial PRIMARY KEY,
     player_id integer NOT NULL,
     season text NOT NULL,
@@ -230,13 +226,13 @@ CREATE TABLE staging.fpl_player_mapping (
 );
 
 
-ALTER TABLE staging.fpl_player_mapping OWNER TO postgres;
+ALTER TABLE intermediate.fpl_player_mapping OWNER TO postgres;
 
-ALTER TABLE staging.fpl_player_mapping
+ALTER TABLE intermediate.fpl_player_mapping
     ADD CONSTRAINT fpl_player_mapping_player_id_season_key UNIQUE (player_id, season);
 
 
-CREATE TABLE staging.fpl_team_mapping (
+CREATE TABLE intermediate.fpl_team_mapping (
     id serial PRIMARY KEY,
     season text NOT NULL,
     fpl_team_id integer NOT NULL,
@@ -245,30 +241,30 @@ CREATE TABLE staging.fpl_team_mapping (
 );
 
 
-ALTER TABLE staging.fpl_team_mapping OWNER TO postgres;
+ALTER TABLE intermediate.fpl_team_mapping OWNER TO postgres;
 
 
-CREATE TABLE staging.understat_game_mapping (
+CREATE TABLE intermediate.understat_game_mapping (
     id serial PRIMARY KEY,
     understat_game_id integer NOT NULL,
     game_id integer NOT NULL
 );
 
 
-ALTER TABLE staging.understat_game_mapping OWNER TO postgres;
+ALTER TABLE intermediate.understat_game_mapping OWNER TO postgres;
 
 
-CREATE TABLE staging.understat_player_mapping (
+CREATE TABLE intermediate.understat_player_mapping (
     id serial PRIMARY KEY,
     name text NOT NULL,
     player_id integer NOT NULL
 );
 
 
-ALTER TABLE staging.understat_player_mapping OWNER TO postgres;
+ALTER TABLE intermediate.understat_player_mapping OWNER TO postgres;
 
 
-CREATE TABLE staging.understat_team_mapping (
+CREATE TABLE intermediate.understat_team_mapping (
     id serial PRIMARY KEY,
     name text NOT NULL,
     team_id integer
@@ -280,20 +276,19 @@ CREATE TABLE raw.fpl_player_manual_review (
     season text NOT NULL,
     fpl_seasonal_id integer,
     opta_id text,
-    "position" integer,
-    is_processed boolean DEFAULT false
+    "position" integer
 );
 
-CREATE TABLE staging.fpl_game_mapping (
+CREATE TABLE intermediate.fpl_game_mapping (
     id serial PRIMARY KEY,
     season text NOT NULL,
     fpl_game_id integer NOT NULL,
     game_id integer
 );
 
-ALTER TABLE staging.fpl_game_mapping OWNER TO postgres;
+ALTER TABLE intermediate.fpl_game_mapping OWNER TO postgres;
 
--- CREATE TABLE analytics.player_teams (
+-- CREATE TABLE core.player_teams (
 --     id serial PRIMARY KEY,
 --     player_id serial NOT NULL,
 --     team integer NOT NULL,
@@ -301,102 +296,102 @@ ALTER TABLE staging.fpl_game_mapping OWNER TO postgres;
 --     end_date timestamp(3) without time zone
 -- );
 
--- ALTER TABLE analytics.player_teams OWNER TO postgres;
+-- ALTER TABLE core.player_teams OWNER TO postgres;
 
 
 ALTER TABLE raw.fpl_player_manual_review
     ADD CONSTRAINT fpl_player_manual_review_name_season_key UNIQUE (name, season);
 
-ALTER TABLE staging.understat_team_mapping OWNER TO postgres;
+ALTER TABLE intermediate.understat_team_mapping OWNER TO postgres;
 
 
-ALTER TABLE ONLY staging.fpl_player_mapping
+ALTER TABLE ONLY intermediate.fpl_player_mapping
     ADD CONSTRAINT fpl_player_mapping_player_master_id_season_key UNIQUE (player_id, season);
 
 
-ALTER TABLE ONLY staging.fpl_team_mapping
+ALTER TABLE ONLY intermediate.fpl_team_mapping
     ADD CONSTRAINT fpl_team_mapping_season_fpl_team_id_key UNIQUE (season, fpl_team_id);
 
 
-ALTER TABLE ONLY staging.understat_game_mapping
+ALTER TABLE ONLY intermediate.understat_game_mapping
     ADD CONSTRAINT understat_game_mapping_understat_game_id_key UNIQUE (understat_game_id);
 
 
-ALTER TABLE ONLY staging.understat_player_mapping
+ALTER TABLE ONLY intermediate.understat_player_mapping
     ADD CONSTRAINT understat_player_mapping_understat_name_key UNIQUE (name);
 
 
-ALTER TABLE ONLY staging.understat_team_mapping
+ALTER TABLE ONLY intermediate.understat_team_mapping
     ADD CONSTRAINT understat_team_mapping_understat_name_key UNIQUE (name);
 
 
 --
--- Name: games fk_games_away_team; Type: FK CONSTRAINT; Schema: analytics; Owner: postgres
+-- Name: games fk_games_away_team; Type: FK CONSTRAINT; Schema: core; Owner: postgres
 --
 
-ALTER TABLE ONLY analytics.games
-    ADD CONSTRAINT fk_games_away_team FOREIGN KEY (away_team_id) REFERENCES analytics.teams(id);
-
-
---
--- Name: games fk_games_home_team; Type: FK CONSTRAINT; Schema: analytics; Owner: postgres
---
-
-ALTER TABLE ONLY analytics.games
-    ADD CONSTRAINT fk_games_home_team FOREIGN KEY (home_team_id) REFERENCES analytics.teams(id);
+ALTER TABLE ONLY core.games
+    ADD CONSTRAINT fk_games_away_team FOREIGN KEY (away_team_id) REFERENCES core.teams(id);
 
 
 --
--- Name: player_seasons player_seasons_player_id_fkey; Type: FK CONSTRAINT; Schema: analytics; Owner: postgres
+-- Name: games fk_games_home_team; Type: FK CONSTRAINT; Schema: core; Owner: postgres
 --
 
-ALTER TABLE ONLY analytics.player_seasons
-    ADD CONSTRAINT player_seasons_player_id_fkey FOREIGN KEY (player_id) REFERENCES analytics.players(id);
-
-
---
--- Name: player_seasons player_seasons_team_id_fkey; Type: FK CONSTRAINT; Schema: analytics; Owner: postgres
---
+ALTER TABLE ONLY core.games
+    ADD CONSTRAINT fk_games_home_team FOREIGN KEY (home_team_id) REFERENCES core.teams(id);
 
 
 --
--- Name: fpl_player_mapping fpl_player_mapping_player_master_id_fkey; Type: FK CONSTRAINT; Schema: staging; Owner: postgres
+-- Name: player_seasons player_seasons_player_id_fkey; Type: FK CONSTRAINT; Schema: core; Owner: postgres
 --
 
-ALTER TABLE ONLY staging.fpl_player_mapping
-    ADD CONSTRAINT fpl_player_mapping_player_master_id_fkey FOREIGN KEY (player_id) REFERENCES analytics.players(id);
-
-
---
--- Name: fpl_team_mapping fpl_team_mapping_team_id_fkey; Type: FK CONSTRAINT; Schema: staging; Owner: postgres
---
-
-ALTER TABLE ONLY staging.fpl_team_mapping
-    ADD CONSTRAINT fpl_team_mapping_team_id_fkey FOREIGN KEY (team_id) REFERENCES analytics.teams(id);
+ALTER TABLE ONLY core.player_seasons
+    ADD CONSTRAINT player_seasons_player_id_fkey FOREIGN KEY (player_id) REFERENCES core.players(id);
 
 
 --
--- Name: understat_game_mapping understat_game_mapping_game_id_fkey; Type: FK CONSTRAINT; Schema: staging; Owner: postgres
+-- Name: player_seasons player_seasons_team_id_fkey; Type: FK CONSTRAINT; Schema: core; Owner: postgres
 --
-
-ALTER TABLE ONLY staging.understat_game_mapping
-    ADD CONSTRAINT understat_game_mapping_game_id_fkey FOREIGN KEY (game_id) REFERENCES analytics.games(id);
 
 
 --
--- Name: understat_player_mapping understat_player_mapping_player_id_fkey; Type: FK CONSTRAINT; Schema: staging; Owner: postgres
+-- Name: fpl_player_mapping fpl_player_mapping_player_master_id_fkey; Type: FK CONSTRAINT; Schema: intermediate; Owner: postgres
 --
 
-ALTER TABLE ONLY staging.understat_player_mapping
-    ADD CONSTRAINT understat_player_mapping_player_id_fkey FOREIGN KEY (player_id) REFERENCES analytics.players(id);
+ALTER TABLE ONLY intermediate.fpl_player_mapping
+    ADD CONSTRAINT fpl_player_mapping_player_master_id_fkey FOREIGN KEY (player_id) REFERENCES core.players(id);
 
 
 --
--- Name: understat_team_mapping understat_team_mapping_team_id_fkey; Type: FK CONSTRAINT; Schema: staging; Owner: postgres
+-- Name: fpl_team_mapping fpl_team_mapping_team_id_fkey; Type: FK CONSTRAINT; Schema: intermediate; Owner: postgres
 --
 
-ALTER TABLE ONLY staging.understat_team_mapping
-    ADD CONSTRAINT understat_team_mapping_team_id_fkey FOREIGN KEY (team_id) REFERENCES analytics.teams(id);
+ALTER TABLE ONLY intermediate.fpl_team_mapping
+    ADD CONSTRAINT fpl_team_mapping_team_id_fkey FOREIGN KEY (team_id) REFERENCES core.teams(id);
+
+
+--
+-- Name: understat_game_mapping understat_game_mapping_game_id_fkey; Type: FK CONSTRAINT; Schema: intermediate; Owner: postgres
+--
+
+ALTER TABLE ONLY intermediate.understat_game_mapping
+    ADD CONSTRAINT understat_game_mapping_game_id_fkey FOREIGN KEY (game_id) REFERENCES core.games(id);
+
+
+--
+-- Name: understat_player_mapping understat_player_mapping_player_id_fkey; Type: FK CONSTRAINT; Schema: intermediate; Owner: postgres
+--
+
+ALTER TABLE ONLY intermediate.understat_player_mapping
+    ADD CONSTRAINT understat_player_mapping_player_id_fkey FOREIGN KEY (player_id) REFERENCES core.players(id);
+
+
+--
+-- Name: understat_team_mapping understat_team_mapping_team_id_fkey; Type: FK CONSTRAINT; Schema: intermediate; Owner: postgres
+--
+
+ALTER TABLE ONLY intermediate.understat_team_mapping
+    ADD CONSTRAINT understat_team_mapping_team_id_fkey FOREIGN KEY (team_id) REFERENCES core.teams(id);
 
 
 ALTER TABLE ONLY raw.understat_games
@@ -411,8 +406,11 @@ ALTER TABLE ONLY raw.fpl_player_games
 ALTER TABLE ONLY raw.fpl_games
     ADD CONSTRAINT fpl_games_fpl_game_id_season_key UNIQUE (season, gameweek, fpl_game_id);
 
-ALTER TABLE ONLY staging.fpl_game_mapping
+ALTER TABLE ONLY intermediate.fpl_game_mapping
     ADD CONSTRAINT fpl_game_mapping_season_fpl_game_id_key UNIQUE (season, fpl_game_id);
 
-ALTER TABLE ONLY staging.fpl_game_mapping
-    ADD CONSTRAINT fpl_game_mapping_game_id_fkey FOREIGN KEY (game_id) REFERENCES analytics.games(id);
+ALTER TABLE ONLY intermediate.fpl_game_mapping
+    ADD CONSTRAINT fpl_game_mapping_game_id_fkey FOREIGN KEY (game_id) REFERENCES core.games(id);
+
+ALTER TABLE ONLY core.player_seasons
+    ADD CONSTRAINT player_seasons_player_id_season_key UNIQUE (season, player_id);
