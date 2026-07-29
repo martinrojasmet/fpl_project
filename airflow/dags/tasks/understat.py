@@ -1,11 +1,19 @@
 import json
+import html
 import logging
 import re
 import requests
 import pandas as pd
 from airflow.decorators import task
-from utils.postgres import get_last_understat_game_id, add_understat_games_and_player_games
 from more_itertools import chunked
+from pydantic import BaseModel, Field
+
+from utils.storage.core import get_players
+from utils.storage.intermediate import get_understat_player_map, add_understat_player_mapping
+from utils.storage.raw import get_understat_players_raw
+from utils.services.understat_ingest import (get_last_understat_game_id, add_understat_games_and_player_games,
+                                             add_players_understat)
+from utils.helpers import get_current_season, intermediate_mapping_matching, fuzzy_string_matching,ai_matching
 
 base_url = "https://understat.com/match/"
 player_data_url = "https://understat.com/getMatchData/"
@@ -32,7 +40,6 @@ PLAYER_COLUMNS = [
 
 GAME_COLUMNS = ["understat_id", "date", "home", "away"]
 
-
 def flatten_player_data_to_rows(player_data, understat_game_id, team_map):
     rows = []
     rosters = player_data.get("rosters", {})
@@ -44,7 +51,7 @@ def flatten_player_data_to_rows(player_data, understat_game_id, team_map):
         for player in side_roster.values():
             rows.append(
                 {
-                    "name": player.get("player"),
+                    "name": html.unescape(player.get("player", "")),
                     "understat_game_id": understat_game_id,
                     "team": team_name,
                     "minutes_played": player.get("time"),
@@ -58,12 +65,6 @@ def flatten_player_data_to_rows(player_data, understat_game_id, team_map):
             )
     return rows
 
-
-# def chunked(items, chunk_size):
-#     for i in range(0, len(items), chunk_size):
-#         yield items[i:i + chunk_size]
-
-
 def extract_match_data_from_html(html):
     match = re.search(r"var\s+match_info\s*=\s*JSON\.parse\('([^']+)'\);", html)
     if not match:
@@ -72,17 +73,6 @@ def extract_match_data_from_html(html):
     raw = match.group(1)
     decoded = bytes(raw, "utf-8").decode("unicode_escape")
     return json.loads(decoded)
-
-
-# def is_understat_404_html(html):
-#     body = (html or "").lower()
-#     return (
-#         "<title>404 page not found</title>" in body
-#         or 'class="error-code">404<' in body
-#         or "<p>not found</p>" in body
-#         or "/css/errors.css" in body
-#     )
-
 
 def fetch_understat_data(session, understat_game_id):
     match_url = f"{base_url}{understat_game_id}"
@@ -131,7 +121,6 @@ def fetch_understat_data(session, understat_game_id):
     #     return None, match_data, f"http2_{player_data_response.status_code}"
 
     return player_data_response.json(), match_data, "ok"
-
 
 @task
 def add_understat_data_task(**kwargs):
@@ -203,3 +192,73 @@ def add_understat_data_task(**kwargs):
         f"Understat task finished: scraped {games_amt} EPL matches, failed ids {len(total_failed_understat_game_ids)}"
     )
     logger.info(f"Failed game ids: {total_failed_understat_game_ids}")
+
+@task
+def match_understat_players_task():
+    # Queries
+    understat_raw_df = get_understat_players_raw()
+    understat_map_df = get_understat_player_map()
+    players_df = get_players()
+    season = get_current_season()
+
+    # 1. Intermediate mapping table matching
+    exact_matched_df, unmatched_after_exact_df = intermediate_mapping_matching(
+        understat_raw_df,
+        understat_map_df,
+        raw_key="name",
+        mapping_key="name",
+    )
+
+    # 2. Fuzzy name matching
+    fuzzy_matched_df, unmatched_after_fuzzy_df = fuzzy_string_matching(
+        unmatched_after_exact_df,
+        players_df,
+        raw_name_col="name",
+        db_name_col="name",
+        result_field="player_id",
+        threshold=86,
+    )
+
+    # 3. AI matching
+    class UnderstatPlayerMatch(BaseModel):
+        name: str = Field(description="Name from understat")
+        player_id: int = Field(description="core.players.id")
+    
+    prompt_string = f'''
+    I need you to look at the list of unmatched Premier League (PL) players (unmatched_raw_data) for the {season} season from one 
+    source. Also check the players from the PL I have in my database and match them, if and only if, you are completely sure that 
+    they exist in the database even if written differently. All of them are players of the PL, but some I don't have in my 
+    database. If you are not sure about a match, don't match it, as will be added to the database. Most, if not all, should be
+    matched. There may be some cases that don't match, or some might just have an abbreviation of their name. You should check with
+    the information available on the internet and what they are known for to match them. A sign the players might not be in teh database
+    is if they are young, for example. Finally, you need to return a list of matched players with the following format: 
+    [{{"name": "player_name_from_unmatched_players", "player_id": "player_id_in_db"}}]
+
+    Input:
+    '''
+
+    ai_matched_df, unmatched_after_ai_df = ai_matching(
+        unmatched_after_fuzzy_df,
+        players_df,
+        prompt_string,
+        UnderstatPlayerMatch,
+        raw_match_col="name",
+    )
+
+
+    matched_players_df = pd.concat(
+        [
+            exact_matched_df[["name", "player_id"]],
+            fuzzy_matched_df[["name", "player_id"]],
+            ai_matched_df[["name", "player_id"]],
+        ],
+        ignore_index=True,
+    )
+
+    print(f"UNDERSTAT: Total matched {len(matched_players_df)}, {len(unmatched_after_ai_df)} unmatched.")
+
+    for unmatched_player in unmatched_after_ai_df["name"].tolist():
+        logger.warning(f"UNDERSTAT: Unmatched player: {unmatched_player}")
+
+    add_understat_player_mapping(matched_players_df)
+    add_players_understat(unmatched_after_ai_df)
