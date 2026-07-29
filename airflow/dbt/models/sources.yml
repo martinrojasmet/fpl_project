@@ -1,0 +1,11 @@
+version: 2
+sources:
+  - name: raw
+    schema: raw
+    tables:
+      - name: fpl_games
+      - name: fpl_player_games
+      - name: understat_games
+      - name: understat_player_games
+    
+    
