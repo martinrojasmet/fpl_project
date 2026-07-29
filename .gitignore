@@ -4,3 +4,8 @@ test/
 .vscode/
 __pycache__/
 cheat-sheet.md
+data/
+tests/
+.venv/
+backup/
+backup.sh
