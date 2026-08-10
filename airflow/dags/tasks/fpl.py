@@ -10,15 +10,17 @@ import os
 
 from utils.helpers import (get_current_season, intermediate_mapping_matching, 
                            fuzzy_string_matching, ai_matching, fetch_player_fpl_api)
-from utils.storage.core import get_players, get_teams, get_last_gameweek_available_for_season
-from utils.storage.intermediate import get_fpl_players, get_fpl_team_mapping, add_fpl_team_mapping
-from utils.storage.raw import add_fpl_player_games, add_fpl_games
-from utils.services.fpl_ingest import (add_players_fpl, add_teams_fpl, get_fpl_players_seasonal_id_for_season,
-                                       add_fpl_player_mapping_and_season)
+from utils.storage.raw import (add_fpl_player_games, add_fpl_games, add_fpl_players,
+                               get_last_gameweek_available_for_season, add_fpl_players,
+                               add_fpl_teams)
+from utils.storage.master import (add_fpl_player_mapping, add_new_fpl_player_mapping, get_fpl_players, get_players,
+                                  get_teams, get_fpl_team_mapping, add_fpl_team_mapping, add_new_fpl_team_mapping,
+                                  get_fpl_players_seasonal_id_for_season)
 
 # Initial FPL data tasks
 @task
-def add_fpl_players_task():
+def add_fpl_players_task(**kwargs):
+    run_id = kwargs.get("run_id")
     # Queries
     season = get_current_season()
     fpl_players_mapping_df = get_fpl_players()
@@ -41,6 +43,10 @@ def add_fpl_players_task():
             for element in fpl_data["elements"]
         ]
     )
+
+    fpl_players_raw_df = api_fpl_players_df.copy()
+    fpl_players_raw_df['run_id'] = run_id
+    fpl_players_raw_df[fpl_players_raw_df['run_id'].isnull()]
 
     # ToDo: Revise if this is necessary
     exact_lookup_df = (
@@ -114,13 +120,17 @@ def add_fpl_players_task():
 
     unmatched_players_df = unmatched_after_ai_df[original_fields].copy()
 
+    matched_players_df.rename(columns={"name": "fpl_name"}, inplace=True)
+    unmatched_players_df.rename(columns={"name": "fpl_name"}, inplace=True)
+
     print(f"FPL players: Total matched {len(matched_players_df)}, {len(unmatched_players_df)} unmatched.")
 
-    add_fpl_player_mapping_and_season(matched_players_df)
-    add_players_fpl(unmatched_players_df)
+    add_fpl_player_mapping(matched_players_df)
+    add_new_fpl_player_mapping(unmatched_players_df)
 
 @task
-def add_fpl_teams_task():
+def add_fpl_teams_task(**kwargs):
+    run_id = kwargs.get("run_id")
     url = 'https://fantasy.premierleague.com/api/bootstrap-static/'
     response = requests.get(url)
     data = response.json()
@@ -128,6 +138,12 @@ def add_fpl_teams_task():
     teams_api_df = teams_api_df[['id', 'name']]
     teams_api_df = teams_api_df.rename(columns={'id': 'fpl_team_id'})
     season = get_current_season()
+
+    teams_raw_df = pd.DataFrame({
+        'name': teams_api_df['name']
+    })
+    teams_raw_df['run_id'] = run_id
+    teams_raw_df['season'] = season
 
     # 1. Intermediate mapping table matching
     fpl_team_mapping_df = get_fpl_team_mapping()
@@ -177,11 +193,13 @@ def add_fpl_teams_task():
     )
     matched_teams_df['season'] = season
     unmatched_teams_df['season'] = season
+    matched_teams_df = matched_teams_df.rename(columns={'name': 'fpl_name'})
+    unmatched_teams_df = unmatched_teams_df.rename(columns={'name': 'fpl_name'})
 
     print(f"FPL teams: Total matched {len(matched_teams_df)}, {len(unmatched_teams_df)} unmatched.")
 
     add_fpl_team_mapping(matched_teams_df)
-    add_teams_fpl(unmatched_teams_df)
+    add_new_fpl_team_mapping(unmatched_teams_df)
 
 
 # FPL tasks

@@ -12,7 +12,7 @@ def convert_stringdate_to_date(string):
     
 def get_current_season():
     now = datetime.now()
-    if now.month >= 7 and now.day > 25:
+    if now.month >= 8:
         return f"{now.year}/{str(now.year + 1)[-2:]}"
     else:
         return f"{now.year - 1}/{str(now.year)[-2:]}"

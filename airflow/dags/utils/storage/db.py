@@ -1,6 +1,6 @@
 import logging
 from contextlib import contextmanager
-from typing import Any, Iterable, Sequence, Tuple
+from typing import Any, Iterable, Sequence, Tuple, Literal
 import pandas as pd
 from airflow.providers.postgres.hooks.postgres import PostgresHook
 import pandas as pd
@@ -100,11 +100,101 @@ class PostgresClient:
             with active_conn.cursor() as cursor:
                 cursor.executemany(query, rows)
 
+    # def insert_df(
+    #     self,
+    #     table: str,
+    #     df: pd.DataFrame,
+    #     conflict_fields: list[str] | None = None,
+    #     on_conflict: Literal["nothing", "update", "coalesce"] = "nothing",
+    #     conn: Any | None = None,
+    # ) -> None:
+    #     if df.empty:
+    #         logger.warning("Passed DataFrame for '%s' is empty. Skipping.", table)
+    #         return
+
+    #     columns = list(df.columns)
+    #     rows = list(df.itertuples(index=False, name=None))
+
+    #     if conflict_fields:
+    #         missing = [field for field in conflict_fields if field not in columns]
+    #         if missing:
+    #             raise ValueError(
+    #                 f"Conflict fields {missing} are not present in DataFrame columns for '{table}'."
+    #             )
+            
+    #     insert_sql = sql.SQL("INSERT INTO {} ({}) VALUES %s").format(
+    #         sql.SQL(table),
+    #         sql.SQL(", ").join(sql.Identifier(column) for column in columns),
+    #     )
+
+    #     if conflict_fields:
+    #         update_cols = [col for col in columns if col not in conflict_fields]
+
+    #         if on_conflict == "nothing" or not update_cols:
+    #             conflict_sql = sql.SQL(" ON CONFLICT ({}) DO NOTHING").format(
+    #                 sql.SQL(", ").join(sql.Identifier(col) for col in conflict_fields)
+    #             )
+
+    #         elif on_conflict == "update":
+    #             assignments = sql.SQL(", ").join(
+    #                 sql.SQL("{} = EXCLUDED.{}").format(
+    #                     sql.Identifier(col), sql.Identifier(col)
+    #                 )
+    #                 for col in update_cols
+    #             )
+    #             conflict_sql = sql.SQL(" ON CONFLICT ({}) DO UPDATE SET {}").format(
+    #                 sql.SQL(", ").join(sql.Identifier(col) for col in conflict_fields),
+    #                 assignments,
+    #             )
+
+    #         elif on_conflict == "coalesce":
+    #             assignments = sql.SQL(", ").join(
+    #                 sql.SQL("{} = COALESCE({}, EXCLUDED.{})").format(
+    #                     sql.Identifier(col),
+    #                     sql.Identifier(col),
+    #                     sql.Identifier(col),
+    #                 )
+    #                 for col in update_cols
+    #             )
+    #             conflict_sql = sql.SQL(" ON CONFLICT ({}) DO UPDATE SET {}").format(
+    #                 sql.SQL(", ").join(sql.Identifier(col) for col in conflict_fields),
+    #                 assignments,
+    #             )
+
+    #         else:
+    #             raise ValueError(
+    #                 f"Unsupported on_conflict action: '{on_conflict}'. "
+    #                 "Supported actions are 'nothing', 'update', and 'coalesce'."
+    #             )
+
+    #         insert_sql = insert_sql + conflict_sql
+
+    #     if conn is not None:
+    #         with conn.cursor() as cursor:
+    #             psycopg2.extras.execute_values(
+    #                 cursor,
+    #                 insert_sql.as_string(conn),
+    #                 rows,
+    #             )
+    #         logger.info("Staged %s rows for table '%s'.", len(rows), table)
+    #         return
+
+    #     with self.connection() as active_conn:
+    #         with active_conn.cursor() as cursor:
+    #             psycopg2.extras.execute_values(
+    #                 cursor,
+    #                 insert_sql.as_string(active_conn),
+    #                 rows,
+    #             )
+
+    #     logger.info("Staged %s rows for table '%s'.", len(rows), table)
+
     def insert_df(
         self,
         table: str,
         df: pd.DataFrame,
         conflict_fields: list[str] | None = None,
+        on_conflict: Literal["nothing", "update", "coalesce"] = "nothing",
         conn: Any | None = None,
     ) -> None:
         if df.empty:
@@ -120,16 +210,53 @@ class PostgresClient:
                 raise ValueError(
                     f"Conflict fields {missing} are not present in DataFrame columns for '{table}'."
                 )
-        
-        insert_sql = sql.SQL("INSERT INTO {} ({}) VALUES %s").format(
+
+        # Added 'AS target' table alias to resolve column ambiguity on upserts
+        insert_sql = sql.SQL("INSERT INTO {} AS target ({}) VALUES %s").format(
             sql.SQL(table),
             sql.SQL(", ").join(sql.Identifier(column) for column in columns),
         )
 
         if conflict_fields:
-            conflict_sql = sql.SQL(" ON CONFLICT ({}) DO NOTHING").format(
-                sql.SQL(", ").join(sql.Identifier(column) for column in conflict_fields)
-            )
+            update_cols = [col for col in columns if col not in conflict_fields]
+
+            if on_conflict == "nothing" or not update_cols:
+                conflict_sql = sql.SQL(" ON CONFLICT ({}) DO NOTHING").format(
+                    sql.SQL(", ").join(sql.Identifier(col) for col in conflict_fields)
+                )
+
+            elif on_conflict == "update":
+                assignments = sql.SQL(", ").join(
+                    sql.SQL("{} = EXCLUDED.{}").format(
+                        sql.Identifier(col), sql.Identifier(col)
+                    )
+                    for col in update_cols
+                )
+                conflict_sql = sql.SQL(" ON CONFLICT ({}) DO UPDATE SET {}").format(
+                    sql.SQL(", ").join(sql.Identifier(col) for col in conflict_fields),
+                    assignments,
+                )
+
+            elif on_conflict == "coalesce":
+                assignments = sql.SQL(", ").join(
+                    sql.SQL("{} = COALESCE(target.{}, EXCLUDED.{})").format(
+                        sql.Identifier(col),
+                        sql.Identifier(col),
+                        sql.Identifier(col),
+                    )
+                    for col in update_cols
+                )
+                conflict_sql = sql.SQL(" ON CONFLICT ({}) DO UPDATE SET {}").format(
+                    sql.SQL(", ").join(sql.Identifier(col) for col in conflict_fields),
+                    assignments,
+                )
+
+            else:
+                raise ValueError(
+                    f"Unsupported on_conflict action: '{on_conflict}'. "
+                    "Supported actions are 'nothing', 'update', and 'coalesce'."
+                )
+
             insert_sql = insert_sql + conflict_sql
 
         if conn is not None:

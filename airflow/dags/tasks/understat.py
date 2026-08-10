@@ -8,12 +8,10 @@ from airflow.decorators import task
 from more_itertools import chunked
 from pydantic import BaseModel, Field
 
-from utils.storage.core import get_players
-from utils.storage.intermediate import get_understat_player_map, add_understat_player_mapping
-from utils.storage.raw import get_understat_players_raw
-from utils.services.understat_ingest import (get_last_understat_game_id, add_understat_games_and_player_games,
-                                             add_players_understat)
+from utils.storage.raw import (get_understat_players_raw, add_understat_games_and_player_games,
+                               get_last_understat_game_id)
 from utils.helpers import get_current_season, intermediate_mapping_matching, fuzzy_string_matching,ai_matching
+from utils.storage.master import get_players, get_understat_player_mapping, add_understat_player_mapping
 
 base_url = "https://understat.com/match/"
 player_data_url = "https://understat.com/getMatchData/"
@@ -84,11 +82,7 @@ def fetch_understat_data(session, understat_game_id):
         return None, None, "understat_request_error"
 
     if warm_response.status_code == 404:
-        #  or is_understat_404_html(warm_response.text)
         return None, None, "understat_404_error"
-    
-    # if warm_response.status_code >= 400:
-    #     return None, None, f"http1_{warm_response.status_code}"
 
     match_data = extract_match_data_from_html(warm_response.text)
     if not match_data:
@@ -197,13 +191,15 @@ def add_understat_data_task(**kwargs):
 def match_understat_players_task():
     # Queries
     understat_raw_df = get_understat_players_raw()
-    understat_map_df = get_understat_player_map()
+    understat_map_df = get_understat_player_mapping()
     players_df = get_players()
     season = get_current_season()
 
+    understat_name_raw_df = understat_raw_df[["name"]].drop_duplicates().reset_index(drop=True)
+
     # 1. Intermediate mapping table matching
     exact_matched_df, unmatched_after_exact_df = intermediate_mapping_matching(
-        understat_raw_df,
+        understat_name_raw_df,
         understat_map_df,
         raw_key="name",
         mapping_key="name",
@@ -217,6 +213,12 @@ def match_understat_players_task():
         db_name_col="name",
         result_field="player_id",
         threshold=86,
+    )
+
+    unmatched_after_fuzzy_w_teams_df = unmatched_after_fuzzy_df.merge(
+        understat_raw_df[["name", "team"]].drop_duplicates(),
+        on="name",
+        how="left"
     )
 
     # 3. AI matching
@@ -236,6 +238,11 @@ def match_understat_players_task():
 
     Input:
     '''
+    input_string = f"""
+    unmatched_raw_data: {unmatched_after_fuzzy_w_teams_df.to_dict(orient='records')}
+    players_in_db: {players_df.to_dict(orient='records')}
+    """
+    prompt_string += input_string
 
     ai_matched_df, unmatched_after_ai_df = ai_matching(
         unmatched_after_fuzzy_df,
@@ -261,4 +268,3 @@ def match_understat_players_task():
         logger.warning(f"UNDERSTAT: Unmatched player: {unmatched_player}")
 
     add_understat_player_mapping(matched_players_df)
-    add_players_understat(unmatched_after_ai_df)
