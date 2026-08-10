@@ -31,6 +31,181 @@ clean-targets:         # directories to be removed by `dbt clean`
 # files using the `{{ config(...) }}` macro.
 models:
   fpl_dbt:
-    # Config indicated by + and applies to all files under models/example/
-    example:
+    staging:
+      +schema: staging
       +materialized: view
+    core:
+      +schema: core
+      +materialized: incremental
+    master:
+      +schema: master
+      +materialized: incremental
+
+
+seeds:
+  fpl_dbt:
+    +schema: staging
+    fpl_db_core_players:
+      +column_types:
+        id: uuid
+        name: text
+        is_active: boolean
+    fpl_db_core_teams:
+      +column_types:
+        id: uuid
+        name: text
+    fpl_db_core_games:
+      +column_types:
+        id: uuid
+        season: text
+        gameweek: integer
+        datetime: timestamp
+        result: text
+        home_team_id: uuid
+        away_team_id: uuid
+    fpl_db_core_player_games:
+      +column_types:
+        id: uuid
+        player_id: uuid
+        game_id: uuid
+        fpl_price: integer
+        points: integer
+        minutes_played: integer
+        goals_scored: integer
+        expected_goals_understat: double precision
+        goals_conceded: integer
+        assists: integer
+        expected_assists_understat: double precision
+        yellow_cards: integer
+        red_card: integer
+        clean_sheet: integer
+        key_passes: integer
+        own_goals: integer
+        penalties_missed: integer
+        penalties_saved: integer
+        saves: integer
+        bonus_points: integer
+        expected_assists_fpl: double precision
+        expected_goals_fpl: double precision
+        fpl_element: integer
+        local_understat_id: integer
+    fpl_db_core_player_seasons:
+      +column_types:
+        id: uuid
+        player_id: uuid
+        season: text
+        position: integer
+    fpl_db_core_player_teams:
+      +column_types:
+        id: uuid
+        start_date: timestamp
+        end_date: timestamp
+        team_id: uuid
+        player_id: uuid
+    fpl_db_master_game_mappings:
+      +column_types:
+        game_id: uuid
+        season: text
+        fpl_game_id: integer
+        understat_game_id: integer
+    fpl_db_master_player_mappings:
+      +column_types:
+        id: integer
+        player_id: uuid
+        season: text
+        fpl_seasonal_id: integer
+        opta_id: text
+        fpl_name: text
+        understat_name: text
+        position: integer
+    fpl_db_master_team_mappings:
+      +column_types:
+        id: integer
+        team_id: uuid
+        season: text
+        fpl_team_id: integer
+        fpl_name: text
+        understat_name: text
+# seeds:
+#   fpl_dbt:
+#     fpl_db_core_players:
+#       +column_types:
+#         id: uuid
+#         name: string
+#         is_active: boolean
+#     fpl_db_core_teams:
+#       +column_types:
+#         id: uuid
+#         name: string
+#     fpl_db_core_games:
+#       +column_types:
+#         id: uuid
+#         season: string
+#         gameweek: integer
+#         datetime: datetime
+#         result: string
+#         home_team_id: uuid
+#         away_team_id: uuid
+#     fpl_db_core_player_games:
+#       +column_types:
+#         id: uuid
+#         player_id: uuid
+#         game_id: uuid
+#         fpl_price: integer
+#         points: integer
+#         minutes_played: integer
+#         goals_scored: integer
+#         expected_goals_understat: float
+#         goals_conceded: integer
+#         assists: integer
+#         expected_assists_understat: float
+#         yellow_cards: integer
+#         red_card: integer
+#         clean_sheet: integer
+#         key_passes: integer
+#         own_goals: integer
+#         penalties_missed: integer
+#         penalties_saved: integer
+#         saves: integer
+#         bonus_points: integer
+#         expected_assists_fpl: float
+#         expected_goals_fpl: float
+#         fpl_element: integer
+#         local_understat_id: integer
+#     fpl_db_core_player_seasons:
+#       +column_types:
+#         id: uuid
+#         player_id: uuid
+#         season: string
+#         position: integer
+#     fpl_db_core_player_teams:
+#       +column_types:
+#         id: uuid
+#         start_date: datetime
+#         end_date: datetime
+#         team_id: uuid
+#         player_id: uuid
+#     fpl_db_master_game_mappings:
+#       +column_types:
+#         game_id: uuid
+#         season: string
+#         fpl_game_id: integer
+#         understat_game_id: integer
+#     fpl_db_master_player_mappings:
+#       +column_types:
+#         id: integer
+#         player_id: uuid
+#         season: string
+#         fpl_seasonal_id: integer
+#         opta_id: integer
+#         fpl_name: string
+#         understat_name: string
+#         position: string
+#     fpl_db_master_team_mappings:
+#       +column_types:
+#         id: integer
+#         team_id: uuid
+#         season: string
+#         fpl_team_id: integer
+#         fpl_name: string
+#         understat_name: string

@@ -7,5 +7,12 @@ sources:
       - name: fpl_player_games
       - name: understat_games
       - name: understat_player_games
+      - name: fpl_teams
+      - name: fpl_players
+  - name: master
+    schema: master
+    tables:
+      - name: player_mappings
+      - name: team_mappings
     
     

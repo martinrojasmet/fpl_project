@@ -1,0 +1,47 @@
+{{
+config(
+    materialized="view"
+)
+}}
+
+select
+    id,
+    season,
+    gameweek,
+    fpl_game_id,
+    fpl_datetime,
+    fpl_player_id,
+    opta_id,
+    fpl_team_id,
+    opponent_fpl_team_id,
+    total_points,
+    minutes_played,
+    goals_scored,
+    goals_conceded,
+    own_goals,
+    assists,
+    penalties_missed,
+    penalties_saved,
+    clean_sheets,
+    yellow_cards,
+    red_cards,
+    saves,
+    expected_assists,
+    expected_goals,
+    bonus_points,
+    value,
+    fpl_element,
+    bps,
+    creativity,
+    fixture,
+    ict_index,
+    influence,
+    selected,
+    threat,
+    transfers_balance,
+    transfers_in,
+    transfers_out,
+    expected_goal_involvements,
+    expected_goals_conceded,
+    starts
+from {{ source('raw', 'fpl_player_games') }}

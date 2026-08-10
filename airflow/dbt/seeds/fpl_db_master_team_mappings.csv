@@ -1,0 +1,41 @@
+id,team_id,season,fpl_team_id,fpl_name,understat_name
+1,362fd116-c81c-454a-bbbf-9224362fbaf7,2025/26,1,Arsenal,Arsenal
+3,4bc42e2a-a630-47d5-95b3-21e67deba946,2025/26,4,Bournemouth,Bournemouth
+5,400ce689-140a-4090-a2b3-9f1efcf49197,2025/26,3,Burnley,Burnley
+7,bc07075d-b661-4e83-8d89-594f6969f966,2025/26,7,Chelsea,Chelsea
+8,553e758c-d6be-4a04-8016-6d3e9c1ef7d5,2025/26,8,Crystal Palace,Crystal Palace
+11,fbfe564e-8109-41b8-a949-f7efc0f209b5,2025/26,9,Everton,Everton
+13,88bd03e8-2c07-4b80-943d-168273bf11d8,2025/26,12,Liverpool,Liverpool
+15,1f0aeb7b-4ade-4beb-9842-a9fe08d61bdb,2025/26,13,Man City,Manchester City
+18,e5c8cbe9-e464-412a-8498-71d0771063a1,2025/26,14,Man Utd,Manchester United
+19,fb3fd3a3-f72f-4bb0-8430-d03c65fc42e4,2025/26,17,Sunderland,Sunderland
+22,c36859ee-41f5-4436-b074-52bf466bd03c,2025/26,18,Spurs,Tottenham
+23,bfa79885-47f6-40b9-a2a8-e3621b71b00e,2025/26,19,West Ham,West Ham
+24,30d953db-392e-45e9-a514-036a7f00c912,2025/26,6,Brighton,Brighton
+27,2415f952-0e39-45fa-8b3d-7174113bc844,2025/26,15,Newcastle,Newcastle United
+28,00f7a08d-8096-49b3-839a-b438b1158e01,2025/26,10,Fulham,Fulham
+30,83b99f75-b3a6-4f41-8f23-9b571d69e375,2025/26,20,Wolves,Wolverhampton Wanderers
+31,8350ce70-d89b-4e0a-a5f0-1bea417647b8,2025/26,2,Aston Villa,Aston Villa
+34,6c53158c-9b35-43be-8924-e380139e75f2,2025/26,11,Leeds,Leeds
+35,312de382-16d0-4709-a1a2-5b3836e371d6,2025/26,5,Brentford,Brentford
+37,1bbfff09-22e6-4971-a0fd-023e99c73df0,2025/26,16,Nott'm Forest,Nottingham Forest
+2,362fd116-c81c-454a-bbbf-9224362fbaf7,2026/27,1,Arsenal,Arsenal
+32,8350ce70-d89b-4e0a-a5f0-1bea417647b8,2026/27,2,Aston Villa,Aston Villa
+4,4bc42e2a-a630-47d5-95b3-21e67deba946,2026/27,3,Bournemouth,Bournemouth
+36,312de382-16d0-4709-a1a2-5b3836e371d6,2026/27,4,Brentford,Brentford
+25,30d953db-392e-45e9-a514-036a7f00c912,2026/27,5,Brighton,Brighton
+6,bc07075d-b661-4e83-8d89-594f6969f966,2026/27,6,Chelsea,Chelsea
+40,4559254a-9bca-4b25-9c99-9556cd5069e5,2026/27,7,Coventry City,
+9,553e758c-d6be-4a04-8016-6d3e9c1ef7d5,2026/27,8,Crystal Palace,Crystal Palace
+10,fbfe564e-8109-41b8-a949-f7efc0f209b5,2026/27,9,Everton,Everton
+29,00f7a08d-8096-49b3-839a-b438b1158e01,2026/27,10,Fulham,Fulham
+12,046d2b51-3060-4bea-9687-32605ad18897,2026/27,11,Hull City,Hull
+39,807d15a6-48f7-45cb-9c7d-d765dec9ef0c,2026/27,12,Ipswich Town,Ipswich
+33,6c53158c-9b35-43be-8924-e380139e75f2,2026/27,13,Leeds,Leeds
+14,88bd03e8-2c07-4b80-943d-168273bf11d8,2026/27,14,Liverpool,Liverpool
+16,1f0aeb7b-4ade-4beb-9842-a9fe08d61bdb,2026/27,15,Man City,Manchester City
+17,e5c8cbe9-e464-412a-8498-71d0771063a1,2026/27,16,Man Utd,Manchester United
+26,2415f952-0e39-45fa-8b3d-7174113bc844,2026/27,17,Newcastle,Newcastle United
+38,1bbfff09-22e6-4971-a0fd-023e99c73df0,2026/27,18,Nott'm Forest,Nottingham Forest
+21,c36859ee-41f5-4436-b074-52bf466bd03c,2026/27,19,Spurs,Tottenham
+20,fb3fd3a3-f72f-4bb0-8430-d03c65fc42e4,2026/27,20,Sunderland,Sunderland
