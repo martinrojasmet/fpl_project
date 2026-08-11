@@ -6,869 +6,869 @@ id,player_id,season,fpl_seasonal_id,opta_id,fpl_name,understat_name,position
 5,0770e266-9633-4bd7-9e25-b218ce04a2f4,2022/23,,,Alisson,Alisson,1
 6,241bad0e-8d84-406c-88c3-040c8b9a8de7,2022/23,,,Neto,Neto,1
 7,761dd69f-17b5-4966-96a2-76277e08c754,2024/25,785,575204,Claudio Echeverri,Claudio Echeverri,3
-8,8c8cc68d-e4da-41c6-8716-a17bb3f8529e,2025/26,1,154561,David Raya Martín,David Raya,
-9,dc4a57f5-c41d-4b7c-9911-f8c0143162c6,2025/26,2,109745,Kepa Arrizabalaga Revuelta,Kepa,
-10,58eb5b8f-a3de-4a62-9bd0-8e583a6baa0d,2025/26,3,463748,Karl Hein,,
-11,f7ea0dfa-3d4d-4280-9635-f443f045977c,2025/26,4,551221,Tommy Setford,,
-12,8fc63c4c-fe1d-4ba7-b070-dc23c576cc89,2025/26,5,226597,Gabriel dos Santos Magalhães,Gabriel,
-13,f9bba49a-202f-4676-8403-89b69aba431e,2025/26,6,462424,William Saliba,William Saliba,
-14,39cfc7e8-d097-4574-8da1-b39c898aaecc,2025/26,7,466075,Riccardo Calafiori,Riccardo Calafiori,
-15,00b52884-4ac1-4ef9-aa10-735b1f7d561a,2025/26,8,445122,Jurriën Timber,Jurriën Timber,
-16,05a5a6ff-f492-4eb5-9719-6dcdf5e6916d,2025/26,9,440854,Jakub Kiwior,Jakub Kiwior,
-17,af860212-099b-4083-9c6b-0b667e106d07,2025/26,10,499169,Myles Lewis-Skelly,Myles Lewis-Skelly,
-18,8702ee2f-195f-4cb2-b2af-95159eaa74d8,2025/26,11,198869,Benjamin White,Ben White,
-19,9e76b7ed-f9f6-489f-9c20-123fbe45111e,2025/26,14,588793,Maldini Kacurri,,
-20,0bdc54f5-493f-421e-8dd2-27a46576fb72,2025/26,15,499167,Josh Nichols,,
-21,eaf2f6bc-da6a-44df-96c7-714275cd1719,2025/26,16,223340,Bukayo Saka,Bukayo Saka,
-22,b5e6c9ad-10c2-4bff-9f45-746f6a7b3465,2025/26,17,184029,Martin Ødegaard,Martin Odegaard,
-23,2a008f35-80d2-45a1-b2c1-2431dec0d8cc,2025/26,18,248857,Noni Madueke,Noni Madueke,
-24,060747da-f457-488e-b411-04b14d664ddb,2025/26,19,444145,Gabriel Martinelli Silva,Gabriel Martinelli,
-25,c20d9923-e246-4057-a326-8691402cb3bd,2025/26,20,116216,Leandro Trossard,Leandro Trossard,
-26,2d3c3a1d-0246-49a8-b713-fb234c752389,2025/26,21,204480,Declan Rice,Declan Rice,
-27,730a90b3-4b79-474a-98d4-449bcf655b48,2025/26,22,195384,Mikel Merino Zazón,Mikel Merino,
-28,c2d6123b-73fb-4d00-8e17-10e665a4d3a3,2025/26,23,438098,Fábio Ferreira Vieira,Fábio Vieira,
-29,0d1a6874-c8a6-4c75-9e26-6cc146615f85,2025/26,24,128295,Christian Nørgaard,Christian Nørgaard,
-30,8e9b9927-a7a9-4302-8cd0-774e1e696c78,2025/26,25,499175,Ethan Nwaneri,Ethan Nwaneri,
-31,eb3d8a2a-7b37-4016-9290-68b9cccc21ec,2025/26,28,588796,Ismeal Kabia,,
-32,9e78f47f-6da8-4013-b7a8-87b63b1e07b6,2025/26,30,219847,Kai Havertz,Kai Havertz,
-33,90385cd1-1b4d-4eb7-8f0e-4ec42ec27b40,2025/26,31,205651,Gabriel Fernando de Jesus,Gabriel Jesus,
-34,8f5b6126-8cee-4eda-9580-a85fb023a7b4,2025/26,266,232413,Eberechi Eze,Eberechi Eze,
-35,84546ac0-47e1-4932-b173-8e0f393efc0d,2025/26,32,98980,Emiliano Martínez Romero,Emiliano Martinez,
-36,b1b44db6-1843-4c58-b181-d8c77e598350,2025/26,34,462492,Joe Gauci,,
-37,f1bcd20b-b791-474b-90b7-c5552694b80c,2025/26,35,462381,Filip Marschall,,
-38,b2c4a6df-6c1d-49ff-b4e7-1c6c0212be83,2025/26,36,199796,Matty Cash,Matthew Cash,
-39,fd6c27e7-f130-4343-aa06-b74e8ef628fd,2025/26,37,101188,Lucas Digne,Lucas Digne,
-40,cab4e50f-8585-44b5-b295-fad3bc50c15b,2025/26,38,199798,Ezri Konsa Ngoyo,Ezri Konsa Ngoyo,
-41,9f5c0372-965f-4c09-a409-48c6e1ba28fa,2025/26,39,441302,Ian Maatsen,Ian Maatsen,
-42,9c3e5a68-1061-402c-ad21-25b8c26178ff,2025/26,40,149484,Tyrone Mings,Tyrone Mings,
-43,b6a2b8f2-e4f0-45bd-b728-1f7e74cdaf74,2025/26,41,244954,Pau Torres,Pau Torres,
-44,ca8f56a5-50a6-40ee-9d34-b0913f594204,2025/26,42,606798,Andrés García,Andrés García,
-45,b4488bc0-e064-48b7-b498-c58aa2b1836f,2025/26,43,106468,Álex Moreno Lopera,Álex Moreno,
-46,fb90f28e-7da5-4951-9e8a-b8a35718154c,2025/26,44,515597,Lamare Bogarde,Lamare Bogarde,
-47,151b7466-31e5-4463-bf01-23ce093bf31c,2025/26,45,514315,Lino da Cruz Sousa,,
-48,dd678e0b-c375-428e-96fa-615f1dc5f283,2025/26,47,244850,Morgan Rogers,Morgan Rogers,
-49,3114f8f0-79c0-4955-ae6a-3dc31bfd90e1,2025/26,48,166989,Youri Tielemans,Youri Tielemans,
-50,7ec8c0ea-b6ee-431a-a977-bbde342865b4,2025/26,49,215711,Leon Bailey,Leon Bailey,
-51,809750fd-2ea8-4b4a-bce5-2e692aa3c335,2025/26,50,195546,Emiliano Buendía Stati,Emiliano Buendía,
-52,68fbd8c6-06c2-4041-8cc4-a9f44972e367,2025/26,51,469247,Samuel Iling-Junior,,
-53,f14ce898-c5ce-40a4-a22c-6ef0340b5f36,2025/26,53,204646,Donyell Malen,Donyell Malen,
-54,b36cebaf-b61e-47db-baba-dee6e39cfa5b,2025/26,54,122806,John McGinn,John McGinn,
-55,1ae7f23c-458b-4bbf-8b00-9eb6a8d3a2b2,2025/26,55,88894,Ross Barkley,Ross Barkley,
-56,4db6e7c9-53f0-477b-8730-d48f073fd549,2025/26,56,491287,Enzo Barrenechea,,
-57,cd5c57a2-8d24-4b10-9104-d67f8b87f85a,2025/26,57,461421,Lewis Dobbin,Lewis Dobbin,
-58,c0e3d0b0-8ab9-4301-85e4-ee12d5aa5e8b,2025/26,58,226944,Boubacar Kamara,Boubacar Kamara,
-59,ddbb6b67-0242-47e5-9af0-072b452429d2,2025/26,59,449871,Amadou Onana,Amadou Onana,
-60,ce62388b-1e0c-4716-9ef9-f66df6b5afd5,2025/26,60,577731,Ben Broggio,,
-61,081e023d-f043-4914-9923-7547e9f4e353,2025/26,61,151589,Leander Dendoncker,,
-62,0674829c-1695-4256-9435-7f330b4a594c,2025/26,62,559962,Jamaldeen Jimoh-Aloba,Jamaldeen Jimoh,
-63,0be5f79c-8f7a-4516-9509-8e16c25fb451,2025/26,63,537403,Kadan Young,,
-64,0552be44-9d74-4958-b8ba-3b4d84ed57b9,2025/26,64,178301,Ollie Watkins,Ollie Watkins,
-65,fef21c3b-20a9-4632-a6e3-8db0948f2205,2025/26,389,444884,Harvey Elliott,Harvey Elliott,
-66,830feb86-402a-4daf-affa-3f675202527d,2025/26,456,209243,Jadon Sancho,Jadon Sancho,
-67,44dc201e-dc85-4982-a627-e938ddc48bc0,2025/26,719,184667,Victor Lindelöf,Victor Lindelöf,
-68,657110e7-2562-4b51-83bf-69551e37f8c1,2025/26,187,58621,Kyle Walker,Kyle Walker,
-69,9d100761-36fa-4c80-91ee-fa247d9a415b,2025/26,198,180804,Axel Tuanzebe,Axel Tuanzebe,
-70,134b692c-b3a5-477d-ae7b-610a63bac91c,2025/26,199,208912,Joe Worrall,Joe Worrall,
-71,a8573c60-489b-47da-b482-21fcbb55d536,2025/26,200,444180,Jaidon Anthony,Jaidon Anthony,
-72,c2376744-d688-4b78-8331-b916fe78d2d4,2025/26,207,465527,Hannibal Mejbri,Hannibal Mejbri,
-73,c291d224-8f96-4a24-b524-cd665cdab83a,2025/26,470,67089,Martin Dúbravka,Martin Dubravka,
-74,0a8ab14f-a374-4492-9acc-0a1cf2fbb119,2025/26,614,101178,James Ward-Prowse,James Ward-Prowse,
-75,ad03317e-4fb2-4aba-b887-32348bcfcb2f,2025/26,676,503714,Lesley Ugochukwu,Chimuanya Ugochukwu,
-76,cbf71d01-10fb-4ac6-9c80-58557bb4347e,2025/26,680,440323,Armando Broja,Armando Broja,
-77,241bad0e-8d84-406c-88c3-040c8b9a8de7,2025/26,66,69752,Norberto Murara Neto,Neto,
-78,908014a9-09ff-487d-947e-94b822111b08,2025/26,67,457569,Đorđe Petrović,Djordje Petrovic,
-79,0aa06c2f-e3d9-4068-9137-b1c6aedaf268,2025/26,68,444172,Will Dennis,,
-80,63c6ba11-a89d-43b5-aeea-b5cf6d9275f6,2025/26,69,568791,Callan McKenna,,
-81,cd001a15-198a-444e-83bc-06bced7ba49e,2025/26,70,495145,Alex Paulsen,,
-82,19446b56-6f52-401f-8bdc-6e5cd56bd471,2025/26,71,477580,Illia Zabarnyi,Illia Zabarnyi,
-83,f98faf93-e1aa-4c24-b12c-1140704e92eb,2025/26,72,221466,Marcos Senesi Barón,Marcos Senesi,
-84,8c59aeca-3be0-48e3-87f3-abc04294867e,2025/26,73,54469,Adam Smith,Adam Smith,
-85,6633980b-dbfe-40f9-93c6-6f1d87eb16b8,2025/26,75,541462,Matai Akinmboni,,
-86,da7e8c4f-45b6-4982-a72a-27c5837d3b5d,2025/26,77,463981,James Hill,James Hill,
-87,fa82c104-4bb4-44ea-99ba-197e7b9b54e2,2025/26,78,436893,Julián Araujo Zúñiga,Julián Araujo,
-88,6fde9f20-8252-414f-a30d-8fc120612036,2025/26,79,223911,Chris Mepham,Chris Mepham,
-89,9a2e293d-d951-470a-9828-b0958d351f6a,2025/26,80,575901,Julio Soler Barreto,Julio Soler,
-90,35fc7a46-7e2f-453b-8b2e-b7f3e35f6949,2025/26,81,222683,Justin Kluivert,Justin Kluivert,
-91,0b0f5b5e-be7b-478d-aa23-5f619d16e5cb,2025/26,84,201658,Marcus Tavernier,Marcus Tavernier,
-92,d773f228-5102-4554-a7e4-aadc6a213084,2025/26,85,200785,Tyler Adams,Tyler Adams,
-93,cb658622-94a6-4c72-8fc3-ee760080b729,2025/26,86,111317,David Brooks,David Brooks,
-94,a8dc9e82-f136-46ca-add6-dd8d3f7181e1,2025/26,87,158499,Ryan Christie,Ryan Christie,
-95,6ccd22a5-35fa-45f0-8bb0-1fe3f642daf9,2025/26,88,155408,Lewis Cook,Lewis Cook,
-96,32a1a749-cbe9-42ad-9092-e85ebfa2d361,2025/26,89,168991,Philip Billing,Philip Billing,
-97,fa7f3fbe-f1a1-4944-a63f-c28478e8c6e7,2025/26,90,503139,Alex Scott,Alex Scott,
-98,ae95b84b-d709-4d69-8fce-3ad10be29f4e,2025/26,91,224995,Luis Sinisterra Lucumí,Luis Sinisterra,
-99,d6c64626-bc1c-4652-b242-1ae90f58bc0a,2025/26,92,441240,Romain Faivre,,
-100,7ef17fb1-41aa-4135-840c-78dab8eb0374,2025/26,93,424044,Hamed Traorè,Hamed Junior Traore,
-101,4847b21e-dbd9-4565-90d5-ae0c6f3b0e88,2025/26,94,550596,Dominic Sadi,,
-102,a93384c0-7470-4437-9549-7000c61f9b36,2025/26,95,530121,Zain Silcott-Duberry,Zain Silcott-Duberry,
-103,bd24fd1b-4cc3-4e5b-94df-1325598ea4eb,2025/26,96,606775,Ben Winterburn,Ben Winterburn,
-104,e7d3fa84-b7d0-432f-a17b-62dcd50dac2f,2025/26,97,444102,Francisco Evanilson de Lima Barbosa,Evanilson,
-105,8bf82ce7-d406-4c79-8560-1832322ecfec,2025/26,98,168636,Enes Ünal,Enes Ünal,
-106,770bee50-6c71-497a-a0f4-ccfa519c3ab2,2025/26,99,590760,Daniel Adu-Adjei,,
-107,5c12b7ca-9d61-46d9-93a7-0aa3abd6eea2,2025/26,391,496208,Ben Gannon-Doak,Ben Doak,
-108,6ac8f5b9-859e-4414-8eb7-ed93d2c022d2,2025/26,687,606774,Remy Rees-Dottin,Remy Rees-Dottin,
-109,ff210445-02b1-4677-9041-2f4d71ca9d5b,2025/26,782,40383,Fraser Forster,Fraser Forster,
-110,733bd107-f236-4471-9655-f01379c1bcc5,2025/26,27,200641,Reiss Nelson,Reiss Nelson,
-111,87c3b645-1b39-4ff6-8e5c-ee06dd89f269,2025/26,83,533463,Dango Ouattara,Dango Ouattara,
-112,f82e53d7-605b-4a3d-8ce6-b28823b60aa1,2025/26,101,200720,Caoimhín Kelleher,Caoimhin Kelleher,
-113,fae871db-f1d1-46cb-9a37-a68b23418fa7,2025/26,104,535017,Julian Eyestone,,
-114,f2114ba7-f7b6-4935-8cce-503ef22d76a7,2025/26,105,507433,Hákon Rafn Valdimarsson,Hákon Valdimarsson,
-115,125ec0fc-cbeb-467a-8e71-8f0ada688670,2025/26,106,432830,Nathan Collins,Nathan Collins,
-116,9aec606f-bff2-484a-9d8f-7f4c0fe7dfaa,2025/26,107,249231,Keane Lewis-Potter,Keane Lewis-Potter,
-117,b390871c-5ff9-47b4-9fbc-8069f15ccc95,2025/26,108,191866,Kristoffer Ajer,Kristoffer Ajer,
-118,46b035ea-3bfc-4c19-8e64-071f99e5ea70,2025/26,109,194010,Rico Henry,Rico Henry,
-119,9604dbe5-ce94-417d-b75f-8c05bc946008,2025/26,110,607464,Michael Kayode,Michael Kayode,
-120,44241170-8423-49f8-85bb-deb69ddfa48f,2025/26,111,231065,Ethan Pinnock,Ethan Pinnock,
-121,dac09667-7631-4ead-95e7-53d1a814d4f1,2025/26,112,226956,Mads Roerslev Rasmussen,Mads Roerslev,
-122,c6e7ac73-23b7-4259-8695-c7198c3c43cc,2025/26,113,444765,Sepp van den Berg,Sepp van den Berg,
-123,0e3096fb-1a1e-4f9d-bc05-66005ec9d22b,2025/26,114,622536,Benjamin Arthur,,
-124,7ba0ee40-1601-49e4-8f1b-b9ae33eb4456,2025/26,116,472713,Aaron Hickey,Aaron Hickey,
-125,f614f8c3-7444-4fea-b27a-84434634c3c8,2025/26,117,570241,Kim Ji-soo,Kim Ji-Soo,
-126,253cb250-29d3-4112-a2f7-3877d5e01783,2025/26,118,499717,Jayden Meghoma,Jayden Meghoma,
-127,8b635a0b-1d12-4fa1-ac09-216f20e4947c,2025/26,120,513418,Kevin Schade,Kevin Schade,
-128,112a0eb3-0a5b-496b-b396-801917ec861a,2025/26,121,440089,Mikkel Damsgaard,Mikkel Damsgaard,
-129,159a70a6-77c4-49e0-974f-019d3e6ab615,2025/26,123,244858,Fábio Freitas Gouveia Carvalho,Fabio Carvalho,
-130,8d8b3693-4c1c-41ff-a2ca-5adf8ab86188,2025/26,125,204580,Vitaly Janelt,Vitaly Janelt,
-131,0a08f076-b5ad-40a4-ac56-0dd943858329,2025/26,126,207283,Mathias Jensen,Mathias Jensen,
-132,59be428e-1815-4299-87d2-45631e20edfd,2025/26,127,626464,Gustavo Nunes Fernandes Gomes,Gustavo Nunes,
-133,7045407f-356d-48d2-8736-5b310f8e703d,2025/26,128,428580,Frank Onyeka,Frank Onyeka,
-134,a7c6ea10-4548-4496-be01-8385d6b36d66,2025/26,129,508395,Yehor Yarmoliuk,Yehor Yarmolyuk,
-135,12d85374-64db-40ed-b677-c23eae6ec21c,2025/26,131,628204,Yunus Emre Konak,Yunus Konak,
-136,2b165e18-79e4-486a-8b52-f84663014f56,2025/26,132,220695,Paris Maghoma,Paris Maghoma,
-137,ab9f50aa-1162-48f7-9b5f-0a4c171aa52b,2025/26,133,450539,Myles Peart-Harris,Myles Peart-Harris,
-138,9506b6f4-6706-4010-abbd-cda04f86a649,2025/26,134,591357,Ryan Trevitt,Ryan Trevitt,
-139,849e9e22-c994-4e94-b9d8-18e9ac8d9fe6,2025/26,136,502500,Igor Thiago Nascimento Rodrigues,Thiago,
-140,c97405ef-b463-4908-bb8b-f2186b90ba21,2025/26,137,533710,Iwan Morgan,,
-141,a7f69c5f-2404-4f5c-af99-f4ab747da321,2025/26,748,183656,Josh Dasilva,Josh Dasilva,
-142,b7d5d127-bdfb-497e-9767-9dee5b80a9eb,2025/26,138,49262,Jason Steele,Jason Steele,
-143,ca2fad3c-7b24-4564-b856-18eaa1454bb8,2025/26,139,489639,Bart Verbruggen,Bart Verbruggen,
-144,619f6e84-31c3-4f9c-a03b-42ad670feee1,2025/26,141,472739,Carl Rushworth,,
-145,bba082dc-e723-455d-ac6d-0d5b4006d6a5,2025/26,146,83299,Lewis Dunk,Lewis Dunk,
-146,b017da9f-56f3-43d0-81ba-ba7a3806e0b6,2025/26,147,204214,Pervis Estupiñán Tenorio,Estupiñán,
-147,5595fcf5-6ff7-43b4-808d-b35fd4ef7ffd,2025/26,148,231416,Ferdi Kadıoğlu,Ferdi Kadioglu,
-148,6464d7dc-b00f-4f30-95ef-28e68277b29a,2025/26,149,223434,Igor Julio dos Santos de Paulo,Igor Julio,
-149,d3ee6450-9e56-4af5-8fd2-7f580e9d4d43,2025/26,150,232792,Tariq Lamptey,Tariq Lamptey,
-150,954cea21-640d-4ae9-80ba-685f406277dc,2025/26,151,469142,Jan Paul van Hecke,Jan Paul van Hecke,
-151,d38b9de7-2bbe-426b-95e8-712c23991199,2025/26,152,111478,Joël Veltman,Joël Veltman,
-152,8d8a8e65-90ee-4e5e-9e67-279929f6005d,2025/26,153,110735,Adam Webster,Adam Webster,
-153,bc02f96a-825e-4289-a282-913dfd9ec102,2025/26,154,439135,Eiran Cashin,Eiran Cashin,
-154,7849794b-38c4-4a91-a8ac-2e75a038bbc4,2025/26,155,589100,Jacob Slater,,
-155,978b7e27-fc49-4e82-b51b-26bc9a204756,2025/26,157,451340,Mitoma Kaoru,Kaoru Mitoma,
-156,9f3cd734-cb60-4861-bcef-5f31aa336b54,2025/26,158,463067,Georginio Rutter,Georginio Rutter,
-157,caaa5e05-744a-4b07-84ec-85c9f12315a7,2025/26,159,109345,Solly March,Solly March,
-158,e7d847a5-66c9-4796-bcb7-b4211b33bb04,2025/26,160,592031,Yankuba Minteh,Yankuba Minteh,
-159,dbbbab45-12ce-4799-94fb-9049cf691b9a,2025/26,161,474120,Julio Enciso Espínola,Julio Enciso,
-160,b22ccb52-c93b-4386-b625-108d1b8c31ef,2025/26,162,513433,Brajan Gruda,Brajan Gruda,
-161,205e17ad-76e5-4a8a-ba2d-17e068f39ce2,2025/26,163,532529,Jack Hinshelwood,Jack Hinshelwood,
-162,b9c2bdf4-908a-4a05-bae4-865a4626ce38,2025/26,164,219249,Matt O'Riley,Matt O'Riley,
-163,39b7e45e-ca67-43b4-bdae-fa110e16bc1a,2025/26,166,509416,Yasin Ayari,Yasin Ayari,
-164,ec207835-87ee-4056-8795-9b04f054dd05,2025/26,167,535301,Carlos Baleba,Carlos Baleba,
-165,e8498d0b-a80e-4f2c-a7d5-4744ba79699e,2025/26,169,514254,Diego Gómez Amarilla,Diego Gómez,
-166,77cea9fb-b868-43b2-9beb-87e8d91dd610,2025/26,170,15157,James Milner,James Milner,
-167,8318a5ef-20aa-4111-a203-80bf0226adf0,2025/26,171,441192,Jeremy Sarmiento Morante,Jeremy Sarmiento,
-168,0e7b8ecc-a699-45cb-8993-d5e32832794b,2025/26,173,467779,Mats Wieffer,Mats Wieffer,
-169,0ef396fa-0d67-4b34-aab7-dad74779bd84,2025/26,175,567121,Joe Knight,Joe Knight,
-170,250007a4-f432-4598-98bf-4d72fe2bbbaa,2025/26,176,550141,Adrian Mazilu,,
-171,b2542e3f-f727-4be7-b102-499d813f28f3,2025/26,177,513834,Andrew Moran,,
-172,2de4111b-3169-48a3-8e41-c9fc7e174dae,2025/26,178,50175,Danny Welbeck,Danny Welbeck,
-173,e45a67bc-f818-44b2-86f1-2b2c16924a11,2025/26,179,487117,Evan Ferguson,Evan Ferguson,
-174,b118bf52-b844-489f-9dbd-9062311f444a,2025/26,783,60307,Pascal Groß,Pascal Groß,
-175,58ecb62d-6842-4969-9c96-1eb5f5a3844e,2025/26,220,215059,Robert Lynch Sánchez,Robert Sánchez,
-176,b4a212e5-2269-4519-9737-c540dad37345,2025/26,221,508479,Filip Jörgensen,Filip Jorgensen,
-177,634e753c-4227-4caf-b615-3f2d349785f9,2025/26,224,179268,Marc Cucurella Saseta,Marc Cucurella,
-178,8f24ce04-4a4b-4faa-a0c3-0ecb9e6a6d2c,2025/26,225,225796,Reece James,Reece James,
-179,3ce8a9da-92b0-4f78-aab5-c56fd203b57c,2025/26,226,180736,Trevoh Chalobah,Trevoh Chalobah,
-180,5352a53c-371e-42ed-a345-bdcc7230af37,2025/26,227,460028,Levi Samuels Colwill,Levi Colwill,
-181,959df0a3-8c35-4bae-bb1b-679a38d24321,2025/26,228,482609,Malo Gusto,Malo Gusto,
-182,77f852ed-4969-4632-b499-6cfe91ddbe30,2025/26,229,242880,Benoît Badiashile Mukinayi,Benoit Badiashile Mukinayi,
-183,602a32fc-f64c-41ec-93c9-32fc9192864c,2025/26,230,444463,Wesley Fofana,Wesley Fofana,
-184,106be257-c769-429d-8343-e6a75dd3b6dd,2025/26,232,109646,Tosin Adarabioyo,Tosin Adarabioyo,
-185,76b77469-699e-4ad8-a35a-05ac25881187,2025/26,233,577016,Josh Acheampong,Josh Acheampong,
-186,d3c92dd6-bb68-43a1-99a8-aef14c6d9325,2025/26,234,622758,Aarón Anselmino,,
-187,ac9f956e-8a1e-44c5-bada-92041eda09ef,2025/26,235,244851,Cole Palmer,Cole Palmer,
-188,97bf024e-98d7-4f14-9b3f-7f83a23c1d26,2025/26,236,247632,Pedro Lomba Neto,Pedro Neto,
-189,5ab3f06e-434d-4640-952d-0e7e998d761d,2025/26,237,448047,Enzo Fernández,Enzo Fernández,
-190,5105b215-ce6e-4494-93d2-f5aab4a3315a,2025/26,240,213198,Christopher Nkunku,Christopher Nkunku,
-191,cc48ff04-fda2-4ab5-b65d-7a7fe526fb2f,2025/26,241,486672,Moisés Caicedo Corozo,Moisés Caicedo,
-192,0f4c04eb-d670-413f-aa27-6ebea80648cb,2025/26,244,514356,Roméo Lavia,Romeo Lavia,
-193,f0a83477-9a84-415d-a7f0-c16f464ca033,2025/26,245,465920,Mykhailo Mudryk,Mykhailo Mudryk,
-194,5c06b0a2-21e8-4135-9ddb-12dc4df2555e,2025/26,246,532605,Andrey Nascimento dos Santos,Andrey Santos,
-195,78b25f86-58fe-4875-b7a0-38e71d54ad53,2025/26,249,475168,João Pedro Junqueira de Jesus,João Pedro,
-196,67217edb-a846-4ac9-878e-2ddcc1dadfcf,2025/26,250,463034,Liam Delap,Liam Delap,
-197,9845f271-6a65-4739-b337-4358823c2b28,2025/26,251,517052,Nicolas Jackson,Nicolas Jackson,
-198,c7245ea9-802c-4854-a436-6d2f2e2ddf06,2025/26,252,499309,Marc Guiu Paz,Marc Guiu,
-199,c7a4d6d5-531f-45e5-902b-a002babbdb49,2025/26,453,493105,Alejandro Garnacho Ferreyra,Alejandro Garnacho,
-200,1593b0e8-5e6e-4ee0-97dc-c59996945458,2025/26,840,567119,Shumaira Mheuka,Shumaira Mheuka,
-201,35abb6ba-fa65-4591-b6f1-295bd4189044,2025/26,253,172649,Dean Henderson,Dean Henderson,
-202,a1b20c33-8ecf-4938-9172-30cedbb9dc97,2025/26,255,169593,Remi Matthews,,
-203,4a161504-a54e-4f71-980c-76258773e5ea,2025/26,256,247348,Daniel Muñoz Mejía,Daniel Muñoz,
-204,564732c7-d213-4b90-bae4-c6bdfdc241e3,2025/26,257,437499,Maxence Lacroix,Maxence Lacroix,
-205,efcb34ce-b8ec-4f6e-8f4d-3f43931a54f6,2025/26,258,244723,Tyrick Mitchell,Tyrick Mitchell,
-206,00304b5c-9f80-4755-9db6-70fcfb471122,2025/26,261,427623,Chris Richards,Chris Richards,
-207,054bd8af-0a5f-4812-8702-434f43a0fc84,2025/26,262,515621,Chadi Riad Dnanou,Chadi Riad,
-208,45f8df16-463f-4069-948a-36689e9398fe,2025/26,263,57328,Nathaniel Clyne,Nathaniel Clyne,
-209,54bb43bc-e7aa-4943-9132-0c76a4090099,2025/26,264,156074,Rob Holding,,
-210,3df9155a-859c-4558-b3e8-ce776b533e4b,2025/26,265,590012,Caleb Kporha,Caleb Kporha,
-211,2d7896e5-bdbb-4eed-90a1-e8f82a308761,2025/26,267,232185,Ismaïla Sarr,Ismaila Sarr,
-212,e8a9a06b-9a2b-4bed-bbd1-d6dabfe8384a,2025/26,268,438464,Cheick Doucouré,Cheick Oumar Doucoure,
-213,e5f59f5d-d05a-4bdd-8f1d-3c47725c5b81,2025/26,269,606921,Romain Esse,Romain Esse,
-214,f5064d39-0ef6-4eea-8795-9bfa7bcda88d,2025/26,270,108413,Will Hughes,Will Hughes,
-215,a57c573b-9e52-4560-8f92-cfbd45ad8f34,2025/26,271,209400,Daichi Kamada,Daichi Kamada,
-216,e3a78660-310f-4ed3-b4b7-77beca004592,2025/26,272,152551,Jefferson Lerma Solís,Jefferson Lerma,
-217,9fc89667-620c-4a07-a188-debfe5bea8dc,2025/26,273,496221,Adam Wharton,Adam Wharton,
-218,e52e1494-f956-4419-921b-f4e9d9125549,2025/26,274,579075,Asher Agbinone,Asher Agbinone,
-219,3acb44ae-5b2f-45c5-9869-84d7afbc168f,2025/26,275,466117,Naouirou Ahamada,Naouirou Ahamada,
-220,4b659083-76f4-4acf-94f2-c067fbae05f5,2025/26,276,489706,Justin Devenny,Justin Devenny,
-221,c9df79cf-d31f-41be-8415-dcba7c67b297,2025/26,277,450535,Malcolm Ebiowei,,
-222,0be15e13-8da5-483c-a42e-ff087947359d,2025/26,278,450542,Jesurun Rak-Sakyi,Jesurun Rak-Sakyi,
-223,ad4e763c-77a9-498e-bfdf-c206f8108f4c,2025/26,279,536694,Matheus França de Oliveira,Matheus França,
-224,82672137-05d4-4564-82a0-ccd9a3ed62b1,2025/26,280,531989,David Ozoh,,
-225,b2f42ff2-77b6-4839-85b2-b21d29529489,2025/26,281,530318,Kaden Rodney,Kaden Rodney,
-226,51b47c65-f386-4921-97d4-2832ef428a0b,2025/26,282,574398,Franco Umeh-Chibueze,,
-227,fbeda0b1-fba6-4982-bc64-fcb647bdb4aa,2025/26,283,231747,Jean-Philippe Mateta,Jean-Philippe Mateta,
-228,316ae259-265d-480f-93fa-4ce0f626e8b7,2025/26,284,205533,Eddie Nketiah,Eddie Nketiah,
-229,ae553ab7-226a-49c0-827b-6652d5d1c7a0,2025/26,285,199670,Odsonne Édouard,Odsonne Edouard,
-230,f34c6bed-d548-4ed4-8e01-407f36f5ca33,2025/26,286,576980,Zach Marsh,,
-231,dd426201-6b0d-4e17-a9fa-639eeb2ac418,2025/26,580,242898,Brennan Johnson,Brennan Johnson,
-232,0d8faf78-acfd-472f-8579-f67546f00094,2025/26,654,247412,Jørgen Strand Larsen,Jørgen Strand Larsen,
-233,852b8e99-5abc-4f45-834c-4b82cd761841,2025/26,242,215413,Kiernan Dewsbury-Hall,Kiernan Dewsbury-Hall,
-234,280eaf50-a1c8-436d-bda2-2eebff373391,2025/26,243,550615,Tyrique George,Tyrique George,
-235,e14a60b0-c5c3-482d-9b61-01d92aeaaef5,2025/26,287,111234,Jordan Pickford,Jordan Pickford,
-236,0f18b700-59c1-408d-bebb-69524169d4a4,2025/26,288,229600,Mark Travers,Mark Travers,
-237,b2956a8b-fe92-47c6-b79b-de88325f518c,2025/26,290,480455,Jarrad Branthwaite,Jarrad Branthwaite,
-238,26eaee45-f326-409e-8d39-72d972f14e96,2025/26,291,17761,James Tarkowski,James Tarkowski,
-239,a253d98f-9eca-43f1-9015-5c8511d97c51,2025/26,292,224967,Vitalii Mykolenko,Vitalii Mykolenko,
-240,dd9fd6a5-55ae-4be3-9d09-f763b9cd3d0f,2025/26,293,512462,Jake O'Brien,Jake O'Brien,
-241,bb4f6fba-13e4-4517-94d5-33224b40e9a1,2025/26,294,59949,Séamus Coleman,Seamus Coleman,
-242,2d73beaa-be2a-484c-9dff-1bf7927941e2,2025/26,295,106611,Michael Keane,Michael Keane,
-243,bdbdae70-b65b-42ef-8c71-652c3870558c,2025/26,296,243571,Nathan Patterson,Nathan Patterson,
-244,066fa6ef-4170-4327-b572-3c2ff226bc15,2025/26,297,496178,Roman Dixon,Roman Dixon,
-245,fafb8cd0-eb45-4d2f-ab0e-3bafb0e4ec74,2025/26,299,440993,Iliman Ndiaye,Iliman Ndiaye,
-246,f7aa5c64-8487-4dfa-ab29-01c4d8c10eb6,2025/26,300,433154,Dwight McNeil,Dwight McNeil,
-247,2658a869-5abe-4742-8aee-9b077e84eb37,2025/26,301,502697,Carlos Alcaraz Durán,Carlos Alcaraz,
-248,508e8ec8-ad8a-4db6-a32a-a6e1e5e02541,2025/26,302,80801,Idrissa Gana Gueye,Idrissa Gueye,
-249,1c660429-4643-421e-a350-ab36f78cb9a1,2025/26,303,232928,James Garner,James Garner,
-250,dd8d4123-995c-434f-8617-1ca644f6f2d8,2025/26,304,490094,Tim Iroegbunam,Tim Iroegbunam,
-251,8e34adec-0f08-47ed-8f15-75fa2e47019a,2025/26,305,609873,Harrison Armstrong,Harrison Armstrong,
-252,296d29ab-2b45-43d9-b404-bc523810cef2,2025/26,306,547801,Callum Bates,,
-253,2b89fbfc-2cd4-463a-b820-5ce296c75695,2025/26,307,504296,Coby Ebere,,
-254,9e503294-677d-4eb6-afa0-2e7ac9ca5e05,2025/26,308,496279,Isaac Heath,,
-255,93439586-35e5-42ba-87fc-18707d455db5,2025/26,309,491557,Jenson Metcalfe,,
-256,173cfe8b-f489-4922-8264-22e87c1dfc62,2025/26,311,486385,Norberto Bercique Gomes Betuncal,Beto,
-257,e428431a-3fde-4578-a858-ebdd30f20d5b,2025/26,312,491012,Youssef Ramalho Chermiti,Youssef Chermiti,
-258,6f855388-9213-4e1b-b7b6-87b8bf1f7444,2025/26,313,536241,Martin Sherif,,
-259,3c643231-db3b-46f4-80f0-a33979f63288,2025/26,419,114283,Jack Grealish,Jack Grealish,
-260,f330910f-a62e-4853-bc6f-65d94f877321,2025/26,630,138001,Tom King,Tom King,
-261,6abf2e43-7532-495b-9baa-6d4563ec960a,2025/26,707,496661,Tyler Dibling,Tyler Dibling,
-262,74afb9cb-18dd-4e48-aaa1-2267e42b6bf7,2025/26,314,80201,Bernd Leno,Bernd Leno,
-263,65ea922b-e24a-4073-a83f-989d52da023d,2025/26,315,428971,Steven Benda,,
-264,6d5abde7-1f76-477a-acc0-ca49a9fd4ab3,2025/26,316,169528,Antonee Robinson,Antonee Robinson,
-265,02539faa-015d-44f3-9210-cfd5e296a32d,2025/26,317,174874,Joachim Andersen,Joachim Andersen,
-266,8e1ff5ee-c560-481e-9d65-b7c5dfce6918,2025/26,318,232892,Calvin Bassey,Calvin Bassey,
-267,38eac867-ae09-4f4e-9791-9ad2c4572d42,2025/26,319,166477,Timothy Castagne,Timothy Castagne,
-268,a5e18fe7-45fc-4d0a-a4f8-ae032850f68a,2025/26,320,219924,Issa Diop,Issa Diop,
-269,6fd4776f-ee54-4d51-b129-46efc5960c5d,2025/26,321,246301,Jorge Cuenca Barreno,Jorge Cuenca,
-270,4eee3faa-33dc-49a8-9bd3-8a2463d975e0,2025/26,322,167074,Kenny Tete,Kenny Tete,
-271,30b4cf70-9f70-4dd2-9b7c-bd17b8d6f129,2025/26,323,591385,Samuel Amissah,,
-272,b90def95-9562-42fd-b58c-8fac67adb479,2025/26,324,153133,Alex Iwobi,Alex Iwobi,
-273,b0076fa1-2d94-4513-82f0-93616a4e0e84,2025/26,325,209289,Emile Smith Rowe,Emile Smith-Rowe,
-274,c0b876d5-f9e9-4ea8-af27-9cb7687b1f92,2025/26,327,156689,Andreas Hoelgebaum Pereira,Andreas Pereira,
-275,baf2ed33-845d-4a56-9fca-fe13e7b45853,2025/26,328,184349,Ryan Sessegnon,Ryan Sessegnon,
-276,a9b733b1-f28a-4ee6-9925-aacc58107500,2025/26,329,153682,Harry Wilson,Harry Wilson,
-277,d55f4f7d-068b-4c69-9cf2-de621d1d85ea,2025/26,330,207189,Sander Berge,Sander Berge,
-278,e1a5293d-11cb-4154-a20c-75d19e4a3ffb,2025/26,331,76357,Tom Cairney,Tom Cairney,
-279,a9551960-d7f9-4af5-848c-cb5e73d73e6b,2025/26,332,212314,Saša Lukić,Sasa Lukic,
-280,670f1eda-f0ed-4dad-bfdd-1e19d22820c1,2025/26,333,573062,Martial Godo,Martial Godo,
-281,fc704d7e-8009-40bc-abf4-077d5caf1a2a,2025/26,334,515024,Luke Harris,,
-282,b0c2ffa6-b285-425b-8eb2-c9f652427eb3,2025/26,335,577725,Josh King,Joshua King,
-283,0479f281-b698-4aba-ac40-86fedaa3eddf,2025/26,336,153366,Harrison Reed,Harrison Reed,
-284,0c132447-b77a-4ef3-8b76-773466c30a9f,2025/26,337,102057,Raúl Jiménez Rodríguez,Raúl Jiménez,
-285,b7c44e29-4ef6-47a2-954c-0b60eeb245dd,2025/26,338,244042,Rodrigo Muniz Carvalho,Rodrigo Muniz,
-286,17e6932b-81bc-4766-bc4e-d808b06dd4c0,2025/26,424,477555,Oscar Bobb,Oscar Bobb,
-287,90e55f29-eaf3-45ba-b6d3-9f50aa3d550f,2025/26,168,536916,Facundo Buonanotte,Facundo Buonanotte,
-288,b15d2b09-385b-46e8-80b3-c9705da992b9,2025/26,352,221399,Jack Harrison,Jack Harrison,
-289,709d3031-90a5-4a10-ace0-73b80225cb0f,2025/26,493,180135,Sean Longstaff,Sean Longstaff,
-290,049a7ce0-2122-4c95-b21b-097e3d229319,2025/26,691,177815,Dominic Calvert-Lewin,Dominic Calvert-Lewin,
-291,49acc28c-0579-4ecf-bb09-7844ec2862b6,2025/26,706,220627,James Justin,James Justin,
-292,0770e266-9633-4bd7-9e25-b218ce04a2f4,2025/26,366,116535,Alisson Becker,Alisson,
-293,da1637e8-b587-4c57-97e9-29a83d53e283,2025/26,371,544877,Milos Kerkez,Milos Kerkez,
-294,ef0771b9-26c5-4915-8dea-392a26f45cbe,2025/26,372,122798,Andrew Robertson,Andrew Robertson,
-295,8a0b53aa-a122-4ea8-8a32-fb80f11f2cdc,2025/26,373,97032,Virgil van Dijk,Virgil van Dijk,
-296,8a942902-7e65-496f-97ab-36b2020d968f,2025/26,374,204716,Ibrahima Konaté,Ibrahima Konaté,
-297,a38c8aff-9fa1-4fba-9126-f5d18b077163,2025/26,375,492777,Conor Bradley,Conor Bradley,
-298,493f278e-a61c-4a7b-bfbc-b7ae9d3926fb,2025/26,376,171287,Joe Gomez,Joseph Gomez,
-299,7cdd3161-7671-44b1-ba34-2c6aab483072,2025/26,377,214285,Konstantinos Tsimikas,Konstantinos Tsimikas,
-300,231b8d11-0bb6-4103-9619-3733aba936cb,2025/26,378,611926,Amara Nallo,,
-301,5d65e834-c62a-40ff-b188-49c37deb087f,2025/26,379,219937,Rhys Williams,,
-302,ba35841c-cdd5-4031-b2ad-00f11cc639c9,2025/26,381,118748,Mohamed Salah,Mohamed Salah,
-303,d2f7294c-7df5-479c-9c9b-f550be9dda26,2025/26,383,244731,Luis Díaz Marulanda,Luis Díaz,
-304,5b4d8bb7-50e8-4325-9fdb-667bc1bc5677,2025/26,384,243298,Cody Gakpo,Cody Gakpo,
-305,43d10f61-0a63-49f2-9406-cc65de429029,2025/26,385,223541,Federico Chiesa,Federico Chiesa,
-306,396e1c5f-a102-4af3-a5b7-2d8ca2b3ef6f,2025/26,386,243016,Alexis Mac Allister,Alexis Mac Allister,
-307,ab460977-65fb-434c-8333-a420e23169cc,2025/26,387,424876,Dominik Szoboszlai,Dominik Szoboszlai,
-308,46b262ba-a864-4a5c-983b-8287c9e1b2c6,2025/26,388,206915,Curtis Jones,Curtis Jones,
-309,df3a988b-b09d-4529-a70a-6bff596cff56,2025/26,390,441266,Ryan Gravenberch,Ryan Gravenberch,
-310,eed618bc-4fff-431a-8342-6e56d6875fda,2025/26,392,158983,Endo Wataru,Wataru Endo,
-311,93efe74e-3c76-403d-8c67-ed7381cbe208,2025/26,393,535928,Stefan Bajčetić Maquieira,,
-312,39590410-de16-4719-b2db-e4bd707cfaa1,2025/26,394,491501,James McConnell,,
-313,c4815505-10e4-4202-9b11-259a19ba8117,2025/26,395,440148,Tyler Morton,,
-314,291cf79e-8289-4aea-b433-663239f6c492,2025/26,396,591386,Trey Nyoni,Treymaurice Nyoni,
-315,9ddeea34-afa6-43b2-9718-40ac87c1da54,2025/26,397,447203,Darwin Núñez Ribeiro,Darwin Núñez,
-316,22e7a380-ba57-4e49-a5fe-81f87c540017,2025/26,398,500058,Jayden Danns,Jayden Danns,
-317,83bf64c5-d053-4c9b-88a8-2fe044533999,2025/26,499,219168,Alexander Isak,Alexander Isak,
-318,d02b81d6-108e-4cfd-b34b-80f3ae2382ca,2025/26,82,437730,Antoine Semenyo,Antoine Semenyo,
-319,4dc79854-22a7-4d9a-b7e6-6b6024465d87,2025/26,260,209036,Marc Guéhi,Marc Guehi,
-320,cde448c3-c413-4852-ae1a-1a4fbac7e91a,2025/26,399,121160,Ederson Santana de Moraes,Ederson,
-321,b45dc1be-2cff-43c5-9659-ce1274c92394,2025/26,401,122074,Marcus Bettinelli,,
-322,cbeb32ec-d8f8-466d-8977-017ce20d9908,2025/26,402,448514,Rayan Aït-Nouri,Rayan Ait Nouri,
-323,7ceade22-f5db-4b3e-ae20-120cd46c67cf,2025/26,403,477424,Joško Gvardiol,Josko Gvardiol,
-324,d86e3efa-0331-4d5e-94c6-ec063d3fa29e,2025/26,404,211975,Manuel Akanji,Manuel Akanji,
-325,3b730726-1e3e-4d2a-9bc3-61177fb5d031,2025/26,405,126184,Nathan Aké,Nathan Aké,
-326,08cbab83-8554-41d0-bd69-4cd420eb698c,2025/26,406,578153,Abdukodir Khusanov,Abduqodir Khusanov,
-327,ff3ae152-e9fa-4768-a059-853e3e482bc3,2025/26,407,465351,Matheus Nunes,Matheus Nunes,
-328,2fc945e5-d19c-4530-a647-863b0ea4396d,2025/26,408,171314,Rúben dos Santos Gato Alves Dias,Rúben Dias,
-329,0847dcd8-082d-4991-8913-1e3bc242dcc3,2025/26,409,97299,John Stones,John Stones,
-330,b771e153-5d75-49ce-8fbd-e6e1cbda6bd2,2025/26,410,477064,Rico Lewis,Rico Lewis,
-331,65af5c82-2bf4-4b3c-b0f7-49d30a717146,2025/26,411,472769,Nico O'Reilly,Nico O'Reilly,
-332,bdec436e-5a79-4ed5-9db6-0f5c66eae832,2025/26,412,616222,Vitor de Oliveira Nunes dos Reis,Vitor Reis,
-333,a21fec65-1718-44e4-a9e7-8b4ba2c6abdb,2025/26,413,438234,Omar Marmoush,Omar Marmoush,
-334,7299a365-c7d3-4fae-983c-d6b980719a1d,2025/26,414,209244,Phil Foden,Phil Foden,
-335,23ceeab7-83a7-41b5-895a-8a8ba6669fe0,2025/26,415,510281,Sávio Moreira de Oliveira,Sávio,
-336,3f381c8a-eeae-4940-9b06-ea05f752e310,2025/26,515,222531,Morgan Gibbs-White,Morgan Gibbs-White,
-337,152452e6-1e36-4c7b-b9aa-15d38bd2fcbb,2025/26,416,165809,Bernardo Mota Veiga de Carvalho e Silva,Bernardo Silva,
-338,5556734b-d1e3-4f5e-94c7-813cd4bcdd56,2025/26,418,248875,Jérémy Doku,Jéremy Doku,
-339,c283ee88-d305-40e4-8002-0308c558c5ae,2025/26,420,59859,İlkay Gündoğan,Ilkay Gündogan,
-340,272bfaa8-fc18-42f2-8300-f77ca505a345,2025/26,421,220566,Rodrigo 'Rodri' Hernandez Cascante,Rodri,
-341,18518340-c700-4515-a0b4-90b371a9686e,2025/26,422,91651,Mateo Kovačić,Mateo Kovacic,
-342,6491134c-17b9-44b3-a599-bd21c9c5651f,2025/26,423,465694,Nico González Iglesias,Nico González,
-343,761dd69f-17b5-4966-96a2-76277e08c754,2025/26,425,575204,Claudio Echeverri,Claudio Echeverri,
-344,0f24ddb4-65f2-4527-908d-a89f91277b34,2025/26,429,155405,Kalvin Phillips,Kalvin Phillips,
-345,6d3fb615-c3e0-4895-b384-57dcb3dc557e,2025/26,430,223094,Erling Haaland,Erling Haaland,
-346,9bcc4be0-a5b6-401f-9fa3-49f78f0f7594,2025/26,794,494307,Max Alleyne,Max Alleyne,
-347,8b74ab57-db22-45f4-80ce-8e5d59b3ce3b,2025/26,119,446008,Bryan Mbeumo,Bryan Mbeumo,
-348,5df08c11-5708-49a1-b677-3a4f70a17f17,2025/26,431,451302,Altay Bayındır,Altay Bayindir,
-349,8e605721-6cde-4dac-8b83-eff0db4372f1,2025/26,432,202641,André Onana,André Onana,
-350,e61cb6e8-8eed-43ee-b067-95a55cb4736d,2025/26,433,588555,Elyh Harrison,,
-351,83ca5847-cede-4643-8401-ec260ed79816,2025/26,434,21205,Tom Heaton,,
-352,c7faa94f-b501-4af9-9045-7f3efb97be86,2025/26,436,209365,Matthijs de Ligt,Matthijs de Ligt,
-353,33567cf6-0cb2-4e77-96d5-18102807b133,2025/26,437,221820,Lisandro Martínez,Lisandro Martínez,
-354,f67b8250-dee9-4e16-9acc-b8eb04a75bd6,2025/26,438,230001,Noussair Mazraoui,Noussair Mazraoui,
-355,bf428111-cd34-4d6e-afd6-31e7a312dc1d,2025/26,440,216051,Diogo Dalot Teixeira,Diogo Dalot,
-356,1eee5051-f16f-4a8e-af4e-028517faa001,2025/26,441,596777,Patrick Dorgu,Patrick Dorgu,
-357,499022db-4b66-47a6-9be9-f8ba92e29786,2025/26,442,95658,Harry Maguire,Harry Maguire,
-358,794ce9ff-d47d-43c0-b13c-1e48807bc608,2025/26,443,106760,Luke Shaw,Luke Shaw,
-359,2c569b38-1dd7-472f-80b7-6ec3828f627e,2025/26,444,550864,Leny Yoro,Leny Yoro,
-360,db5c0678-2734-4ed9-81cb-218e7a0a089b,2025/26,445,577974,Harry Amass,Harry Amass,
-361,e45d7534-4746-4bad-a959-a6cbf37edec1,2025/26,446,547676,Tyler Fredricson,Tyler Fredricson,
-362,80c83afd-6865-416d-b5f4-593ad9ed1f47,2025/26,447,606745,Ayden Heaven,Ayden Heaven,
-363,469511da-b743-4641-8d98-42dc51b5e329,2025/26,448,222690,Tyrell Malacia,Tyrell Malacia,
-364,d61ea56d-0474-4524-a061-9869f4ccbb19,2025/26,449,141746,Bruno Borges Fernandes,Bruno Fernandes,
-365,26ad018f-7c27-46e2-af1c-493276052c85,2025/26,450,430871,Matheus Santos Carneiro da Cunha,Matheus Cunha,
-366,8a5a085d-5110-4f8e-87d3-1fdb384d8533,2025/26,451,176297,Marcus Rashford,Marcus Rashford,
-367,2f0ea22d-f760-4599-a623-60f4e3be22f1,2025/26,452,493250,Amad Diallo,Amad Diallo Traore,
-368,be00977b-d686-4932-8288-db6993f55a4b,2025/26,454,467169,Antony dos Santos,Antony,
-369,dfc945e1-aaca-4013-b2b3-96e85b299423,2025/26,455,184341,Mason Mount,Mason Mount,
-370,8212e83e-299a-4fe2-b598-7e466a9e0621,2025/26,457,61256,Carlos Henrique Casimiro,Casemiro,
-371,1c5ff361-4a45-48ba-b2e2-55c967518fac,2025/26,458,516895,Kobbie Mainoo,Kobbie Mainoo,
-372,2e5dfd6f-2c8a-4242-bd88-71b571e78ec9,2025/26,459,232112,Manuel Ugarte Ribeiro,Manuel Ugarte,
-373,c981a842-25d4-406d-adec-d423a19effe3,2025/26,460,490881,Toby Collyer,Toby Collyer,
-374,167d8179-f5d1-401e-b5c3-0db84283bb81,2025/26,461,556639,Jayce Fitzgerald,,
-375,73c21faa-876a-417f-bfbd-b5433eae68c3,2025/26,462,547037,Jack Fletcher,Jack Fletcher,
-376,781087f1-32b6-4c7e-ae69-ee5ef75ad7d2,2025/26,463,618873,Sékou Koné,,
-377,48da60a2-014b-491f-99ee-034d2e11bf48,2025/26,464,559684,Jack Moorhouse,,
-378,36b875ed-889a-4d7f-a5e7-f57bb5b23e4e,2025/26,465,497894,Rasmus Højlund,Rasmus Højlund,
-379,ea2a7a09-c8ae-430a-bf6f-dd514154e543,2025/26,466,458249,Joshua Zirkzee,Joshua Zirkzee,
-380,394f611e-73b5-4779-8110-c73e3593c90f,2025/26,467,596047,Chido Obi,Chido Obi-Martin,
-381,ad3900af-fef7-4545-99c0-dc7158e97e3a,2025/26,468,575034,Ethan Wheatley,,
-382,e73c83e7-3640-43d0-8c0f-f267926827fc,2025/26,788,576637,Godwill Kukonki,,
-383,f551e1b9-1b4f-4ee0-ab12-5b3d29f7f00e,2025/26,52,232653,Jacob Ramsey,Jacob Ramsey,
-384,b917d372-2d17-444e-8384-8d2a9e5f8453,2025/26,135,216646,Yoane Wissa,Yoane Wissa,
-385,57d51316-9d56-4d98-9df7-f5fc936704bb,2025/26,469,98747,Nick Pope,Nick Pope,
-386,b6732bbc-09ba-4c3e-a535-861fd96488bc,2025/26,472,111452,Odysseas Vlachodimos,,
-387,97f710e3-4d5b-475f-b4fb-dedf2866e61d,2025/26,473,487838,Lewis Hall,Lewis Hall,
-388,a813d09b-3694-4714-b863-bb5997ef8f43,2025/26,474,119471,Fabian Schär,Fabian Schär,
-389,71e04b79-f1a7-4123-8130-bae9732ba772,2025/26,475,220237,Sven Botman,Sven Botman,
-390,64c1604f-20e8-4f70-aca6-234467915cdb,2025/26,476,78916,Dan Burn,Dan Burn,
-391,3a3343ac-df8a-4423-9c8f-614fa31f7612,2025/26,477,441191,Tino Livramento,Valentino Livramento,
-392,320fe051-d0b5-4c7d-984b-d719a2196470,2025/26,478,77794,Kieran Trippier,Kieran Trippier,
-393,7f160bcd-c48f-454e-bd10-5d13e7b7a608,2025/26,479,111773,Emil Krafth,Emil Krafth,
-394,ef27dda9-b74d-4e05-a474-3ce88f01963e,2025/26,480,101148,Jamaal Lascelles,Jamaal Lascelles,
-395,98a9027f-96af-4214-9516-b319364983a7,2025/26,481,545477,Alex Murphy,Alex Murphy,
-396,a54bf982-f33c-43d5-af92-0c93ea1f7d9b,2025/26,483,578512,Miodrag Pivaš,,
-397,c932dd05-c46b-4c8e-bffd-ebc3be8f8402,2025/26,484,169359,Matt Targett,Matt Targett,
-398,86e096b9-965f-4b13-bc0b-7dc91707f0d4,2025/26,485,232826,Anthony Gordon,Anthony Gordon,
-399,bc7b3008-ecdf-482b-a820-20ef64676b4e,2025/26,486,449434,Anthony Elanga,Anthony Elanga,
-400,7d0ce2be-20f7-4099-add3-2623af5b22d6,2025/26,487,201666,Harvey Barnes,Harvey Barnes,
-401,701caef7-4a05-4908-8c32-05de68526194,2025/26,488,208706,Bruno Guimarães Rodriguez Moura,Bruno Guimarães,
-402,bec3286a-79d9-4125-ae8e-4c789e476cd5,2025/26,489,114243,Jacob Murphy,Jacob Murphy,
-403,423e1b12-0219-4921-9347-0631bb645a1c,2025/26,490,180974,Joelinton Cássio Apolinário de Lira,Joelinton,
-404,6530cfe0-7569-4842-bbcf-bb9dfee916c9,2025/26,491,432422,Sandro Tonali,Sandro Tonali,
-405,3858ec1b-1c61-4728-bcf3-15d955a16881,2025/26,494,200089,Joe Willock,Joe Willock,
-406,bec0f8f2-2df7-40e7-87e2-c25495599010,2025/26,495,153127,Isaac Hayden,,
-407,fede430f-ca86-4467-ae60-c0f052711f2c,2025/26,496,564510,Garang Kuol,,
-408,fd38c29c-1522-4d3d-a93e-66cb66d14a11,2025/26,497,547719,Lewis Miley,Lewis Miley,
-409,caea5c3e-561c-4856-b0bd-d1f3a2de121e,2025/26,498,461484,Joe White,,
-410,d7c96669-436e-4944-b54d-59695cfd26c6,2025/26,500,538207,William Osula,William Osula,
-411,e4e24720-d2ab-4a3b-a489-6cd5d1114cfd,2025/26,674,225321,Aaron Ramsdale,Aaron Ramsdale,
-412,826f2eb6-c024-428d-8947-35add533b2c5,2025/26,753,19236,John Ruddy,,
-413,bb980a5b-6f4c-4bb4-8f85-9c682f3370c6,2025/26,12,206325,Oleksandr Zinchenko,Oleksandr Zinchenko,
-414,451e115e-1a94-4c54-9b7d-63f25fa9e973,2025/26,400,88248,Stefan Ortega Moreno,Stefan Ortega Moreno,
-415,47e50346-47f4-4225-b164-b93dba66e562,2025/26,426,432714,James McAtee,James McAtee,
-416,8c847126-728a-47e6-8521-13af156a6181,2025/26,502,85633,Matz Sels,Matz Sels,
-417,4ed2bd00-dba2-458c-a4d3-1ffd9fbd8736,2025/26,503,475123,Carlos Miguel dos Santos Pereira,,
-418,af5e5726-fb1e-4fdb-8879-a28afd3dde17,2025/26,504,224068,Matt Turner,Matt Turner,
-419,881f4ab3-adab-4461-9561-4a736a1d3e31,2025/26,505,227444,Nikola Milenković,Nikola Milenkovic,
-420,d0f8670d-03c3-4760-8678-d391c9455f38,2025/26,506,575476,Murillo Costa dos Santos,Murillo,
-421,bfd0282a-2b61-49c9-98e7-a2f22f330e82,2025/26,507,159506,Ola Aina,Ola Aina,
-422,2456c5b8-e6c9-4ea3-9269-41f7c6216476,2025/26,508,215136,Neco Williams,Neco Williams,
-423,23018d09-1c46-4936-9727-40496371c8b8,2025/26,511,485047,Felipe Rodrigues da Silva,Morato,
-424,d6be337c-9102-4aba-acf1-a150cba17751,2025/26,512,204822,Omar Richards,,
-425,aecff7a0-6062-45b5-86d7-0c3961793ed6,2025/26,513,549067,Zach Abbott,Zach Abbott,
-426,114c54aa-c2b2-4adf-b9e3-052f9113dfdf,2025/26,514,90585,Willy Boly,Willy Boly,
-427,6bd06b24-334f-4fdb-9746-1d98ccfcfe3f,2025/26,516,209046,Callum Hudson-Odoi,Callum Hudson-Odoi,
-428,b340a5b0-42ae-4f2a-8096-1b227edae50a,2025/26,517,215379,Elliot Anderson,Elliot Anderson,
-429,1eb4ac7e-6158-4851-b363-d4ff6070ce72,2025/26,518,510500,João Pedro Ferreira da Silva,Jota Silva,
-430,023da49d-2e7d-4907-9df5-f04db9b0fd41,2025/26,519,250199,Nicolás Domínguez,Nicolás Domínguez,
-431,7e50df7b-2666-48ac-85ad-2ed37e8b6dcb,2025/26,520,243345,Lewis O'Brien,,
-432,614dca87-6771-4409-b1d4-230660704518,2025/26,521,210462,Ibrahim Sangaré,Ibrahim Sangare,
-433,8a50219f-55c4-404b-bc89-9754e0eb85de,2025/26,522,204968,Ryan Yates,Ryan Yates,
-434,c48c5c98-df72-4edd-acd0-85450e59269a,2025/26,523,569014,Eric da Silva Moreira,Eric da Silva Moreira,
-435,a3839c5a-f87e-48df-9a8d-dc0bc957b87b,2025/26,525,60689,Chris Wood,Chris Wood,
-436,67150f6f-4550-46e1-ab06-5be560ba9de2,2025/26,527,210156,Taiwo Awoniyi,Taiwo Awoniyi,
-437,2e9ab3a1-b490-479c-ba94-45eeb1b7bca8,2025/26,693,503301,Omari Hutchinson,Omari Hutchinson,
-438,1612fa1c-cb9b-4980-837e-d768f86b0886,2025/26,543,535818,Simon Adingra,Simon Adingra,
-439,2e9610c8-836f-402c-804e-0720c93a9009,2025/26,565,184254,Guglielmo Vicario,Guglielmo Vicario,
-440,bc66bf7d-e1f5-48c5-b89d-ff0dbd008bd8,2025/26,566,214572,Brandon Austin,Brandon Austin,
-441,159841f0-d0bc-4c77-89c1-ff5886c01ec1,2025/26,567,485055,Antonín Kinský,Antonín Kinsky,
-442,681c11ac-7e56-493e-9ca1-72f90b878d01,2025/26,568,441164,Pedro Porro Sauceda,Pedro Porro,
-443,359d703f-5c63-4bfe-8ccc-57d4ede0b37c,2025/26,569,221632,Cristian Romero,Cristian Romero,
-444,0b8ecd30-19a8-4509-9f8d-09deaf8ac2ee,2025/26,570,135720,Kevin Danso,Kevin Danso,
-445,517c88fc-d2e4-48f9-a244-13a2f0813e40,2025/26,571,115556,Ben Davies,Ben Davies,
-446,c8c438ab-f065-4b03-9765-3002b42f3a58,2025/26,572,493125,Radu Drăgușin,Radu Dragusin,
-447,c49b3106-4c26-46c9-bbb8-4e132b81910a,2025/26,573,232859,Djed Spence,Djed Spence,
-448,b4d3e76d-0620-4853-b965-d10f7cac139e,2025/26,574,487053,Destiny Udogie,Iyenoma Destiny Udogie,
-449,86a8b7af-747c-4791-8f50-dc0403622b73,2025/26,575,491279,Micky van de Ven,Micky van de Ven,
-450,357b7d84-e65a-4563-88ab-112294f2872e,2025/26,576,548308,Ashley Phillips,,
-451,5167d7b8-c362-4ebd-8d34-fc379f6ecaa3,2025/26,579,85971,Son Heung-min,Son Heung-Min,
-452,d1f5f863-043f-4759-adbe-9489d6df04e1,2025/26,581,172780,James Maddison,James Maddison,
-453,3155f865-690c-4281-b00c-fce26e784489,2025/26,582,460842,Mohammed Kudus,Mohammed Kudus,
-454,7c870cd7-9d1e-4b81-bd53-117b5ce27c54,2025/26,583,445044,Dejan Kulusevski,Dejan Kulusevski,
-455,c35eea94-ca8c-4a5c-abb5-39a702041a48,2025/26,584,511499,Mathys Tel,Mathys Tel,
-456,4dba7c71-3721-48b7-8d06-f7a97d1e654c,2025/26,585,202993,Rodrigo Bentancur,Rodrigo Bentancur,
-457,e642deb6-f398-4f23-8f6b-4517569c6521,2025/26,586,570526,Lucas Bergvall,Lucas Bergvall,
-458,58fbf6e5-9ce2-410c-a1f9-e0d2f4607ad0,2025/26,587,227127,Yves Bissouma,Yves Bissouma,
-459,3f7d0d15-bae9-4443-b8fd-602d0b46e83b,2025/26,588,550839,Wilson Odobert,Wilson Odobert,
-460,5aaeed89-dd50-43b0-8bd5-0b00ffae7428,2025/26,589,235674,Manor Solomon,Manor Solomon,
-461,78cef93a-5d90-47df-ae43-9951588f6c59,2025/26,590,436234,Bryan Gil Salvatierra,,
-462,4c7e5c2a-dc4d-4126-a8d6-7cc8830fff8a,2025/26,591,547701,Archie Gray,Archie Gray,
-463,5eee3996-1d93-4d7b-9e06-d7dcb289c696,2025/26,592,499721,Mikey Moore,Mikey Moore,
-464,5627a160-9c95-443d-92f6-42bd33cb437c,2025/26,593,482442,Pape Matar Sarr,Pape Sarr,
-465,19503768-2c69-4c5d-b12f-316a33e22977,2025/26,594,623095,Yang Min-hyeok,,
-466,fe994675-7f34-4277-b6f3-6e738a132d08,2025/26,595,499726,Callum Olusesi,Callum Olusesi,
-467,25e1b024-b4c4-4732-9894-b39b4415754e,2025/26,596,154566,Dominic Solanke-Mitchell,Dominic Solanke,
-468,babad0a4-ef7c-4e3c-804d-048bdc6c91d4,2025/26,597,212319,Richarlison de Andrade,Richarlison,
-469,84e499c3-6bed-49fa-8949-8b304244139f,2025/26,598,552427,Will Lankshear,Will Lankshear,
-470,6eb78588-fb64-4370-9014-57f422cbdcd4,2025/26,599,490145,Dane Scarlett,Dane Scarlett,
-471,4740a0a4-ae26-4421-9b41-4652ab59e9dd,2025/26,790,611917,Lucá Williams-Barnett,,
-472,84fa1217-2dbe-4acc-a446-1f78327fe989,2025/26,796,232787,Conor Gallagher,Conor Gallagher,
-473,755babc2-28eb-47e7-bda6-3c28588e49bf,2025/26,326,159533,Adama Traoré Diarra,Adama Traoré,
-474,2b71ec62-c2bf-4ac3-99ab-166c358d7904,2025/26,600,84182,Alphonse Areola,Alphonse Areola,
-475,53f6428c-e03e-4b83-9596-03cfaf24f761,2025/26,601,82143,Wes Foderingham,Wes Foderingham,
-476,89bd4d8a-948b-40e5-8958-5c47b1c373ec,2025/26,604,109533,Emerson Palmieri dos Santos,Emerson,
-477,dd74e658-57fa-4e99-ac94-889f064764fa,2025/26,605,214048,Maximilian Kilman,Max Kilman,
-478,eb6fd9d0-63c5-4080-a5ab-0e9751ec993d,2025/26,606,233963,Konstantinos Mavropanos,Konstantinos Mavropanos,
-479,9ddf23ec-f1ed-43e6-bd0b-c40e8f383ac3,2025/26,607,210494,Nayef Aguerd,Naif Aguerd,
-480,a9fbdbd6-784f-4f5f-95a1-f43823a8fbd2,2025/26,608,536109,Ollie Scarles,Oliver Scarles,
-481,9b78a208-c2e8-4f6d-908c-f001fec8c607,2025/26,609,462116,Jean-Clair Todibo,Jean-Clair Todibo,
-482,96e5f281-158d-4a4d-8dee-93ed027fa325,2025/26,610,214590,Aaron Wan-Bissaka,Aaron Wan-Bissaka,
-483,5d6d7fa0-1871-40aa-95df-b817b19c645a,2025/26,611,518438,Kaelan Casey,Kaelan Casey,
-484,112a1260-0cb2-4248-b27b-68e25d2c087a,2025/26,612,224024,Lucas Tolentino Coelho de Lima,Lucas Paquetá,
-485,3706fb38-9c0f-4fa6-a4d3-69171dad0499,2025/26,613,215439,Tomáš Souček,Tomas Soucek,
-486,da40d2fc-9fb1-4653-874a-386c8feae25e,2025/26,615,450070,Crysencio Summerville,Crysencio Summerville,
-487,6532b4fe-afc3-4fea-a648-f7a83cb442db,2025/26,616,213999,Edson Álvarez Velázquez,Edson Álvarez,
-488,15a27285-1e19-4e00-970d-f2ca8c65d987,2025/26,617,149519,Maxwel Cornet,Maxwel Cornet,
-489,d11092d2-02a1-483d-8581-ce070c6c41d9,2025/26,618,197024,Guido Rodríguez,Guido Rodríguez,
-490,34fd9fbe-964e-4832-8c52-b64dac780c07,2025/26,619,577114,Luis Guilherme Lira dos Santos,Luis Guilherme,
-491,528f0d18-f132-45d6-a245-4dc41004aa90,2025/26,620,490885,George Earthy,George Earthy,
-492,56a218b5-0326-4ae2-b2f9-c21ae2995077,2025/26,621,229384,Andy Irving,Andy Irving,
-493,2dddc136-dd1e-4405-9609-c0692c8a7479,2025/26,622,518442,Lewis Orford,Lewis Orford,
-494,e82f741c-7aaf-4807-bbfc-ce5f4a0d98b9,2025/26,624,178186,Jarrod Bowen,Jarrod Bowen,
-495,9dc9d7d5-adb7-4d08-afb8-4b30b62c446d,2025/26,625,91889,Niclas Füllkrug,Niclas Füllkrug,
-496,2b064b3d-3801-4f5d-b158-269afc136611,2025/26,659,158534,Kyle Walker-Peters,Kyle Walker-Peters,
-497,1f21671d-d143-49c8-938f-b90e1b57a10e,2025/26,671,75115,Callum Wilson,Callum Wilson,
-498,c3d3ae83-1510-42da-9233-2f411397d2cf,2025/26,679,467189,Mads Hermansen,Mads Hermansen,
-499,47914f38-fdf2-4070-a8e0-34617f66da30,2025/26,708,551226,Mateus Gonçalo Espanha Fernandes,Mateus Fernandes,
-500,3359e9ae-5151-45b4-8e0c-77a2b0623e8d,2025/26,738,37096,Lukasz Fabianski,Lukasz Fabianski,
-501,c5cf643d-e278-468a-8b57-8144d875ff4e,2025/26,747,602903,Ezra Mayers,Ezra Mayers,
-502,a106c077-5b59-42d2-97d3-d938b4530fd4,2025/26,815,220362,Axel Disasi,Axel Disasi,
-503,1a66fd6a-6710-4f29-a6c5-89c04a1049b0,2025/26,627,101982,Sam Johnstone,Sam Johnstone,
-504,afbf49b6-75a5-4592-ab2c-d08295a2a391,2025/26,628,149065,José Malheiro de Sá,José Sá,
-505,31d931b3-f4b5-4f98-92ad-9c612108061d,2025/26,629,79602,Daniel Bentley,Daniel Bentley,
-506,2c539cb7-0919-4d3d-9446-d2d5d7f33f9c,2025/26,631,516939,Emmanuel Agbadou,Emmanuel Agbadou,
-507,b066e645-c6a2-464e-b911-c0d83cb622ac,2025/26,632,87835,Matt Doherty,Matt Doherty,
-508,f80b11d9-0005-4eed-a49f-0b013931db8b,2025/26,633,490721,Hugo Bueno López,Hugo Bueno,
-509,b1c6dee8-393c-44d5-aab5-3369c66cf4a6,2025/26,634,501837,Yerson Mosquera Valdelamar,Yerson Mosquera,
-510,00feecc2-b82f-4759-a986-d8c283132ebb,2025/26,635,483081,Rodrigo Martins Gomes,Rodrigo Gomes,
-511,7c1cd5dc-9bd6-4518-b5a5-b90251db72a2,2025/26,636,231480,Santiago Ignacio Bueno,Santiago Bueno,
-512,9949992d-a0a0-4d9e-81d6-83b903efc08c,2025/26,637,510362,Toti Gomes,Toti,
-513,28f0d67c-3eee-4d55-b744-c63484af671b,2025/26,638,441271,Ki-Jana Hoever,Ki-Jana Hoever,
-514,2cb1c2d6-7875-4bca-aaf3-f9a0db2e5f2d,2025/26,639,560248,Bastien Meupiyou Menadjou,,
-515,4acb2de8-282d-41a8-9184-ef6a36d9c1ff,2025/26,640,641221,Pedro Cardoso de Lima,Pedro Lima,
-516,e1d9a973-35a1-4fba-9980-59ebf61233f0,2025/26,641,517179,Alfie Pond,Alfie Pond,
-517,4ebbd927-7869-42c7-a226-2ad79d9f6b61,2025/26,642,184754,Hwang Hee-chan,Hee-Chan Hwang,
-518,16247559-28c9-47cb-849e-b0c75c2240b7,2025/26,643,509291,André Trindade da Costa Neto,André,
-519,f18cd524-27df-453e-a1ff-a354597fc676,2025/26,644,231057,Jean-Ricner Bellegarde,Jean-Ricner Bellegarde,
-520,85560e36-f11f-4635-b01b-aa5dbbf39dfe,2025/26,646,448089,João Victor Gomes da Silva,João Gomes,
-521,cfa0cd66-03e4-4dac-b6ab-aaf0a86fddf8,2025/26,647,181284,Gonçalo Manuel Ganchinho Guedes,Gonçalo Guedes,
-522,4a01ead9-a90f-4239-81ba-dfabf4f0011a,2025/26,648,433312,Marshall Munetsi,Marshall Munetsi,
-523,82d86330-77c1-4de3-b44c-b66f83e9287c,2025/26,649,476502,Boubacar Traoré,Boubacar Traore,
-524,ae32d960-6ef2-49be-9ddb-fb32ac08929d,2025/26,650,497606,Tawanda Chirewa,Tawanda Chirewa,
-525,df260d38-74bc-4db1-b6a1-981114d38c59,2025/26,651,596054,Tom Edozie,Tom Edozie,
-526,c210e153-763f-4bc6-96a7-063bc363159a,2025/26,652,593001,Enso González Medina,,
-527,9dd5d807-1dfd-466a-8479-8ed7e06b22fb,2025/26,653,240299,Joe Hodge,,
-528,2367f968-80af-48da-99cc-896d8e179fc2,2025/26,655,449988,Fábio Soares Silva,Fabio Silva,
-529,520b1085-6580-44d1-b65c-7132e209cb65,2025/26,656,429414,Saša Kalajdžić,Sasa Kalajdzic,
-530,9d887de9-69c3-4611-b5a7-3906aa107b80,2025/26,657,589507,Leon Chiwome,,
-531,2198aa01-1c6c-4ef2-a972-673503c094f7,2025/26,658,531363,Nathan Fraser,,
-532,b335ffd3-622f-49c4-a3a3-c24d28da56a4,2025/26,749,647671,Mateus Mané,Mateus Mané,
-533,4fc6dec6-7b50-4852-a52b-5ba4c7db9034,2025/26,817,155511,Adam Armstrong,Adam Armstrong,
-534,45c954c5-7a8e-4420-b0d7-2cd2367743a7,2025/26,13,563324,Brayden Clarke,,
-535,778353c6-4ddf-40e8-a474-96ac57b79dae,2025/26,26,481655,Martín Zubimendi Ibáñez,Martín Zubimendi,
-536,c9a47ffc-3016-4301-ad03-e3bcfe5043f4,2025/26,29,437742,Albert Sambi Lokonga,,
-537,5dfc3e0c-26d2-47c0-b444-42500f664a8c,2025/26,662,500040,Cristhian Mosquera,Cristhian Mosquera,
-538,2c0b785d-9175-415e-b7ee-cb10961a60a6,2025/26,666,224117,Viktor Gyökeres,Viktor Gyokeres,
-539,8454fd25-b5e1-43c0-868e-638cea3bbabb,2025/26,700,616077,Max Dowman,Max Dowman,
-540,a6b5ae28-d53d-4502-afe9-44c0c9db37f4,2025/26,711,646243,Andre Harriman-Annous,,
-541,2b9337d7-0164-4b9e-969e-db2f0905a2cc,2025/26,725,448104,Piero Hincapié,Piero Hincapié,
-542,be053f5a-34d8-4bc3-a672-da0c1dd36231,2025/26,759,616065,Marli Salmon,,
-543,7e66bd94-3d78-463b-b062-cb3bf2da1cce,2025/26,33,72147,Marco Bizot,Marco Bizot,
-544,c9f8e9f1-a6b9-43d2-b510-4795ddd9351a,2025/26,46,587178,Yasin Özcan,,
-545,24757ac2-400b-4dcd-974d-225337584faf,2025/26,65,576756,Zépiqueno Redmond,,
-546,4c5f3a6c-b926-4546-b5a0-5f5d33fc2c89,2025/26,688,481283,James Wright,,
-547,e44fd2fe-5943-44e1-9ff5-4edce556a2aa,2025/26,699,230046,Douglas Luiz Soares de Paulo,Douglas Luiz,
-548,a4550d4e-f6f6-4bc2-ba98-59bb9d17b54b,2025/26,701,569577,Triston Rowe,,
-549,fcb8fa2a-d72a-4a6e-93dc-15b1a2df698a,2025/26,702,645618,Bradley Burrowes,Bradley Burrowes,
-550,68f12412-b39c-4bd7-be8d-d2406c2b312e,2025/26,703,564505,Sam Proctor,,
-551,55276dfb-832f-427c-a193-450715bf5569,2025/26,710,534836,Travis Patterson,,
-552,c2cc4a44-59c2-4e9b-b724-7c670e762a77,2025/26,754,577285,George Hemmings,George Hemmings,
-553,a90aba94-1559-4cba-b7a7-c9924d81565f,2025/26,757,516875,Ronnie Hollingshead,,
-554,326ad64b-61aa-45cb-aeec-6b418032b7b0,2025/26,768,664015,Leon Routh,,
-555,6ac72509-7e34-45fd-b9f8-26900e8adf0e,2025/26,781,618027,TJ Carroll,,
-556,1e921cf9-1036-46eb-998c-afb94a60d6a6,2025/26,792,653481,Alysson Edward Franco da Rocha dos Santos,Alysson Edward,
-557,3be1b83a-42f2-4ae8-a257-d8157749b5c9,2025/26,808,173879,Tammy Abraham,Tammy Abraham,
-558,c63e6e33-3aa3-4d23-b62b-052db893898c,2025/26,183,518030,Max Weiß,,
-559,2468d2cb-1943-47c2-8ce2-d5a32bc6b63d,2025/26,184,489571,Etienne Green,,
-560,327507d4-d84c-49a9-aaa0-50c547faaf64,2025/26,185,51943,Václav Hladký,,
-561,67813629-ed25-456c-b9b0-7e930f1bdc21,2025/26,186,192290,Connor Roberts,,
-562,0490c4f8-083a-4462-b202-ab60e507362d,2025/26,188,247245,Hannes Delcroix,,
-563,5bc96f0a-9920-48bb-af9e-27451b4bc2b8,2025/26,189,461567,Owen Dodgson,,
-564,8812c842-5bef-4cd1-af43-5f3723c33c62,2025/26,190,478969,Hjalmar Ekdal,Hjalmar Ekdal,
-565,4aa1d8ba-6831-42d3-a286-3938c0f8ca9f,2025/26,191,477717,Maxime Estève,Maxime Estève,
-566,9951d846-9147-4ca0-b269-27c4137a500e,2025/26,192,494960,Quilindschy Hartman,Quilindschy Hartman,
-567,7cb6336a-336a-45cd-8c7c-36e4e503dca9,2025/26,193,461188,Bashir Humphreys,Bashir Humphreys,
-568,e68404d7-2152-4d57-9be8-b6ce18ba7418,2025/26,194,241231,Jordan Beyer,,
-569,124db537-8df8-4353-952d-25094393b631,2025/26,195,549329,Lucas Pires Silva,Lucas Pires,
-570,b71a5acf-9c2f-48aa-8d97-648cf8f07551,2025/26,196,450072,Shurandy Sambo,,
-571,5b77be6e-0bb3-457f-bad5-4403f47235b1,2025/26,197,519895,Oliver Sonne,Oliver Sonne,
-572,d41a0b68-0df4-4a96-84c8-8c0ad3bc6423,2025/26,201,183751,Manuel Benson Hedilazio,,
-573,515a377e-fa30-4dfa-9826-e2ce13cfa78c,2025/26,202,179458,Jacob Bruun Larsen,Jacob Bruun Larsen,
-574,ac4b4494-847c-4a93-8e3b-f01261646dfc,2025/26,203,578614,Enock Agyei,,
-575,28f0f650-0881-473a-992f-f226fe6347b5,2025/26,204,250735,Darko Churlinov,,
-576,f6b276eb-040b-462e-829b-e92375cf6019,2025/26,205,172567,Josh Cullen,Josh Cullen,
-577,b2d79a38-4117-4421-ab94-826f5898e52c,2025/26,206,174592,Marcus Edwards,Marcus Edwards,
-578,b78bc2a1-f104-4691-9ce2-2776c93df7c4,2025/26,208,487702,Luca Koleosho,,
-579,b494f3b5-3cfe-4a72-b033-70c177835129,2025/26,209,167887,Josh Laurent,Josh Laurent,
-580,d2854813-72ea-4db2-b5a4-1f58d42d0e15,2025/26,210,469272,Loum Tchaouna,Loum Tchaouna,
-581,f6bc79c3-d0c9-41f1-8bb6-88d20ce94792,2025/26,211,447715,Aaron Ramsey,,
-582,4e27e291-cc12-4140-b48d-73671c8b25c8,2025/26,212,576323,Oluwaseun Adewumi,,
-583,ceabde74-5487-468d-b432-f8940c5af8e4,2025/26,213,551206,Jaydon Banel,Jaydon Banel,
-584,43e9e607-27a0-46a3-8d71-2ced0f01a9fa,2025/26,214,437748,Mike Trésor Ndayishimiye,Mike Trésor,
-585,556508c1-c458-487f-859f-5ecb7a845062,2025/26,215,431639,Zian Flemming,Zian Flemming,
-586,f3c4d980-7893-46c2-b459-47f43451dad7,2025/26,216,492831,Zeki Amdouni,,
-587,7d544fd0-af52-4656-ace1-4b683c3a2ff4,2025/26,217,435973,Lyle Foster,Lyle Foster,
-588,842b8fac-de5b-4fec-af54-364f3d7cd0f7,2025/26,218,44699,Ashley Barnes,Ashley Barnes,
-589,0951e249-0fa6-4e11-9e2d-d1d2156f8c7f,2025/26,219,220598,Michael Obafemi,,
-590,daccf845-69c5-45a4-ac54-e344ba2e8ece,2025/26,722,216055,Florentino Ibrain Morris Luís,Florentino Luís,
-591,63a1e33c-d7ef-4511-8798-9e574cfd7ccf,2025/26,776,647960,Oliver Pimlott,,
-592,eb440bb2-7556-470e-9dbe-618751a5494a,2025/26,784,704232,George Brierley,,
-593,c77da048-8150-4fbf-8384-899e1a9df8b4,2025/26,820,644593,Kian McMahon-Brown,,
-594,751e7d9e-fd20-4d31-9e3c-5f8102f2d7c9,2025/26,74,494521,Adrien Truffert,Adrien Truffert,
-595,56d2f6c5-0d4d-4a66-ae82-533f51b35299,2025/26,76,518906,Owen Bevan,,
-596,c7528804-9623-4bdb-ad85-0f62c8d857c4,2025/26,100,560262,Junior Kroupi,Eli Junior Kroupi,
-597,96208a93-4ee8-40f6-a03c-a2f5d26c2388,2025/26,685,242882,Bafodé Diakité,Bafode Diakite,
-598,45af936c-cd99-491c-b5c6-905c20a14ba7,2025/26,697,489888,Amine Adli,Amine Adli,
-599,8a23bf48-4959-4df0-a5f8-f77f853305b0,2025/26,713,551483,Álex Jiménez Sánchez,Alejandro Jiménez,
-600,c6e10f61-8f06-4028-8d03-fe524e615dee,2025/26,721,620487,Veljko Milosavljevic,Veljko Milosavljevic,
-601,522190bc-90c2-410d-85fd-e3e77951843c,2025/26,756,678552,Malcom DaCosta,,
-602,b5913531-8486-40c3-bfea-b0243a1ff115,2025/26,799,658013,Charlie Stevens,,
-603,487f0e75-49d1-4ab9-afe1-0bd8ecd1a25d,2025/26,801,614574,Alex Tóth,Alex Tóth,
-604,de6141f8-37cb-4837-84d5-12f916f5e8dd,2025/26,806,436416,Christos Mandas,,
-605,0fcb35d0-9ca4-4e84-ae2e-8fb6afb802ef,2025/26,807,499604,Rayan Vitor Simplício Rocha,Rayan,
-606,21f95d65-4e8e-4bca-9cf9-b538ac33b2bd,2025/26,102,235448,Ellery Balcombe,,
-607,73b82181-685e-4e83-aec5-17d2036a8ebc,2025/26,103,503300,Matthew Cox,,
-608,06a7455e-20c3-4c63-8b9f-ba883dd303a2,2025/26,115,612534,Benjamin Fredrick,,
-609,fe1675f8-b283-4a0b-b6ae-ac6b2d6c5eca,2025/26,122,543295,Antoni Milambo,Antoni Milambo,
-610,ce96ad9b-997d-46d3-a93d-4cb784f16ad1,2025/26,124,56979,Jordan Henderson,Jordan Henderson,
-611,0b7d0441-160a-4c1b-84bb-e6cea29184b5,2025/26,130,606689,Romelle Donovan,Romelle Donovan,
-612,d41f09ef-6f87-4cc1-9f1a-ee796af3d065,2025/26,797,593174,Kaye Furo,,
-613,844e8fb4-8934-482c-b81a-1971b2bbd95c,2025/26,810,559610,Luka Bentt,,
-614,743e28fa-6d1f-44e8-a594-c903f011ae8f,2025/26,819,494556,Ollie Shield,,
-615,7dae3789-efe3-4b18-8337-da34318d94f5,2025/26,823,649240,Joshua Stephenson,,
-616,8b62be21-84f4-402b-82dc-dc61764f013e,2025/26,824,587433,Conor McManus,,
-617,652842ef-86ad-4d96-acb9-ad34f7f6af7a,2025/26,826,547671,Riley Owen,,
-618,5daf2c6c-97ba-41a1-96ae-09570f44f903,2025/26,140,209288,Tom McGill,,
-619,bfc67171-cbc5-49fb-81b9-ee7120af739d,2025/26,142,240514,Kjell Scherpen,,
-620,25e894d5-5fe6-4e70-9231-eb41f5fd051f,2025/26,143,204120,Olivier Boscagli,Olivier Boscagli,
-621,013d5efd-ec7a-483b-be9f-0a514707655a,2025/26,144,550090,Diego Coppola,Diego Coppola,
-622,75dcd00b-3ea1-42da-bb8a-25dbb04a0866,2025/26,145,465730,Maxim De Cuyper,Maxim De Cuyper,
-623,2dd3ddd4-7a02-47b2-a523-352b8f31f216,2025/26,156,547720,Charlie Tasker,,
-624,db100fc4-014e-4885-821d-e58e75ba7b2a,2025/26,165,516211,Abdallah Sima,,
-625,c6677205-fea4-4d34-a658-598ec89e3c2f,2025/26,172,549074,Tom Watson,Tom Watson,
-626,9858f4ff-8524-4a7a-a918-b885dbbe672e,2025/26,174,611695,Malick Yalcouyé,,
-627,d8b398a5-c466-4f3e-82c1-3b674cffb7c8,2025/26,180,608181,Stefanos Tzimas,Stefanos Tzimas,
-628,78b49aa9-73ed-4667-89db-8fd7b6a24104,2025/26,181,647850,Charalampos Kostoulas,Charalampos Kostoulas,
-629,13be3147-4bef-4613-8472-82b94f305fcd,2025/26,744,556637,Nehemiah Oriola,Nehemiah Oriola,
-630,c395b9a2-45d9-49af-b107-70fdf588034d,2025/26,761,604988,Freddie Simmonds,,
-631,3a760bdc-2151-45df-b3e4-518c0d97e81d,2025/26,795,597320,Harry Howell,Harry Howell,
-632,df2e5ec0-960b-42e4-b9c4-2d0593b49273,2025/26,222,549939,Mike Penders,,
-633,9c195ceb-7acc-4b9d-a707-cd4ac3340f07,2025/26,223,471798,Gabriel Słonina,,
-634,e51d19df-18b0-4a28-8c3b-ea5d199f2252,2025/26,231,574458,Mamadou Sarr,Mamadou Sarr,
-635,faf51dbf-9abf-4c45-8be3-01866db48561,2025/26,238,624773,Estêvão Almeida de Oliveira Gonçalves,Estêvão,
-636,07b70ca9-5991-4de8-91e1-48a13b9a2533,2025/26,239,463936,Jamie Bynoe-Gittens,Jamie Bynoe-Gittens,
-637,703cf6e8-6b6f-43e6-bb9e-10415ec3bc79,2025/26,247,491007,Dário Luís Essugo,Dário Essugo,
-638,b71957d8-d91d-462e-bbe3-a2404e270c3b,2025/26,248,611134,Kendry Páez Andrade,,
-639,aae806e0-9c1d-434e-a9db-1e5f5787b3f0,2025/26,672,551210,Jorrel Hato,Jorrel Hato,
-640,4521be15-24bd-4fbd-9440-5b6416d61b11,2025/26,743,611912,Landon Emenalo,,
-641,3bd16c1f-a031-44b4-a50c-b6ba1805f7ed,2025/26,789,518335,Max Merrick,,
-642,8cadc27c-78e8-42f7-998c-adecb9719d31,2025/26,803,499857,Teddy Sharman-Lowe,,
-643,2cc3182b-648a-462b-ae1c-b6e3029764fc,2025/26,829,619734,Jesse Derry,,
-644,29da4cc1-15b0-4153-b967-eca492bc9160,2025/26,833,671606,Mathis Eboué,,
-645,68142031-e47a-4b3f-aa62-8fc82cfabcb7,2025/26,834,616286,Ryan Kavuma-McQueen,,
-646,110b5e40-012d-40a1-a4f6-7a8dd3577e32,2025/26,254,121709,Walter Benítez,Walter Benítez,
-647,9d4c256f-4e58-48e8-85b9-3220349b124f,2025/26,259,218364,Borna Sosa,Borna Sosa,
-648,844f4bef-b076-4494-a416-6620adc76b35,2025/26,677,485337,Evann Guessand,Evann Guessand,
-649,563ea4ef-6a1c-4f5c-83cf-f5df6b946cc0,2025/26,690,590014,Rio Cardines,,
-650,d60ca0b4-6c07-4e7e-9dd6-1a8f5bb807cc,2025/26,712,488024,Yéremy Pino Santos,Yeremi Pino,
-651,e8542eaf-c756-4ee5-9398-365773676f59,2025/26,723,651426,Jaydee Canvot,Jaydee Canvot,
-652,0da7cad4-0eda-42bd-8235-fddd42a644ef,2025/26,732,660392,Christantus Uche,Christantus Uche,
-653,4696ed36-622a-46dd-ae4a-f44988d9f0ab,2025/26,762,672492,Joél Drakes-Thomas,Joél Drakes-Thomas,
-654,467d16d7-91c1-4e76-87ed-08fff566b19f,2025/26,773,643426,Dean Benamar,,
-655,6774c343-7a31-4046-9f75-d8368d985e16,2025/26,780,631106,Ben Casey,,
-656,4872d622-de0b-477e-82ce-ab2619781460,2025/26,793,591384,George King,,
-657,960e06c6-602d-4b33-b050-428df9c4fd05,2025/26,798,502988,Danny Imray,,
-658,950142b2-44d2-4f2b-a3fc-36ee6934d69f,2025/26,289,447325,Harry Tyrer,,
-659,81fc2872-eb98-4f18-afed-6013f0bc66a1,2025/26,298,474907,Reece Welch,,
-660,49b2de31-efe5-4781-8658-8ef59262a45d,2025/26,310,586309,Thierno Barry,Thierno Barry,
-661,a1d3fbc5-6afa-4331-a53c-01fd44bddd7c,2025/26,667,499300,Adam Aznou,,
-662,61fd040a-2a9b-4046-bf92-682d3b5ee405,2025/26,704,461446,Tyler Onyango,,
-663,fd6b0bfa-e94a-4356-8849-6e503548ef11,2025/26,705,491745,Elijah Campbell,,
-664,74591a67-54a5-4eaa-bec2-37a0b6ba973e,2025/26,728,513466,Merlin Röhl,Merlin Röhl,
-665,a60aea8e-bf25-4dd9-8d15-eef355251f1e,2025/26,779,629068,Braiden Graham,,
-666,299dfcf6-8fe4-418c-8c6f-3903d20c4779,2025/26,664,86873,Benjamin Lecomte,,
-667,01b1421f-9874-4630-a023-e175c6c710d1,2025/26,727,218328,Samuel Chukwueze,Samuel Chukwueze,
-668,2c5e3c83-a97a-486a-8107-dcfb3f27e0a5,2025/26,731,560552,Kevin Santos Lopes de Macedo,Kevin,
-669,44ba52ac-2afe-4eb4-83b0-492817ba10b1,2025/26,737,631786,Jonah Kusi-Asare,Jonah Kusi-Asare,
-670,0410c4b4-c5ae-4964-9c28-23c0514a101b,2025/26,770,619536,Seth Ridgeon,,
-671,7d302ab3-7eb6-479f-91dc-0cbe50fe9418,2025/26,786,505079,Alfie McNally,,
-672,f6bc9a94-bd54-4442-a82b-ff3618209116,2025/26,339,437495,Illan Meslier,,
-673,f811b131-bd7c-4398-b921-a5a5799561a2,2025/26,340,97846,Alex Cairns,,
-674,bfa7b9dc-bd5a-4874-8671-c0ed83dfeb0c,2025/26,341,59735,Karl Darlow,Karl Darlow,
-675,a2802682-bc33-4a6b-b2c1-724a93d6830e,2025/26,342,226182,Jayden Bogle,Jayden Bogle,
-676,2dd169d2-509a-4993-ba91-6349e20df845,2025/26,343,222694,Pascal Struijk,Pascal Struijk,
-677,a4512a38-c9e8-4276-8cae-77d2afe58aa6,2025/26,344,434752,Jaka Bijol,Jaka Bijol,
-678,0be24c77-a34a-4723-a43a-b959d525f313,2025/26,345,437738,Sebastiaan Bornauw,Sebastiaan Bornauw,
-679,2730357e-9a2a-4b63-ae77-345a50627fca,2025/26,346,113564,Sam Byram,Sam Byram,
-680,08cab054-adb9-4f26-9e36-9f18897f3b16,2025/26,347,243526,Gabriel Gudmundsson,Gabriel Gudmundsson,
-681,2145cb57-1e29-45d2-bcce-4cd84f6243b5,2025/26,348,214225,Joe Rodon,Joe Rodon,
-682,66763589-c3aa-486e-a6a4-ff7de250212e,2025/26,349,492368,Isaac Schmidt,,
-683,469b1e86-8e93-4bb9-8bd0-fd9ddcb1075f,2025/26,350,427637,Brenden Aaronson,Brenden Aaronson,
-684,61ca5bdd-7e14-447c-8e47-54b3349e7b09,2025/26,351,492859,Wilfried Gnonto,Wilfried Gnonto,
-685,8d8f7c6c-be45-45ff-8d3b-b9ae64e07b9e,2025/26,353,200617,Daniel James,Daniel James,
-686,7b5cc5b5-7aae-4a8d-9ed1-e567f802cc6a,2025/26,354,199598,Ethan Ampadu,Ethan Ampadu,
-687,d038aa1f-d61b-4957-ae14-813f44862f63,2025/26,355,248937,Sam Greenwood,,
-688,f61fc53a-22f9-4be7-9679-f9db4c5516d2,2025/26,356,486520,Ilia Gruev,Ilia Gruev,
-689,a78de008-6ea6-4db6-88fc-94b74016f042,2025/26,357,433952,Largie Ramazani,,
-690,f5980244-5e18-4a4d-99d0-95cf10b83b4d,2025/26,358,248056,Tanaka Ao,Ao Tanaka,
-691,20b2400f-41ec-4778-8975-36a3caa497ba,2025/26,359,536119,Charlie Crew,,
-692,534c4433-20e0-4a65-a210-f561bb424741,2025/26,360,462635,Joe Gelhardt,,
-693,4c156eaf-44c1-468d-9757-35331d66ebe7,2025/26,361,470294,Darko Gyabi,,
-694,44fe132a-5fa0-4510-9433-1457a994a5a8,2025/26,362,235826,Joël Piroe,Joël Piroe,
-695,3c3d363f-5a99-4862-818f-330ad7a70482,2025/26,363,106617,Patrick Bamford,,
-696,3f7d4955-3c72-41cb-a9d5-b304175a295f,2025/26,364,565297,Mateo Joseph Fernández-Regatillo,,
-697,f1b76ad1-eb2c-4609-8e11-c4c75a9c0b5d,2025/26,365,174594,Lukas Nmecha,Lukas Nmecha,
-698,af06eb0f-d679-4b50-b0e1-14cab602991d,2025/26,660,466525,Anton Stach,Anton Stach,
-699,342c7c81-08f2-4ead-a6e9-eeb112ad9d48,2025/26,665,201595,Lucas Estella Perri,Lucas Perri,
-700,388f57c9-3041-47f7-8b9a-e517164d0b7b,2025/26,698,435997,Noah Okafor,Noah Okafor,
-701,9fa07b42-5eab-47dd-adea-14e198ee9c94,2025/26,741,600882,Harry Gray,,
-702,db1fc670-1800-46cf-9e4b-52a48c7cd414,2025/26,787,565863,Sam Chambers,,
-703,339b006a-a61c-499f-844e-2c386bcb912e,2025/26,837,643970,Jayden Lienou,,
-704,5cc0d215-d5d4-45b3-af5b-bd01530e0311,2025/26,838,577978,Rhys Chadwick,,
-705,8c7bf2ec-b723-4cee-b203-717a8f6af630,2025/26,839,592740,Alfie Cresswell,,
-706,64b1a57c-753c-4b0e-9c5f-86bbaaa374a4,2025/26,367,449027,Giorgi Mamardashvili,Giorgi Mamardashvili,
-707,c50eefc4-0ce3-4575-83aa-7f746377fb98,2025/26,368,586268,Ármin Pécsi,,
-708,84d38cc9-bc39-4672-8b53-faf8a5100a96,2025/26,369,155503,Freddie Woodman,Freddie Woodman,
-709,85aac69a-bc63-40d0-8755-354a03fd69aa,2025/26,370,216094,Jeremie Frimpong,Jeremie Frimpong,
-710,4c6a6f18-c1ea-455d-954f-c922e26a2530,2025/26,380,489580,Calvin Ramsay,,
-711,327e3d79-232d-4484-b1f1-43aaa0942e81,2025/26,382,494595,Florian Wirtz,Florian Wirtz,
-712,84b69e98-390d-476c-9d22-4fff6ced5ad0,2025/26,661,510663,Hugo Ekitiké,Hugo Ekitike,
-713,26e44f55-b45e-40e6-9e19-ae50bd7ef048,2025/26,686,611922,Rio Ngumoha,Rio Ngumoha,
-714,391904fa-ad1d-4b28-9d9a-6dd11809b9e5,2025/26,692,647681,Giovanni Leoni,,
-715,b60acbd9-f275-486a-adcb-1605a7034843,2025/26,746,596042,Kieran Morrison,,
-716,4ec14890-71ba-4e28-af6c-00ce47c8410a,2025/26,760,519440,Wellity Lucky,,
-717,ab475111-a65b-495f-891c-d90a71aa0489,2025/26,830,677945,Will Wright,,
-718,abb828d9-75cb-46c0-a5cd-3d4917f6da5e,2025/26,832,718875,Talla Ndiaye,,
-719,72c2916b-461c-41b9-aad4-0cfbd4866cc5,2025/26,182,432720,James Trafford,James Trafford,
-720,a9964c35-21a3-4eff-a609-0b960532b723,2025/26,417,466052,Rayan Cherki,Mathis Cherki,
-721,48976bbe-e0a6-4695-b993-e2231c2bddfe,2025/26,427,433036,Tijjani Reijnders,Tijjani Reijnders,
-722,008f6059-3542-4558-8535-60c083e77012,2025/26,428,566164,Sverre Nypan,,
-723,da4d28b6-6b8e-41c9-b410-11fd8543dfb8,2025/26,736,204936,Gianluigi Donnarumma,Gianluigi Donnarumma,
-724,2acd128c-7464-4303-aba2-44a9f4c8cd47,2025/26,739,590039,Divine Mukasa,Divine Mukasa,
-725,948b65ef-e9d3-403a-87af-0473b44c428d,2025/26,740,566213,Stephen Mfuni,,
-726,b695d829-61fd-4513-8199-4ab553767fb5,2025/26,742,616288,Ryan McAidoo,,
-727,71e87d67-e5e2-42ae-bc39-bf79a1f6fb34,2025/26,763,516234,Charlie Gray,,
-728,54468bd1-fd06-4348-9c84-3166c4cf40a8,2025/26,764,580921,Reigan Heskey,,
-729,2d43fc58-918d-4162-ab81-ca56878f2e46,2025/26,435,461537,Dermot Mee,,
-730,3b9090fd-c44a-4113-b1be-4e97fb690015,2025/26,439,661712,Diego León Blanco,,
-731,85119164-5ae7-4f6f-80b1-092a42162193,2025/26,681,485711,Benjamin Sesko,Benjamin Sesko,
-732,bb7748e2-2ef7-4421-8859-c247f34a47c3,2025/26,733,465247,Senne Lammens,Senne Lammens,
-733,a455a99c-7d01-45c4-a87b-9a60e64d8d46,2025/26,755,576628,Shea Lacey,Shea Lacey,
-734,ff5ce571-a1e3-41d5-b275-b30305063708,2025/26,769,576620,Bendito Mantato,Bendito Mantato,
-735,bd8e0743-5b08-4f54-8d1e-c20451e3ded3,2025/26,771,519913,Tyler Fletcher,Tyler Fletcher,
-736,1fc7bcd4-95a7-4375-8fc6-717d8724ae57,2025/26,827,576634,Jim Thwaites,,
-737,ebb5d965-7b31-4fcd-b112-cec4474abe3e,2025/26,471,81441,Mark Gillespie,,
-738,1e94f3f7-b3a9-4a9b-908e-efdca4903a94,2025/26,482,441024,Harrison Ashby,,
-739,e48f8c8d-4ddd-47fe-8ded-e1c27e46b2c4,2025/26,492,640108,Antoñito Cordero Campillo,,
-740,c8edcf75-9425-4ebc-90b1-3bf2f679e115,2025/26,501,599303,Sean Neave,,
-741,ef6b540e-642d-4b54-95d8-a1c563ddd79e,2025/26,684,465642,Malick Thiaw,Malick Thiaw,
-742,dd466680-ba84-408d-89b0-c7e483d597b3,2025/26,689,623110,Seung-Soo Park,,
-743,c04f867b-36d2-434d-a473-384c086a4651,2025/26,714,470313,Nick Woltemade,Nick Woltemade,
-744,bdbd5de0-b151-4a6f-9e5e-a46bc128c8f0,2025/26,765,553746,Leo Shahar,,
-745,0724a32b-dee2-4dc8-aeef-99df3f5c293f,2025/26,772,666607,Sam Alabi,,
-746,c62d4152-8c36-4bc7-87f3-320f6f7092bf,2025/26,509,451432,David Mota Veiga Teixeira do Carmo,,
-747,7cbdcb07-d703-40df-98b5-5e101234a66e,2025/26,510,575458,Jair Paula da Cunha Filho,Jair,
-748,e8567870-86fe-4347-8ba0-117b5faaab95,2025/26,524,495161,Marko Stamenić,,
-749,f54fb77a-5b11-4bc9-826b-aaa232a30ff1,2025/26,526,482973,Igor Jesus Maciel da Cruz,Igor Jesus,
-750,45f173af-3825-4fe8-a590-5d88bd90b2c4,2025/26,669,456512,Dan Ndoye,Dan Ndoye,
-751,7aec56ec-d366-4387-8805-091972b29540,2025/26,675,107265,Angus Gunn,Angus Gunn,
-752,62bd7bd2-92b2-48fb-8a6a-117defecfe5e,2025/26,696,465680,Arnaud Kalimuendo,Arnaud Kalimuendo Muinga,
-753,4147179e-ef8a-4411-90ae-c1e6f013aab9,2025/26,715,221389,John Victor Maciel Furtado,John Victor,
-754,492147bd-d7b8-464e-9e3b-af7bb5a4a224,2025/26,716,500151,Nicolò Savona,Nicolò Savona,
-755,e2bc2802-2f16-4e94-8238-7d3f8ac255c0,2025/26,729,560441,Luis Eduardo Soares da Silva,,
-756,440cb15b-01cb-471a-a5d8-92ce0759188d,2025/26,734,476887,Dilane Bakwa,Dilane Bakwa,
-757,5475cca1-baf6-4309-a30c-584b716f39d2,2025/26,805,469130,Lorenzo Lucca,Lorenzo Lucca,
-758,99f870a9-636c-448f-b815-32781c98a884,2025/26,814,470315,Luca Netz,Luca Netz,
-759,128d3053-fc28-44af-b0d8-2a235f95a35e,2025/26,835,568159,Archie Whitehall,,
-760,1a6336d2-5c95-42e9-aef2-3500c474ac39,2025/26,836,590040,Jimmy Sinclair,,
-761,a4685873-562e-4e63-8bd6-d964a8342518,2025/26,841,687076,Lamin Sillah,,
-762,6c23d615-5f8e-4b9e-9c94-ce4a37ac31be,2025/26,528,232571,Anthony Patterson,,
-763,75420585-e994-4f50-ac88-3a0a6cd67521,2025/26,529,74854,Simon Moore,,
-764,2912cab1-b49c-427d-a2f3-46c96d4ca77e,2025/26,530,490000,Blondy Nna Noukeu,,
-765,4a0710a2-b07d-4519-9416-714f8642b646,2025/26,531,223827,Daniel Ballard,Dan Ballard,
-766,5d9ac816-8619-4d2f-b167-9f64ea8e0180,2025/26,532,487676,Trai Hume,Trai Hume,
-767,11c5fb5d-554f-46d4-a3f0-43103e82d6b4,2025/26,533,220684,Aji Alese,,
-768,2441d011-1e93-4a32-b7d0-1418f1a9594d,2025/26,534,232820,Joe Anderson,,
-769,4711c6c7-796d-4590-8718-5c0c137bf953,2025/26,535,461195,Dennis Cirkin,Dennis Cirkin,
-770,e3f07bf9-da8a-47b0-b7ea-10e99cb1c7ed,2025/26,536,477547,Leo Fuhr Hjelde,,
-771,f0ffe8c3-0d4c-4896-a6bf-6698f03b7745,2025/26,537,492066,Niall Huggins,,
-772,ba823f3c-13c6-4954-bf15-7d17a0c1dd9f,2025/26,538,514613,Zak Johnson,,
-773,bc328d2f-bd7c-4e75-9a00-4cc0beb398fe,2025/26,539,167512,Luke O'Nien,Luke O'Nien,
-774,2e17063c-4c61-48a4-9071-8656d80b8d86,2025/26,540,465702,Timothée Pembélé,,
-775,a5326f15-e26f-435d-8afa-4162227a9125,2025/26,541,434399,Reinildo Mandava,Reinildo,
-776,de2f7a1e-0cd0-4e31-a0ac-339781606f30,2025/26,542,519634,Jenson Seelt,Jenson Seelt,
-777,bbbc56f9-32e4-49c6-9feb-a3468e1c684f,2025/26,544,547027,Habib Diarra,Habib Diarra,
-778,ba096756-1a44-4b69-b556-cc908f90bc45,2025/26,545,124165,Patrick Roberts,Patrick Roberts,
-779,240bccd6-3440-49d9-b4b6-42c0155ae6f5,2025/26,546,626844,Milan Aleksić,,
-780,d4219aa9-a443-42da-a605-2fdf63d60e9d,2025/26,547,484420,Enzo Le Fée,Enzo Le Fée,
-781,b8cc856e-9652-4708-8371-9de05b04f0ee,2025/26,548,461199,Romaine Mundle,Romaine Mundle,
-782,068b1f72-1d9f-4053-8da4-1f5f9db3d9ca,2025/26,549,223336,Dan Neil,Dan Neil,
-783,a228ca2d-32c8-45e6-8063-6e6b888eb965,2025/26,550,215460,Ian Poveda-Ocampo,,
-784,664c3d00-a241-494d-9293-817fabf72bd2,2025/26,551,554197,Chris Rigg,Chris Rigg,
-785,e102e6cf-97e9-42b1-854a-56adc897ff0f,2025/26,552,577669,Noah Sadiki,Noah Sadiki,
-786,6200c731-d783-4738-821f-bf7faead0e61,2025/26,553,549912,Chemsdine Talbi,Chemsdine Talbi,
-787,eb844860-49db-4984-a05d-0b0e30d7371f,2025/26,554,477851,Abdoullah Ba,,
-788,e03467ef-1c66-4910-a2b5-4cfe0992c55e,2025/26,555,171422,Alan Browne,,
-789,553cf544-4aaa-445d-9c2d-5a34bbc631e9,2025/26,556,458297,Pierre Ekwah Elimby,,
-790,354368e9-44f7-498c-aa89-35d943e3709b,2025/26,557,547410,Harrison Jones,,
-791,0012a9df-b0af-4082-90a5-869320cc273a,2025/26,558,493837,Jay Matete,,
-792,0772d2e7-67aa-4543-8045-03d7408dd2ea,2025/26,559,500696,Nectarios Triantis,,
-793,e6c49be6-27e1-42ce-bc31-fdf83587c25c,2025/26,560,437505,Wilson Isidor,Wilson Isidor,
-794,05d1cd37-3413-413e-a5fd-39e6399b4b6d,2025/26,561,564406,Eliezer Mayenda Dossou,Eliezer Mayenda,
-795,5ba36b87-0826-4e5e-a854-754167085581,2025/26,562,611975,Ahmed Abdullahi,,
-796,c9182152-dade-4124-a3b4-35ca86288c6c,2025/26,563,551153,Luís Hemir Silva Semedo,,
-797,3705b102-1562-4193-bcc4-8311d85fae1a,2025/26,564,440955,Nazarii Rusyn,,
-798,b37ab2f2-36b1-4b02-bfe1-5cf9b94756b1,2025/26,668,84450,Granit Xhaka,Granit Xhaka,
-799,53719956-8c27-4a5d-8dc9-c13ba9c77e3a,2025/26,670,498016,Robin Roefs,Robin Roefs,
-800,e560e6c4-b226-4e09-9305-e0f0f89ec7c8,2025/26,678,105717,Arthur Masuaku,Arthur Masuaku,
-801,640f552c-5304-4212-a861-92b6428b71ad,2025/26,683,201895,Omar Alderete,Omar Alderete,
-802,32c9ecd1-ba4e-448e-91d8-2e503e65b2e8,2025/26,694,200834,Nordi Mukiele,Nordi Mukiele,
-803,320c3b76-7ee1-42cc-a9c7-a54804af8ddd,2025/26,724,247955,Lutsharel Geertruida,Lutsharel Geertruida,
-804,d2aa0676-ff0a-49eb-92f9-d4bae6c7c62e,2025/26,730,441264,Brian Brobbey,Brian Brobbey,
-805,a49eec77-b57e-4882-a728-48590b2139d2,2025/26,735,110504,Bertrand Traoré,Bertrand Traoré,
-806,33bbd9f6-6965-4b86-b586-b594340bd213,2025/26,774,232356,Jenson Jones,,
-807,9352800b-9bac-479e-833e-9356775ab624,2025/26,775,604211,Tymur Tutierov,,
-808,7c358e50-fa29-4835-ac10-5d6ee8468bc0,2025/26,800,699989,Djiamgone Jocelin Ta Bi,Djiamgone Jocelin Ta Bi,
-809,2203a9c7-e0af-4fae-9246-040b64f08202,2025/26,812,515046,Melker Ellborg,Melker Ellborg,
-810,f40d8384-4acc-4821-bd89-10a1474e0227,2025/26,813,536661,Nilson Angulo,Nilson Angulo,
-811,33d26514-c254-46a5-a204-3edc654ad7a1,2025/26,821,570929,Jack Whittaker,,
-812,2b1150fd-f2a5-480f-90d2-7de6a0ed51d2,2025/26,822,571087,Jaydon Jones,,
-813,895f52bd-21ff-4984-b8ff-1da590f0f6d6,2025/26,577,553299,Takai Kōta,,
-814,918248bd-6402-486f-a13a-0f4250427ee7,2025/26,578,610799,Luka Vušković,,
-815,5f86cb6b-ae70-4315-8d4b-ba0bf1882b9f,2025/26,673,154296,João Maria Lobo Alves Palhares Costa Palhinha Gonçalves,João Palhinha,
-816,608f0e7e-848a-4d91-a61f-c97d4916834c,2025/26,717,493362,Xavi Simons,Xavi Simons,
-817,077808be-c653-4c78-ae95-999d586127c5,2025/26,726,247693,Randal Kolo Muani,Randal Kolo Muani,
-818,34bb5bca-8ae3-4ddb-8361-41da8c3dc2c3,2025/26,745,640419,Jun'ai Byfield,Jun'ai Byfield,
-819,b5a7034d-e9e5-4cd8-839a-22efab30c311,2025/26,750,499716,James Rowswell,James Rowswell,
-820,27ef929f-dc05-43ae-b7a3-b1e79f21b545,2025/26,751,590035,Yusuf Akhamrich,,
-821,538499c9-8845-4af1-9ba4-20c8f37dff9a,2025/26,804,616221,João Victor de Souza Menezes,Souza,
-822,7327cc8d-a821-456b-946c-dd5374f643eb,2025/26,811,536134,Rio Kyerematen,,
-823,d1f67d0d-11a3-4d82-a60b-90f0479f0e50,2025/26,818,613232,James Wilson,,
-824,b5cd5a56-41f7-4134-853f-62dff3140ddd,2025/26,602,483364,Krisztián Hegyi,,
-825,47d990fb-4762-441d-9981-5afd8ed15938,2025/26,603,613804,El Hadji Malick Diouf,El Hadji Malick Diouf,
-826,97976de7-0e71-4bfd-a2d9-87c80343f187,2025/26,623,490142,Freddie Potts,Freddie Potts,
-827,1474abcc-b607-4ad4-a5ac-61315e2e36d6,2025/26,626,565431,Callum Marshall,Callum Marshall,
-828,8daad36b-7102-4288-85f6-67531e40d176,2025/26,718,564940,Soungoutou Magassa,Soungoutou Magassa,
-829,76655ede-839c-47b5-a12a-de89ce660f33,2025/26,752,643473,Airidas Golambeckis,,
-830,9c938ca6-ca55-4cd8-a941-e48dfd05cc84,2025/26,758,630699,Mohamadou Kanté,Mohamadou Kanté,
-831,f6b5bcd7-a984-492a-a100-a71b5fbc1622,2025/26,785,530335,Pablo Felipe Pereira de Jesus,Pablo,
-832,88fc83b5-bf09-4936-8834-f9d9d476350d,2025/26,791,247670,Valentín Castellanos,Valentín Castellanos,
-833,6847702c-365b-4701-b202-70d7b140e906,2025/26,802,572702,Keiber Lamadrid,,
-834,e656fc13-f025-4478-9384-9b26fcf40b8c,2025/26,825,553742,Finlay Herrick,,
-835,38938b13-e94e-4d1b-9a66-57cc4a59849f,2025/26,645,643135,Fer López González,Fernando López,
-836,a5410f19-37f7-4f7c-8fea-3801901f8d58,2025/26,663,230376,Jhon Arias,Jhon Arias,
-837,93faf8ab-dc87-4b45-9d60-dd1aa1dc1a6a,2025/26,682,497949,David Møller Wolfe,David Møller Wolfe,
-838,640ab1dd-d21b-4a35-94ff-a15d8778a6df,2025/26,695,523705,Jackson Tchatchoua,Jackson Tchatchoua,
-839,d938f509-22b2-42c4-8a7b-38c0a2557740,2025/26,709,431248,Ladislav Krejcí,Ladislav Krejcí,
-840,3cefae93-5bb1-490c-b1a5-8033f33fb092,2025/26,720,488213,Tolu Arokodare,Tolu Arokodare,
-841,d84b9e5b-c325-4493-a7f0-508cdb7eff97,2025/26,766,601956,Saheed Olagunju,,
-842,c8f02a4a-57c7-40dc-bcfc-211079c6a04c,2025/26,767,605319,Luke Rawlings,,
-843,af80dc86-4ab4-4d2d-942c-fad5285fc083,2025/26,777,514362,Temple Ojinnaka,,
-844,fc0a2c59-4da8-4694-b676-b23c1709857e,2025/26,778,589121,Ethan Sutherland,,
-845,05aaece7-7936-476f-b24f-d773e9f536c7,2025/26,809,685628,Jerome Abbey,,
-846,c62e7cd9-965a-4a3a-9647-229ae006068b,2025/26,816,209041,Angel Gomes,Angel Gomes,
-847,a73e128b-3fe2-4723-8273-3871b0f388af,2025/26,828,491460,Alfie Brooks,,
-848,24830da7-016e-4f23-a67d-75d1737e8938,2025/26,831,627888,Josh Gracey,,
-849,0c265a4a-81e6-46d2-b15f-1160dc3515ea,2025/26,39,578545,Kosta Nedeljkovic,Kosta Nedeljkovic,
-850,4e9c70cd-90c8-4a6b-b724-f5ea42ed012d,2025/26,177,465390,Kaine Kesler-Hayden,,
-851,7183ccec-0ea9-4ec1-bc31-32c5a55bd384,2025/26,180,220583,Luke Woolfenden,Luke Woolfenden,
-852,aada56f0-7a6a-4c3f-8297-9c6560186191,2025/26,300,108813,Christian Walton,Christian Walton,
-853,605c313b-b25e-41b9-8578-b9e11a545472,2025/26,301,112520,Alex Palmer,Alex Palmer,
-854,1ea6d7fc-080b-4ca4-af8d-d56469226c16,2025/26,304,216616,Dara O'Shea,Dara O'Shea,
-855,88563d26-fdb6-4255-8558-cd35401b1e47,2025/26,305,455084,Leif Davis,Leif Davis,
-856,43614d52-643f-4896-bb81-935141b2adf1,2025/26,306,449429,Jacob Greaves,Jacob Greaves,
-857,c5cedf3c-3401-4c4a-b95a-74dcf8a51156,2025/26,307,222018,Ben Johnson,Ben Johnson,
-858,958160b8-1c1b-42f6-9926-09bd848b0439,2025/26,311,149929,Wes Burns,Wes Burns,
-859,d92e7a7e-c294-4520-91d5-da6f8f36fd0a,2025/26,312,231899,Jack Taylor,Jack Taylor,
-860,d6bb65df-f588-4aea-97a2-bcd2c3df9fed,2025/26,313,443261,Jack Clarke,Jack Clarke,
-861,7eb721cb-3e6b-4f7a-8619-396390087e74,2025/26,314,229164,Chiedozie Ogbene,Chiedozie Ogbene,
-862,79a8c4cb-57b4-4560-87e0-fb36aa54d359,2025/26,315,531442,Abdul Fatawu,Abdul Fatawu,
-863,fa56513c-1a2f-44df-9b8a-f3d0d91190db,2025/26,317,222625,George Hirst,George Hirst,
-864,4817d2cb-729d-4ed5-80b3-8ba056309bf8,2025/26,318,481624,Jaden Philogene,Jaden Philogene-Bidace,
-865,bfa1586d-9b41-4dc1-adf4-2435f827fd65,2025/26,319,172453,Sam Szmodics,Sammie Szmodics,
-866,9e499139-1482-4023-9786-1a39a293dddb,2025/26,322,462387,Ali Al-Hamadi,Ali Al-Hamadi,
-867,e9cd5ef7-9417-43f8-885e-7fbb625e5f1a,2025/26,323,461587,Kasey McAteer,Kasey McAteer,
-868,2113ea99-01a3-4d0f-ab90-8cf8d7a22b52,2025/26,354,432987,Vitezslav Jaros,Vítezslav Jaros,
-869,c3489e6f-c72b-463e-9e6b-19e3668f8c70,2025/26,355,464353,Harvey Davies,,
-870,c647944c-f0e3-49ce-82ed-353de29fbf59,2025/26,410,649208,Jeremy Monga,Jeremy Monga,
+8,8c8cc68d-e4da-41c6-8716-a17bb3f8529e,2025/26,1,154561,David Raya Martín,David Raya,1
+9,dc4a57f5-c41d-4b7c-9911-f8c0143162c6,2025/26,2,109745,Kepa Arrizabalaga Revuelta,Kepa,1
+10,58eb5b8f-a3de-4a62-9bd0-8e583a6baa0d,2025/26,3,463748,Karl Hein,,1
+11,f7ea0dfa-3d4d-4280-9635-f443f045977c,2025/26,4,551221,Tommy Setford,,1
+12,8fc63c4c-fe1d-4ba7-b070-dc23c576cc89,2025/26,5,226597,Gabriel dos Santos Magalhães,Gabriel,2
+13,f9bba49a-202f-4676-8403-89b69aba431e,2025/26,6,462424,William Saliba,William Saliba,2
+14,39cfc7e8-d097-4574-8da1-b39c898aaecc,2025/26,7,466075,Riccardo Calafiori,Riccardo Calafiori,2
+15,00b52884-4ac1-4ef9-aa10-735b1f7d561a,2025/26,8,445122,Jurriën Timber,Jurriën Timber,2
+16,05a5a6ff-f492-4eb5-9719-6dcdf5e6916d,2025/26,9,440854,Jakub Kiwior,Jakub Kiwior,2
+17,af860212-099b-4083-9c6b-0b667e106d07,2025/26,10,499169,Myles Lewis-Skelly,Myles Lewis-Skelly,2
+18,8702ee2f-195f-4cb2-b2af-95159eaa74d8,2025/26,11,198869,Benjamin White,Ben White,2
+19,9e76b7ed-f9f6-489f-9c20-123fbe45111e,2025/26,14,588793,Maldini Kacurri,,2
+20,0bdc54f5-493f-421e-8dd2-27a46576fb72,2025/26,15,499167,Josh Nichols,,2
+21,eaf2f6bc-da6a-44df-96c7-714275cd1719,2025/26,16,223340,Bukayo Saka,Bukayo Saka,3
+22,b5e6c9ad-10c2-4bff-9f45-746f6a7b3465,2025/26,17,184029,Martin Ødegaard,Martin Odegaard,3
+23,2a008f35-80d2-45a1-b2c1-2431dec0d8cc,2025/26,18,248857,Noni Madueke,Noni Madueke,3
+24,060747da-f457-488e-b411-04b14d664ddb,2025/26,19,444145,Gabriel Martinelli Silva,Gabriel Martinelli,3
+25,c20d9923-e246-4057-a326-8691402cb3bd,2025/26,20,116216,Leandro Trossard,Leandro Trossard,3
+26,2d3c3a1d-0246-49a8-b713-fb234c752389,2025/26,21,204480,Declan Rice,Declan Rice,3
+27,730a90b3-4b79-474a-98d4-449bcf655b48,2025/26,22,195384,Mikel Merino Zazón,Mikel Merino,3
+28,c2d6123b-73fb-4d00-8e17-10e665a4d3a3,2025/26,23,438098,Fábio Ferreira Vieira,Fábio Vieira,3
+29,0d1a6874-c8a6-4c75-9e26-6cc146615f85,2025/26,24,128295,Christian Nørgaard,Christian Nørgaard,3
+30,8e9b9927-a7a9-4302-8cd0-774e1e696c78,2025/26,25,499175,Ethan Nwaneri,Ethan Nwaneri,3
+31,eb3d8a2a-7b37-4016-9290-68b9cccc21ec,2025/26,28,588796,Ismeal Kabia,,3
+32,9e78f47f-6da8-4013-b7a8-87b63b1e07b6,2025/26,30,219847,Kai Havertz,Kai Havertz,4
+33,90385cd1-1b4d-4eb7-8f0e-4ec42ec27b40,2025/26,31,205651,Gabriel Fernando de Jesus,Gabriel Jesus,4
+34,8f5b6126-8cee-4eda-9580-a85fb023a7b4,2025/26,266,232413,Eberechi Eze,Eberechi Eze,3
+35,84546ac0-47e1-4932-b173-8e0f393efc0d,2025/26,32,98980,Emiliano Martínez Romero,Emiliano Martinez,1
+36,b1b44db6-1843-4c58-b181-d8c77e598350,2025/26,34,462492,Joe Gauci,,1
+37,f1bcd20b-b791-474b-90b7-c5552694b80c,2025/26,35,462381,Filip Marschall,,1
+38,b2c4a6df-6c1d-49ff-b4e7-1c6c0212be83,2025/26,36,199796,Matty Cash,Matthew Cash,2
+39,fd6c27e7-f130-4343-aa06-b74e8ef628fd,2025/26,37,101188,Lucas Digne,Lucas Digne,2
+40,cab4e50f-8585-44b5-b295-fad3bc50c15b,2025/26,38,199798,Ezri Konsa Ngoyo,Ezri Konsa Ngoyo,2
+41,9f5c0372-965f-4c09-a409-48c6e1ba28fa,2025/26,39,441302,Ian Maatsen,Ian Maatsen,2
+42,9c3e5a68-1061-402c-ad21-25b8c26178ff,2025/26,40,149484,Tyrone Mings,Tyrone Mings,2
+43,b6a2b8f2-e4f0-45bd-b728-1f7e74cdaf74,2025/26,41,244954,Pau Torres,Pau Torres,2
+44,ca8f56a5-50a6-40ee-9d34-b0913f594204,2025/26,42,606798,Andrés García,Andrés García,2
+45,b4488bc0-e064-48b7-b498-c58aa2b1836f,2025/26,43,106468,Álex Moreno Lopera,Álex Moreno,2
+46,fb90f28e-7da5-4951-9e8a-b8a35718154c,2025/26,44,515597,Lamare Bogarde,Lamare Bogarde,2
+47,151b7466-31e5-4463-bf01-23ce093bf31c,2025/26,45,514315,Lino da Cruz Sousa,,2
+48,dd678e0b-c375-428e-96fa-615f1dc5f283,2025/26,47,244850,Morgan Rogers,Morgan Rogers,3
+49,3114f8f0-79c0-4955-ae6a-3dc31bfd90e1,2025/26,48,166989,Youri Tielemans,Youri Tielemans,3
+50,7ec8c0ea-b6ee-431a-a977-bbde342865b4,2025/26,49,215711,Leon Bailey,Leon Bailey,3
+51,809750fd-2ea8-4b4a-bce5-2e692aa3c335,2025/26,50,195546,Emiliano Buendía Stati,Emiliano Buendía,3
+52,68fbd8c6-06c2-4041-8cc4-a9f44972e367,2025/26,51,469247,Samuel Iling-Junior,,3
+53,f14ce898-c5ce-40a4-a22c-6ef0340b5f36,2025/26,53,204646,Donyell Malen,Donyell Malen,3
+54,b36cebaf-b61e-47db-baba-dee6e39cfa5b,2025/26,54,122806,John McGinn,John McGinn,3
+55,1ae7f23c-458b-4bbf-8b00-9eb6a8d3a2b2,2025/26,55,88894,Ross Barkley,Ross Barkley,3
+56,4db6e7c9-53f0-477b-8730-d48f073fd549,2025/26,56,491287,Enzo Barrenechea,,3
+57,cd5c57a2-8d24-4b10-9104-d67f8b87f85a,2025/26,57,461421,Lewis Dobbin,Lewis Dobbin,3
+58,c0e3d0b0-8ab9-4301-85e4-ee12d5aa5e8b,2025/26,58,226944,Boubacar Kamara,Boubacar Kamara,3
+59,ddbb6b67-0242-47e5-9af0-072b452429d2,2025/26,59,449871,Amadou Onana,Amadou Onana,3
+60,ce62388b-1e0c-4716-9ef9-f66df6b5afd5,2025/26,60,577731,Ben Broggio,,3
+61,081e023d-f043-4914-9923-7547e9f4e353,2025/26,61,151589,Leander Dendoncker,,3
+62,0674829c-1695-4256-9435-7f330b4a594c,2025/26,62,559962,Jamaldeen Jimoh-Aloba,Jamaldeen Jimoh,3
+63,0be5f79c-8f7a-4516-9509-8e16c25fb451,2025/26,63,537403,Kadan Young,,3
+64,0552be44-9d74-4958-b8ba-3b4d84ed57b9,2025/26,64,178301,Ollie Watkins,Ollie Watkins,4
+65,fef21c3b-20a9-4632-a6e3-8db0948f2205,2025/26,389,444884,Harvey Elliott,Harvey Elliott,3
+66,830feb86-402a-4daf-affa-3f675202527d,2025/26,456,209243,Jadon Sancho,Jadon Sancho,3
+67,44dc201e-dc85-4982-a627-e938ddc48bc0,2025/26,719,184667,Victor Lindelöf,Victor Lindelöf,2
+68,657110e7-2562-4b51-83bf-69551e37f8c1,2025/26,187,58621,Kyle Walker,Kyle Walker,2
+69,9d100761-36fa-4c80-91ee-fa247d9a415b,2025/26,198,180804,Axel Tuanzebe,Axel Tuanzebe,2
+70,134b692c-b3a5-477d-ae7b-610a63bac91c,2025/26,199,208912,Joe Worrall,Joe Worrall,2
+71,a8573c60-489b-47da-b482-21fcbb55d536,2025/26,200,444180,Jaidon Anthony,Jaidon Anthony,3
+72,c2376744-d688-4b78-8331-b916fe78d2d4,2025/26,207,465527,Hannibal Mejbri,Hannibal Mejbri,3
+73,c291d224-8f96-4a24-b524-cd665cdab83a,2025/26,470,67089,Martin Dúbravka,Martin Dubravka,1
+74,0a8ab14f-a374-4492-9acc-0a1cf2fbb119,2025/26,614,101178,James Ward-Prowse,James Ward-Prowse,3
+75,ad03317e-4fb2-4aba-b887-32348bcfcb2f,2025/26,676,503714,Lesley Ugochukwu,Chimuanya Ugochukwu,3
+76,cbf71d01-10fb-4ac6-9c80-58557bb4347e,2025/26,680,440323,Armando Broja,Armando Broja,4
+77,241bad0e-8d84-406c-88c3-040c8b9a8de7,2025/26,66,69752,Norberto Murara Neto,Neto,1
+78,908014a9-09ff-487d-947e-94b822111b08,2025/26,67,457569,Đorđe Petrović,Djordje Petrovic,1
+79,0aa06c2f-e3d9-4068-9137-b1c6aedaf268,2025/26,68,444172,Will Dennis,,1
+80,63c6ba11-a89d-43b5-aeea-b5cf6d9275f6,2025/26,69,568791,Callan McKenna,,1
+81,cd001a15-198a-444e-83bc-06bced7ba49e,2025/26,70,495145,Alex Paulsen,,1
+82,19446b56-6f52-401f-8bdc-6e5cd56bd471,2025/26,71,477580,Illia Zabarnyi,Illia Zabarnyi,2
+83,f98faf93-e1aa-4c24-b12c-1140704e92eb,2025/26,72,221466,Marcos Senesi Barón,Marcos Senesi,2
+84,8c59aeca-3be0-48e3-87f3-abc04294867e,2025/26,73,54469,Adam Smith,Adam Smith,2
+85,6633980b-dbfe-40f9-93c6-6f1d87eb16b8,2025/26,75,541462,Matai Akinmboni,,2
+86,da7e8c4f-45b6-4982-a72a-27c5837d3b5d,2025/26,77,463981,James Hill,James Hill,2
+87,fa82c104-4bb4-44ea-99ba-197e7b9b54e2,2025/26,78,436893,Julián Araujo Zúñiga,Julián Araujo,2
+88,6fde9f20-8252-414f-a30d-8fc120612036,2025/26,79,223911,Chris Mepham,Chris Mepham,2
+89,9a2e293d-d951-470a-9828-b0958d351f6a,2025/26,80,575901,Julio Soler Barreto,Julio Soler,2
+90,35fc7a46-7e2f-453b-8b2e-b7f3e35f6949,2025/26,81,222683,Justin Kluivert,Justin Kluivert,3
+91,0b0f5b5e-be7b-478d-aa23-5f619d16e5cb,2025/26,84,201658,Marcus Tavernier,Marcus Tavernier,3
+92,d773f228-5102-4554-a7e4-aadc6a213084,2025/26,85,200785,Tyler Adams,Tyler Adams,3
+93,cb658622-94a6-4c72-8fc3-ee760080b729,2025/26,86,111317,David Brooks,David Brooks,3
+94,a8dc9e82-f136-46ca-add6-dd8d3f7181e1,2025/26,87,158499,Ryan Christie,Ryan Christie,3
+95,6ccd22a5-35fa-45f0-8bb0-1fe3f642daf9,2025/26,88,155408,Lewis Cook,Lewis Cook,3
+96,32a1a749-cbe9-42ad-9092-e85ebfa2d361,2025/26,89,168991,Philip Billing,Philip Billing,3
+97,fa7f3fbe-f1a1-4944-a63f-c28478e8c6e7,2025/26,90,503139,Alex Scott,Alex Scott,3
+98,ae95b84b-d709-4d69-8fce-3ad10be29f4e,2025/26,91,224995,Luis Sinisterra Lucumí,Luis Sinisterra,3
+99,d6c64626-bc1c-4652-b242-1ae90f58bc0a,2025/26,92,441240,Romain Faivre,,3
+100,7ef17fb1-41aa-4135-840c-78dab8eb0374,2025/26,93,424044,Hamed Traorè,Hamed Junior Traore,3
+101,4847b21e-dbd9-4565-90d5-ae0c6f3b0e88,2025/26,94,550596,Dominic Sadi,,3
+102,a93384c0-7470-4437-9549-7000c61f9b36,2025/26,95,530121,Zain Silcott-Duberry,Zain Silcott-Duberry,3
+103,bd24fd1b-4cc3-4e5b-94df-1325598ea4eb,2025/26,96,606775,Ben Winterburn,Ben Winterburn,3
+104,e7d3fa84-b7d0-432f-a17b-62dcd50dac2f,2025/26,97,444102,Francisco Evanilson de Lima Barbosa,Evanilson,4
+105,8bf82ce7-d406-4c79-8560-1832322ecfec,2025/26,98,168636,Enes Ünal,Enes Ünal,4
+106,770bee50-6c71-497a-a0f4-ccfa519c3ab2,2025/26,99,590760,Daniel Adu-Adjei,,4
+107,5c12b7ca-9d61-46d9-93a7-0aa3abd6eea2,2025/26,391,496208,Ben Gannon-Doak,Ben Doak,3
+108,6ac8f5b9-859e-4414-8eb7-ed93d2c022d2,2025/26,687,606774,Remy Rees-Dottin,Remy Rees-Dottin,3
+109,ff210445-02b1-4677-9041-2f4d71ca9d5b,2025/26,782,40383,Fraser Forster,Fraser Forster,1
+110,733bd107-f236-4471-9655-f01379c1bcc5,2025/26,27,200641,Reiss Nelson,Reiss Nelson,3
+111,87c3b645-1b39-4ff6-8e5c-ee06dd89f269,2025/26,83,533463,Dango Ouattara,Dango Ouattara,3
+112,f82e53d7-605b-4a3d-8ce6-b28823b60aa1,2025/26,101,200720,Caoimhín Kelleher,Caoimhin Kelleher,1
+113,fae871db-f1d1-46cb-9a37-a68b23418fa7,2025/26,104,535017,Julian Eyestone,,1
+114,f2114ba7-f7b6-4935-8cce-503ef22d76a7,2025/26,105,507433,Hákon Rafn Valdimarsson,Hákon Valdimarsson,1
+115,125ec0fc-cbeb-467a-8e71-8f0ada688670,2025/26,106,432830,Nathan Collins,Nathan Collins,2
+116,9aec606f-bff2-484a-9d8f-7f4c0fe7dfaa,2025/26,107,249231,Keane Lewis-Potter,Keane Lewis-Potter,2
+117,b390871c-5ff9-47b4-9fbc-8069f15ccc95,2025/26,108,191866,Kristoffer Ajer,Kristoffer Ajer,2
+118,46b035ea-3bfc-4c19-8e64-071f99e5ea70,2025/26,109,194010,Rico Henry,Rico Henry,2
+119,9604dbe5-ce94-417d-b75f-8c05bc946008,2025/26,110,607464,Michael Kayode,Michael Kayode,2
+120,44241170-8423-49f8-85bb-deb69ddfa48f,2025/26,111,231065,Ethan Pinnock,Ethan Pinnock,2
+121,dac09667-7631-4ead-95e7-53d1a814d4f1,2025/26,112,226956,Mads Roerslev Rasmussen,Mads Roerslev,2
+122,c6e7ac73-23b7-4259-8695-c7198c3c43cc,2025/26,113,444765,Sepp van den Berg,Sepp van den Berg,2
+123,0e3096fb-1a1e-4f9d-bc05-66005ec9d22b,2025/26,114,622536,Benjamin Arthur,,2
+124,7ba0ee40-1601-49e4-8f1b-b9ae33eb4456,2025/26,116,472713,Aaron Hickey,Aaron Hickey,2
+125,f614f8c3-7444-4fea-b27a-84434634c3c8,2025/26,117,570241,Kim Ji-soo,Kim Ji-Soo,2
+126,253cb250-29d3-4112-a2f7-3877d5e01783,2025/26,118,499717,Jayden Meghoma,Jayden Meghoma,2
+127,8b635a0b-1d12-4fa1-ac09-216f20e4947c,2025/26,120,513418,Kevin Schade,Kevin Schade,3
+128,112a0eb3-0a5b-496b-b396-801917ec861a,2025/26,121,440089,Mikkel Damsgaard,Mikkel Damsgaard,3
+129,159a70a6-77c4-49e0-974f-019d3e6ab615,2025/26,123,244858,Fábio Freitas Gouveia Carvalho,Fabio Carvalho,3
+130,8d8b3693-4c1c-41ff-a2ca-5adf8ab86188,2025/26,125,204580,Vitaly Janelt,Vitaly Janelt,3
+131,0a08f076-b5ad-40a4-ac56-0dd943858329,2025/26,126,207283,Mathias Jensen,Mathias Jensen,3
+132,59be428e-1815-4299-87d2-45631e20edfd,2025/26,127,626464,Gustavo Nunes Fernandes Gomes,Gustavo Nunes,3
+133,7045407f-356d-48d2-8736-5b310f8e703d,2025/26,128,428580,Frank Onyeka,Frank Onyeka,3
+134,a7c6ea10-4548-4496-be01-8385d6b36d66,2025/26,129,508395,Yehor Yarmoliuk,Yehor Yarmolyuk,3
+135,12d85374-64db-40ed-b677-c23eae6ec21c,2025/26,131,628204,Yunus Emre Konak,Yunus Konak,3
+136,2b165e18-79e4-486a-8b52-f84663014f56,2025/26,132,220695,Paris Maghoma,Paris Maghoma,3
+137,ab9f50aa-1162-48f7-9b5f-0a4c171aa52b,2025/26,133,450539,Myles Peart-Harris,Myles Peart-Harris,3
+138,9506b6f4-6706-4010-abbd-cda04f86a649,2025/26,134,591357,Ryan Trevitt,Ryan Trevitt,3
+139,849e9e22-c994-4e94-b9d8-18e9ac8d9fe6,2025/26,136,502500,Igor Thiago Nascimento Rodrigues,Thiago,4
+140,c97405ef-b463-4908-bb8b-f2186b90ba21,2025/26,137,533710,Iwan Morgan,,4
+141,a7f69c5f-2404-4f5c-af99-f4ab747da321,2025/26,748,183656,Josh Dasilva,Josh Dasilva,3
+142,b7d5d127-bdfb-497e-9767-9dee5b80a9eb,2025/26,138,49262,Jason Steele,Jason Steele,1
+143,ca2fad3c-7b24-4564-b856-18eaa1454bb8,2025/26,139,489639,Bart Verbruggen,Bart Verbruggen,1
+144,619f6e84-31c3-4f9c-a03b-42ad670feee1,2025/26,141,472739,Carl Rushworth,,1
+145,bba082dc-e723-455d-ac6d-0d5b4006d6a5,2025/26,146,83299,Lewis Dunk,Lewis Dunk,2
+146,b017da9f-56f3-43d0-81ba-ba7a3806e0b6,2025/26,147,204214,Pervis Estupiñán Tenorio,Estupiñán,2
+147,5595fcf5-6ff7-43b4-808d-b35fd4ef7ffd,2025/26,148,231416,Ferdi Kadıoğlu,Ferdi Kadioglu,2
+148,6464d7dc-b00f-4f30-95ef-28e68277b29a,2025/26,149,223434,Igor Julio dos Santos de Paulo,Igor Julio,2
+149,d3ee6450-9e56-4af5-8fd2-7f580e9d4d43,2025/26,150,232792,Tariq Lamptey,Tariq Lamptey,2
+150,954cea21-640d-4ae9-80ba-685f406277dc,2025/26,151,469142,Jan Paul van Hecke,Jan Paul van Hecke,2
+151,d38b9de7-2bbe-426b-95e8-712c23991199,2025/26,152,111478,Joël Veltman,Joël Veltman,2
+152,8d8a8e65-90ee-4e5e-9e67-279929f6005d,2025/26,153,110735,Adam Webster,Adam Webster,2
+153,bc02f96a-825e-4289-a282-913dfd9ec102,2025/26,154,439135,Eiran Cashin,Eiran Cashin,2
+154,7849794b-38c4-4a91-a8ac-2e75a038bbc4,2025/26,155,589100,Jacob Slater,,2
+155,978b7e27-fc49-4e82-b51b-26bc9a204756,2025/26,157,451340,Mitoma Kaoru,Kaoru Mitoma,3
+156,9f3cd734-cb60-4861-bcef-5f31aa336b54,2025/26,158,463067,Georginio Rutter,Georginio Rutter,3
+157,caaa5e05-744a-4b07-84ec-85c9f12315a7,2025/26,159,109345,Solly March,Solly March,3
+158,e7d847a5-66c9-4796-bcb7-b4211b33bb04,2025/26,160,592031,Yankuba Minteh,Yankuba Minteh,3
+159,dbbbab45-12ce-4799-94fb-9049cf691b9a,2025/26,161,474120,Julio Enciso Espínola,Julio Enciso,3
+160,b22ccb52-c93b-4386-b625-108d1b8c31ef,2025/26,162,513433,Brajan Gruda,Brajan Gruda,3
+161,205e17ad-76e5-4a8a-ba2d-17e068f39ce2,2025/26,163,532529,Jack Hinshelwood,Jack Hinshelwood,3
+162,b9c2bdf4-908a-4a05-bae4-865a4626ce38,2025/26,164,219249,Matt O'Riley,Matt O'Riley,3
+163,39b7e45e-ca67-43b4-bdae-fa110e16bc1a,2025/26,166,509416,Yasin Ayari,Yasin Ayari,3
+164,ec207835-87ee-4056-8795-9b04f054dd05,2025/26,167,535301,Carlos Baleba,Carlos Baleba,3
+165,e8498d0b-a80e-4f2c-a7d5-4744ba79699e,2025/26,169,514254,Diego Gómez Amarilla,Diego Gómez,3
+166,77cea9fb-b868-43b2-9beb-87e8d91dd610,2025/26,170,15157,James Milner,James Milner,3
+167,8318a5ef-20aa-4111-a203-80bf0226adf0,2025/26,171,441192,Jeremy Sarmiento Morante,Jeremy Sarmiento,3
+168,0e7b8ecc-a699-45cb-8993-d5e32832794b,2025/26,173,467779,Mats Wieffer,Mats Wieffer,3
+169,0ef396fa-0d67-4b34-aab7-dad74779bd84,2025/26,175,567121,Joe Knight,Joe Knight,3
+170,250007a4-f432-4598-98bf-4d72fe2bbbaa,2025/26,176,550141,Adrian Mazilu,,3
+171,b2542e3f-f727-4be7-b102-499d813f28f3,2025/26,177,513834,Andrew Moran,,3
+172,2de4111b-3169-48a3-8e41-c9fc7e174dae,2025/26,178,50175,Danny Welbeck,Danny Welbeck,4
+173,e45a67bc-f818-44b2-86f1-2b2c16924a11,2025/26,179,487117,Evan Ferguson,Evan Ferguson,4
+174,b118bf52-b844-489f-9dbd-9062311f444a,2025/26,783,60307,Pascal Groß,Pascal Groß,3
+175,58ecb62d-6842-4969-9c96-1eb5f5a3844e,2025/26,220,215059,Robert Lynch Sánchez,Robert Sánchez,1
+176,b4a212e5-2269-4519-9737-c540dad37345,2025/26,221,508479,Filip Jörgensen,Filip Jorgensen,1
+177,634e753c-4227-4caf-b615-3f2d349785f9,2025/26,224,179268,Marc Cucurella Saseta,Marc Cucurella,2
+178,8f24ce04-4a4b-4faa-a0c3-0ecb9e6a6d2c,2025/26,225,225796,Reece James,Reece James,2
+179,3ce8a9da-92b0-4f78-aab5-c56fd203b57c,2025/26,226,180736,Trevoh Chalobah,Trevoh Chalobah,2
+180,5352a53c-371e-42ed-a345-bdcc7230af37,2025/26,227,460028,Levi Samuels Colwill,Levi Colwill,2
+181,959df0a3-8c35-4bae-bb1b-679a38d24321,2025/26,228,482609,Malo Gusto,Malo Gusto,2
+182,77f852ed-4969-4632-b499-6cfe91ddbe30,2025/26,229,242880,Benoît Badiashile Mukinayi,Benoit Badiashile Mukinayi,2
+183,602a32fc-f64c-41ec-93c9-32fc9192864c,2025/26,230,444463,Wesley Fofana,Wesley Fofana,2
+184,106be257-c769-429d-8343-e6a75dd3b6dd,2025/26,232,109646,Tosin Adarabioyo,Tosin Adarabioyo,2
+185,76b77469-699e-4ad8-a35a-05ac25881187,2025/26,233,577016,Josh Acheampong,Josh Acheampong,2
+186,d3c92dd6-bb68-43a1-99a8-aef14c6d9325,2025/26,234,622758,Aarón Anselmino,,2
+187,ac9f956e-8a1e-44c5-bada-92041eda09ef,2025/26,235,244851,Cole Palmer,Cole Palmer,3
+188,97bf024e-98d7-4f14-9b3f-7f83a23c1d26,2025/26,236,247632,Pedro Lomba Neto,Pedro Neto,3
+189,5ab3f06e-434d-4640-952d-0e7e998d761d,2025/26,237,448047,Enzo Fernández,Enzo Fernández,3
+190,5105b215-ce6e-4494-93d2-f5aab4a3315a,2025/26,240,213198,Christopher Nkunku,Christopher Nkunku,3
+191,cc48ff04-fda2-4ab5-b65d-7a7fe526fb2f,2025/26,241,486672,Moisés Caicedo Corozo,Moisés Caicedo,3
+192,0f4c04eb-d670-413f-aa27-6ebea80648cb,2025/26,244,514356,Roméo Lavia,Romeo Lavia,3
+193,f0a83477-9a84-415d-a7f0-c16f464ca033,2025/26,245,465920,Mykhailo Mudryk,Mykhailo Mudryk,3
+194,5c06b0a2-21e8-4135-9ddb-12dc4df2555e,2025/26,246,532605,Andrey Nascimento dos Santos,Andrey Santos,3
+195,78b25f86-58fe-4875-b7a0-38e71d54ad53,2025/26,249,475168,João Pedro Junqueira de Jesus,João Pedro,4
+196,67217edb-a846-4ac9-878e-2ddcc1dadfcf,2025/26,250,463034,Liam Delap,Liam Delap,4
+197,9845f271-6a65-4739-b337-4358823c2b28,2025/26,251,517052,Nicolas Jackson,Nicolas Jackson,4
+198,c7245ea9-802c-4854-a436-6d2f2e2ddf06,2025/26,252,499309,Marc Guiu Paz,Marc Guiu,4
+199,c7a4d6d5-531f-45e5-902b-a002babbdb49,2025/26,453,493105,Alejandro Garnacho Ferreyra,Alejandro Garnacho,3
+200,1593b0e8-5e6e-4ee0-97dc-c59996945458,2025/26,840,567119,Shumaira Mheuka,Shumaira Mheuka,4
+201,35abb6ba-fa65-4591-b6f1-295bd4189044,2025/26,253,172649,Dean Henderson,Dean Henderson,1
+202,a1b20c33-8ecf-4938-9172-30cedbb9dc97,2025/26,255,169593,Remi Matthews,,1
+203,4a161504-a54e-4f71-980c-76258773e5ea,2025/26,256,247348,Daniel Muñoz Mejía,Daniel Muñoz,2
+204,564732c7-d213-4b90-bae4-c6bdfdc241e3,2025/26,257,437499,Maxence Lacroix,Maxence Lacroix,2
+205,efcb34ce-b8ec-4f6e-8f4d-3f43931a54f6,2025/26,258,244723,Tyrick Mitchell,Tyrick Mitchell,2
+206,00304b5c-9f80-4755-9db6-70fcfb471122,2025/26,261,427623,Chris Richards,Chris Richards,2
+207,054bd8af-0a5f-4812-8702-434f43a0fc84,2025/26,262,515621,Chadi Riad Dnanou,Chadi Riad,2
+208,45f8df16-463f-4069-948a-36689e9398fe,2025/26,263,57328,Nathaniel Clyne,Nathaniel Clyne,2
+209,54bb43bc-e7aa-4943-9132-0c76a4090099,2025/26,264,156074,Rob Holding,,2
+210,3df9155a-859c-4558-b3e8-ce776b533e4b,2025/26,265,590012,Caleb Kporha,Caleb Kporha,2
+211,2d7896e5-bdbb-4eed-90a1-e8f82a308761,2025/26,267,232185,Ismaïla Sarr,Ismaila Sarr,3
+212,e8a9a06b-9a2b-4bed-bbd1-d6dabfe8384a,2025/26,268,438464,Cheick Doucouré,Cheick Oumar Doucoure,3
+213,e5f59f5d-d05a-4bdd-8f1d-3c47725c5b81,2025/26,269,606921,Romain Esse,Romain Esse,3
+214,f5064d39-0ef6-4eea-8795-9bfa7bcda88d,2025/26,270,108413,Will Hughes,Will Hughes,3
+215,a57c573b-9e52-4560-8f92-cfbd45ad8f34,2025/26,271,209400,Daichi Kamada,Daichi Kamada,3
+216,e3a78660-310f-4ed3-b4b7-77beca004592,2025/26,272,152551,Jefferson Lerma Solís,Jefferson Lerma,3
+217,9fc89667-620c-4a07-a188-debfe5bea8dc,2025/26,273,496221,Adam Wharton,Adam Wharton,3
+218,e52e1494-f956-4419-921b-f4e9d9125549,2025/26,274,579075,Asher Agbinone,Asher Agbinone,3
+219,3acb44ae-5b2f-45c5-9869-84d7afbc168f,2025/26,275,466117,Naouirou Ahamada,Naouirou Ahamada,3
+220,4b659083-76f4-4acf-94f2-c067fbae05f5,2025/26,276,489706,Justin Devenny,Justin Devenny,3
+221,c9df79cf-d31f-41be-8415-dcba7c67b297,2025/26,277,450535,Malcolm Ebiowei,,3
+222,0be15e13-8da5-483c-a42e-ff087947359d,2025/26,278,450542,Jesurun Rak-Sakyi,Jesurun Rak-Sakyi,3
+223,ad4e763c-77a9-498e-bfdf-c206f8108f4c,2025/26,279,536694,Matheus França de Oliveira,Matheus França,3
+224,82672137-05d4-4564-82a0-ccd9a3ed62b1,2025/26,280,531989,David Ozoh,,3
+225,b2f42ff2-77b6-4839-85b2-b21d29529489,2025/26,281,530318,Kaden Rodney,Kaden Rodney,3
+226,51b47c65-f386-4921-97d4-2832ef428a0b,2025/26,282,574398,Franco Umeh-Chibueze,,3
+227,fbeda0b1-fba6-4982-bc64-fcb647bdb4aa,2025/26,283,231747,Jean-Philippe Mateta,Jean-Philippe Mateta,4
+228,316ae259-265d-480f-93fa-4ce0f626e8b7,2025/26,284,205533,Eddie Nketiah,Eddie Nketiah,4
+229,ae553ab7-226a-49c0-827b-6652d5d1c7a0,2025/26,285,199670,Odsonne Édouard,Odsonne Edouard,4
+230,f34c6bed-d548-4ed4-8e01-407f36f5ca33,2025/26,286,576980,Zach Marsh,,4
+231,dd426201-6b0d-4e17-a9fa-639eeb2ac418,2025/26,580,242898,Brennan Johnson,Brennan Johnson,3
+232,0d8faf78-acfd-472f-8579-f67546f00094,2025/26,654,247412,Jørgen Strand Larsen,Jørgen Strand Larsen,4
+233,852b8e99-5abc-4f45-834c-4b82cd761841,2025/26,242,215413,Kiernan Dewsbury-Hall,Kiernan Dewsbury-Hall,3
+234,280eaf50-a1c8-436d-bda2-2eebff373391,2025/26,243,550615,Tyrique George,Tyrique George,3
+235,e14a60b0-c5c3-482d-9b61-01d92aeaaef5,2025/26,287,111234,Jordan Pickford,Jordan Pickford,1
+236,0f18b700-59c1-408d-bebb-69524169d4a4,2025/26,288,229600,Mark Travers,Mark Travers,1
+237,b2956a8b-fe92-47c6-b79b-de88325f518c,2025/26,290,480455,Jarrad Branthwaite,Jarrad Branthwaite,2
+238,26eaee45-f326-409e-8d39-72d972f14e96,2025/26,291,17761,James Tarkowski,James Tarkowski,2
+239,a253d98f-9eca-43f1-9015-5c8511d97c51,2025/26,292,224967,Vitalii Mykolenko,Vitalii Mykolenko,2
+240,dd9fd6a5-55ae-4be3-9d09-f763b9cd3d0f,2025/26,293,512462,Jake O'Brien,Jake O'Brien,2
+241,bb4f6fba-13e4-4517-94d5-33224b40e9a1,2025/26,294,59949,Séamus Coleman,Seamus Coleman,2
+242,2d73beaa-be2a-484c-9dff-1bf7927941e2,2025/26,295,106611,Michael Keane,Michael Keane,2
+243,bdbdae70-b65b-42ef-8c71-652c3870558c,2025/26,296,243571,Nathan Patterson,Nathan Patterson,2
+244,066fa6ef-4170-4327-b572-3c2ff226bc15,2025/26,297,496178,Roman Dixon,Roman Dixon,2
+245,fafb8cd0-eb45-4d2f-ab0e-3bafb0e4ec74,2025/26,299,440993,Iliman Ndiaye,Iliman Ndiaye,3
+246,f7aa5c64-8487-4dfa-ab29-01c4d8c10eb6,2025/26,300,433154,Dwight McNeil,Dwight McNeil,3
+247,2658a869-5abe-4742-8aee-9b077e84eb37,2025/26,301,502697,Carlos Alcaraz Durán,Carlos Alcaraz,3
+248,508e8ec8-ad8a-4db6-a32a-a6e1e5e02541,2025/26,302,80801,Idrissa Gana Gueye,Idrissa Gueye,3
+249,1c660429-4643-421e-a350-ab36f78cb9a1,2025/26,303,232928,James Garner,James Garner,3
+250,dd8d4123-995c-434f-8617-1ca644f6f2d8,2025/26,304,490094,Tim Iroegbunam,Tim Iroegbunam,3
+251,8e34adec-0f08-47ed-8f15-75fa2e47019a,2025/26,305,609873,Harrison Armstrong,Harrison Armstrong,3
+252,296d29ab-2b45-43d9-b404-bc523810cef2,2025/26,306,547801,Callum Bates,,3
+253,2b89fbfc-2cd4-463a-b820-5ce296c75695,2025/26,307,504296,Coby Ebere,,3
+254,9e503294-677d-4eb6-afa0-2e7ac9ca5e05,2025/26,308,496279,Isaac Heath,,3
+255,93439586-35e5-42ba-87fc-18707d455db5,2025/26,309,491557,Jenson Metcalfe,,3
+256,173cfe8b-f489-4922-8264-22e87c1dfc62,2025/26,311,486385,Norberto Bercique Gomes Betuncal,Beto,4
+257,e428431a-3fde-4578-a858-ebdd30f20d5b,2025/26,312,491012,Youssef Ramalho Chermiti,Youssef Chermiti,4
+258,6f855388-9213-4e1b-b7b6-87b8bf1f7444,2025/26,313,536241,Martin Sherif,,4
+259,3c643231-db3b-46f4-80f0-a33979f63288,2025/26,419,114283,Jack Grealish,Jack Grealish,3
+260,f330910f-a62e-4853-bc6f-65d94f877321,2025/26,630,138001,Tom King,Tom King,1
+261,6abf2e43-7532-495b-9baa-6d4563ec960a,2025/26,707,496661,Tyler Dibling,Tyler Dibling,3
+262,74afb9cb-18dd-4e48-aaa1-2267e42b6bf7,2025/26,314,80201,Bernd Leno,Bernd Leno,1
+263,65ea922b-e24a-4073-a83f-989d52da023d,2025/26,315,428971,Steven Benda,,1
+264,6d5abde7-1f76-477a-acc0-ca49a9fd4ab3,2025/26,316,169528,Antonee Robinson,Antonee Robinson,2
+265,02539faa-015d-44f3-9210-cfd5e296a32d,2025/26,317,174874,Joachim Andersen,Joachim Andersen,2
+266,8e1ff5ee-c560-481e-9d65-b7c5dfce6918,2025/26,318,232892,Calvin Bassey,Calvin Bassey,2
+267,38eac867-ae09-4f4e-9791-9ad2c4572d42,2025/26,319,166477,Timothy Castagne,Timothy Castagne,2
+268,a5e18fe7-45fc-4d0a-a4f8-ae032850f68a,2025/26,320,219924,Issa Diop,Issa Diop,2
+269,6fd4776f-ee54-4d51-b129-46efc5960c5d,2025/26,321,246301,Jorge Cuenca Barreno,Jorge Cuenca,2
+270,4eee3faa-33dc-49a8-9bd3-8a2463d975e0,2025/26,322,167074,Kenny Tete,Kenny Tete,2
+271,30b4cf70-9f70-4dd2-9b7c-bd17b8d6f129,2025/26,323,591385,Samuel Amissah,,2
+272,b90def95-9562-42fd-b58c-8fac67adb479,2025/26,324,153133,Alex Iwobi,Alex Iwobi,3
+273,b0076fa1-2d94-4513-82f0-93616a4e0e84,2025/26,325,209289,Emile Smith Rowe,Emile Smith-Rowe,3
+274,c0b876d5-f9e9-4ea8-af27-9cb7687b1f92,2025/26,327,156689,Andreas Hoelgebaum Pereira,Andreas Pereira,3
+275,baf2ed33-845d-4a56-9fca-fe13e7b45853,2025/26,328,184349,Ryan Sessegnon,Ryan Sessegnon,3
+276,a9b733b1-f28a-4ee6-9925-aacc58107500,2025/26,329,153682,Harry Wilson,Harry Wilson,3
+277,d55f4f7d-068b-4c69-9cf2-de621d1d85ea,2025/26,330,207189,Sander Berge,Sander Berge,3
+278,e1a5293d-11cb-4154-a20c-75d19e4a3ffb,2025/26,331,76357,Tom Cairney,Tom Cairney,3
+279,a9551960-d7f9-4af5-848c-cb5e73d73e6b,2025/26,332,212314,Saša Lukić,Sasa Lukic,3
+280,670f1eda-f0ed-4dad-bfdd-1e19d22820c1,2025/26,333,573062,Martial Godo,Martial Godo,3
+281,fc704d7e-8009-40bc-abf4-077d5caf1a2a,2025/26,334,515024,Luke Harris,,3
+282,b0c2ffa6-b285-425b-8eb2-c9f652427eb3,2025/26,335,577725,Josh King,Joshua King,3
+283,0479f281-b698-4aba-ac40-86fedaa3eddf,2025/26,336,153366,Harrison Reed,Harrison Reed,3
+284,0c132447-b77a-4ef3-8b76-773466c30a9f,2025/26,337,102057,Raúl Jiménez Rodríguez,Raúl Jiménez,4
+285,b7c44e29-4ef6-47a2-954c-0b60eeb245dd,2025/26,338,244042,Rodrigo Muniz Carvalho,Rodrigo Muniz,4
+286,17e6932b-81bc-4766-bc4e-d808b06dd4c0,2025/26,424,477555,Oscar Bobb,Oscar Bobb,3
+287,90e55f29-eaf3-45ba-b6d3-9f50aa3d550f,2025/26,168,536916,Facundo Buonanotte,Facundo Buonanotte,3
+288,b15d2b09-385b-46e8-80b3-c9705da992b9,2025/26,352,221399,Jack Harrison,Jack Harrison,3
+289,709d3031-90a5-4a10-ace0-73b80225cb0f,2025/26,493,180135,Sean Longstaff,Sean Longstaff,3
+290,049a7ce0-2122-4c95-b21b-097e3d229319,2025/26,691,177815,Dominic Calvert-Lewin,Dominic Calvert-Lewin,4
+291,49acc28c-0579-4ecf-bb09-7844ec2862b6,2025/26,706,220627,James Justin,James Justin,2
+292,0770e266-9633-4bd7-9e25-b218ce04a2f4,2025/26,366,116535,Alisson Becker,Alisson,1
+293,da1637e8-b587-4c57-97e9-29a83d53e283,2025/26,371,544877,Milos Kerkez,Milos Kerkez,2
+294,ef0771b9-26c5-4915-8dea-392a26f45cbe,2025/26,372,122798,Andrew Robertson,Andrew Robertson,2
+295,8a0b53aa-a122-4ea8-8a32-fb80f11f2cdc,2025/26,373,97032,Virgil van Dijk,Virgil van Dijk,2
+296,8a942902-7e65-496f-97ab-36b2020d968f,2025/26,374,204716,Ibrahima Konaté,Ibrahima Konaté,2
+297,a38c8aff-9fa1-4fba-9126-f5d18b077163,2025/26,375,492777,Conor Bradley,Conor Bradley,2
+298,493f278e-a61c-4a7b-bfbc-b7ae9d3926fb,2025/26,376,171287,Joe Gomez,Joseph Gomez,2
+299,7cdd3161-7671-44b1-ba34-2c6aab483072,2025/26,377,214285,Konstantinos Tsimikas,Konstantinos Tsimikas,2
+300,231b8d11-0bb6-4103-9619-3733aba936cb,2025/26,378,611926,Amara Nallo,,2
+301,5d65e834-c62a-40ff-b188-49c37deb087f,2025/26,379,219937,Rhys Williams,,2
+302,ba35841c-cdd5-4031-b2ad-00f11cc639c9,2025/26,381,118748,Mohamed Salah,Mohamed Salah,3
+303,d2f7294c-7df5-479c-9c9b-f550be9dda26,2025/26,383,244731,Luis Díaz Marulanda,Luis Díaz,3
+304,5b4d8bb7-50e8-4325-9fdb-667bc1bc5677,2025/26,384,243298,Cody Gakpo,Cody Gakpo,3
+305,43d10f61-0a63-49f2-9406-cc65de429029,2025/26,385,223541,Federico Chiesa,Federico Chiesa,3
+306,396e1c5f-a102-4af3-a5b7-2d8ca2b3ef6f,2025/26,386,243016,Alexis Mac Allister,Alexis Mac Allister,3
+307,ab460977-65fb-434c-8333-a420e23169cc,2025/26,387,424876,Dominik Szoboszlai,Dominik Szoboszlai,3
+308,46b262ba-a864-4a5c-983b-8287c9e1b2c6,2025/26,388,206915,Curtis Jones,Curtis Jones,3
+309,df3a988b-b09d-4529-a70a-6bff596cff56,2025/26,390,441266,Ryan Gravenberch,Ryan Gravenberch,3
+310,eed618bc-4fff-431a-8342-6e56d6875fda,2025/26,392,158983,Endo Wataru,Wataru Endo,3
+311,93efe74e-3c76-403d-8c67-ed7381cbe208,2025/26,393,535928,Stefan Bajčetić Maquieira,,3
+312,39590410-de16-4719-b2db-e4bd707cfaa1,2025/26,394,491501,James McConnell,,3
+313,c4815505-10e4-4202-9b11-259a19ba8117,2025/26,395,440148,Tyler Morton,,3
+314,291cf79e-8289-4aea-b433-663239f6c492,2025/26,396,591386,Trey Nyoni,Treymaurice Nyoni,3
+315,9ddeea34-afa6-43b2-9718-40ac87c1da54,2025/26,397,447203,Darwin Núñez Ribeiro,Darwin Núñez,4
+316,22e7a380-ba57-4e49-a5fe-81f87c540017,2025/26,398,500058,Jayden Danns,Jayden Danns,4
+317,83bf64c5-d053-4c9b-88a8-2fe044533999,2025/26,499,219168,Alexander Isak,Alexander Isak,4
+318,d02b81d6-108e-4cfd-b34b-80f3ae2382ca,2025/26,82,437730,Antoine Semenyo,Antoine Semenyo,3
+319,4dc79854-22a7-4d9a-b7e6-6b6024465d87,2025/26,260,209036,Marc Guéhi,Marc Guehi,2
+320,cde448c3-c413-4852-ae1a-1a4fbac7e91a,2025/26,399,121160,Ederson Santana de Moraes,Ederson,1
+321,b45dc1be-2cff-43c5-9659-ce1274c92394,2025/26,401,122074,Marcus Bettinelli,,1
+322,cbeb32ec-d8f8-466d-8977-017ce20d9908,2025/26,402,448514,Rayan Aït-Nouri,Rayan Ait Nouri,2
+323,7ceade22-f5db-4b3e-ae20-120cd46c67cf,2025/26,403,477424,Joško Gvardiol,Josko Gvardiol,2
+324,d86e3efa-0331-4d5e-94c6-ec063d3fa29e,2025/26,404,211975,Manuel Akanji,Manuel Akanji,2
+325,3b730726-1e3e-4d2a-9bc3-61177fb5d031,2025/26,405,126184,Nathan Aké,Nathan Aké,2
+326,08cbab83-8554-41d0-bd69-4cd420eb698c,2025/26,406,578153,Abdukodir Khusanov,Abduqodir Khusanov,2
+327,ff3ae152-e9fa-4768-a059-853e3e482bc3,2025/26,407,465351,Matheus Nunes,Matheus Nunes,2
+328,2fc945e5-d19c-4530-a647-863b0ea4396d,2025/26,408,171314,Rúben dos Santos Gato Alves Dias,Rúben Dias,2
+329,0847dcd8-082d-4991-8913-1e3bc242dcc3,2025/26,409,97299,John Stones,John Stones,2
+330,b771e153-5d75-49ce-8fbd-e6e1cbda6bd2,2025/26,410,477064,Rico Lewis,Rico Lewis,2
+331,65af5c82-2bf4-4b3c-b0f7-49d30a717146,2025/26,411,472769,Nico O'Reilly,Nico O'Reilly,2
+332,bdec436e-5a79-4ed5-9db6-0f5c66eae832,2025/26,412,616222,Vitor de Oliveira Nunes dos Reis,Vitor Reis,2
+333,a21fec65-1718-44e4-a9e7-8b4ba2c6abdb,2025/26,413,438234,Omar Marmoush,Omar Marmoush,3
+334,7299a365-c7d3-4fae-983c-d6b980719a1d,2025/26,414,209244,Phil Foden,Phil Foden,3
+335,23ceeab7-83a7-41b5-895a-8a8ba6669fe0,2025/26,415,510281,Sávio Moreira de Oliveira,Sávio,3
+336,3f381c8a-eeae-4940-9b06-ea05f752e310,2025/26,515,222531,Morgan Gibbs-White,Morgan Gibbs-White,3
+337,152452e6-1e36-4c7b-b9aa-15d38bd2fcbb,2025/26,416,165809,Bernardo Mota Veiga de Carvalho e Silva,Bernardo Silva,3
+338,5556734b-d1e3-4f5e-94c7-813cd4bcdd56,2025/26,418,248875,Jérémy Doku,Jéremy Doku,3
+339,c283ee88-d305-40e4-8002-0308c558c5ae,2025/26,420,59859,İlkay Gündoğan,Ilkay Gündogan,3
+340,272bfaa8-fc18-42f2-8300-f77ca505a345,2025/26,421,220566,Rodrigo 'Rodri' Hernandez Cascante,Rodri,3
+341,18518340-c700-4515-a0b4-90b371a9686e,2025/26,422,91651,Mateo Kovačić,Mateo Kovacic,3
+342,6491134c-17b9-44b3-a599-bd21c9c5651f,2025/26,423,465694,Nico González Iglesias,Nico González,3
+343,761dd69f-17b5-4966-96a2-76277e08c754,2025/26,425,575204,Claudio Echeverri,Claudio Echeverri,3
+344,0f24ddb4-65f2-4527-908d-a89f91277b34,2025/26,429,155405,Kalvin Phillips,Kalvin Phillips,3
+345,6d3fb615-c3e0-4895-b384-57dcb3dc557e,2025/26,430,223094,Erling Haaland,Erling Haaland,4
+346,9bcc4be0-a5b6-401f-9fa3-49f78f0f7594,2025/26,794,494307,Max Alleyne,Max Alleyne,2
+347,8b74ab57-db22-45f4-80ce-8e5d59b3ce3b,2025/26,119,446008,Bryan Mbeumo,Bryan Mbeumo,3
+348,5df08c11-5708-49a1-b677-3a4f70a17f17,2025/26,431,451302,Altay Bayındır,Altay Bayindir,1
+349,8e605721-6cde-4dac-8b83-eff0db4372f1,2025/26,432,202641,André Onana,André Onana,1
+350,e61cb6e8-8eed-43ee-b067-95a55cb4736d,2025/26,433,588555,Elyh Harrison,,1
+351,83ca5847-cede-4643-8401-ec260ed79816,2025/26,434,21205,Tom Heaton,,1
+352,c7faa94f-b501-4af9-9045-7f3efb97be86,2025/26,436,209365,Matthijs de Ligt,Matthijs de Ligt,2
+353,33567cf6-0cb2-4e77-96d5-18102807b133,2025/26,437,221820,Lisandro Martínez,Lisandro Martínez,2
+354,f67b8250-dee9-4e16-9acc-b8eb04a75bd6,2025/26,438,230001,Noussair Mazraoui,Noussair Mazraoui,2
+355,bf428111-cd34-4d6e-afd6-31e7a312dc1d,2025/26,440,216051,Diogo Dalot Teixeira,Diogo Dalot,2
+356,1eee5051-f16f-4a8e-af4e-028517faa001,2025/26,441,596777,Patrick Dorgu,Patrick Dorgu,2
+357,499022db-4b66-47a6-9be9-f8ba92e29786,2025/26,442,95658,Harry Maguire,Harry Maguire,2
+358,794ce9ff-d47d-43c0-b13c-1e48807bc608,2025/26,443,106760,Luke Shaw,Luke Shaw,2
+359,2c569b38-1dd7-472f-80b7-6ec3828f627e,2025/26,444,550864,Leny Yoro,Leny Yoro,2
+360,db5c0678-2734-4ed9-81cb-218e7a0a089b,2025/26,445,577974,Harry Amass,Harry Amass,2
+361,e45d7534-4746-4bad-a959-a6cbf37edec1,2025/26,446,547676,Tyler Fredricson,Tyler Fredricson,2
+362,80c83afd-6865-416d-b5f4-593ad9ed1f47,2025/26,447,606745,Ayden Heaven,Ayden Heaven,2
+363,469511da-b743-4641-8d98-42dc51b5e329,2025/26,448,222690,Tyrell Malacia,Tyrell Malacia,2
+364,d61ea56d-0474-4524-a061-9869f4ccbb19,2025/26,449,141746,Bruno Borges Fernandes,Bruno Fernandes,3
+365,26ad018f-7c27-46e2-af1c-493276052c85,2025/26,450,430871,Matheus Santos Carneiro da Cunha,Matheus Cunha,3
+366,8a5a085d-5110-4f8e-87d3-1fdb384d8533,2025/26,451,176297,Marcus Rashford,Marcus Rashford,3
+367,2f0ea22d-f760-4599-a623-60f4e3be22f1,2025/26,452,493250,Amad Diallo,Amad Diallo Traore,3
+368,be00977b-d686-4932-8288-db6993f55a4b,2025/26,454,467169,Antony dos Santos,Antony,3
+369,dfc945e1-aaca-4013-b2b3-96e85b299423,2025/26,455,184341,Mason Mount,Mason Mount,3
+370,8212e83e-299a-4fe2-b598-7e466a9e0621,2025/26,457,61256,Carlos Henrique Casimiro,Casemiro,3
+371,1c5ff361-4a45-48ba-b2e2-55c967518fac,2025/26,458,516895,Kobbie Mainoo,Kobbie Mainoo,3
+372,2e5dfd6f-2c8a-4242-bd88-71b571e78ec9,2025/26,459,232112,Manuel Ugarte Ribeiro,Manuel Ugarte,3
+373,c981a842-25d4-406d-adec-d423a19effe3,2025/26,460,490881,Toby Collyer,Toby Collyer,3
+374,167d8179-f5d1-401e-b5c3-0db84283bb81,2025/26,461,556639,Jayce Fitzgerald,,3
+375,73c21faa-876a-417f-bfbd-b5433eae68c3,2025/26,462,547037,Jack Fletcher,Jack Fletcher,3
+376,781087f1-32b6-4c7e-ae69-ee5ef75ad7d2,2025/26,463,618873,Sékou Koné,,3
+377,48da60a2-014b-491f-99ee-034d2e11bf48,2025/26,464,559684,Jack Moorhouse,,3
+378,36b875ed-889a-4d7f-a5e7-f57bb5b23e4e,2025/26,465,497894,Rasmus Højlund,Rasmus Højlund,4
+379,ea2a7a09-c8ae-430a-bf6f-dd514154e543,2025/26,466,458249,Joshua Zirkzee,Joshua Zirkzee,4
+380,394f611e-73b5-4779-8110-c73e3593c90f,2025/26,467,596047,Chido Obi,Chido Obi-Martin,4
+381,ad3900af-fef7-4545-99c0-dc7158e97e3a,2025/26,468,575034,Ethan Wheatley,,4
+382,e73c83e7-3640-43d0-8c0f-f267926827fc,2025/26,788,576637,Godwill Kukonki,,2
+383,f551e1b9-1b4f-4ee0-ab12-5b3d29f7f00e,2025/26,52,232653,Jacob Ramsey,Jacob Ramsey,3
+384,b917d372-2d17-444e-8384-8d2a9e5f8453,2025/26,135,216646,Yoane Wissa,Yoane Wissa,4
+385,57d51316-9d56-4d98-9df7-f5fc936704bb,2025/26,469,98747,Nick Pope,Nick Pope,1
+386,b6732bbc-09ba-4c3e-a535-861fd96488bc,2025/26,472,111452,Odysseas Vlachodimos,,1
+387,97f710e3-4d5b-475f-b4fb-dedf2866e61d,2025/26,473,487838,Lewis Hall,Lewis Hall,2
+388,a813d09b-3694-4714-b863-bb5997ef8f43,2025/26,474,119471,Fabian Schär,Fabian Schär,2
+389,71e04b79-f1a7-4123-8130-bae9732ba772,2025/26,475,220237,Sven Botman,Sven Botman,2
+390,64c1604f-20e8-4f70-aca6-234467915cdb,2025/26,476,78916,Dan Burn,Dan Burn,2
+391,3a3343ac-df8a-4423-9c8f-614fa31f7612,2025/26,477,441191,Tino Livramento,Valentino Livramento,2
+392,320fe051-d0b5-4c7d-984b-d719a2196470,2025/26,478,77794,Kieran Trippier,Kieran Trippier,2
+393,7f160bcd-c48f-454e-bd10-5d13e7b7a608,2025/26,479,111773,Emil Krafth,Emil Krafth,2
+394,ef27dda9-b74d-4e05-a474-3ce88f01963e,2025/26,480,101148,Jamaal Lascelles,Jamaal Lascelles,2
+395,98a9027f-96af-4214-9516-b319364983a7,2025/26,481,545477,Alex Murphy,Alex Murphy,2
+396,a54bf982-f33c-43d5-af92-0c93ea1f7d9b,2025/26,483,578512,Miodrag Pivaš,,2
+397,c932dd05-c46b-4c8e-bffd-ebc3be8f8402,2025/26,484,169359,Matt Targett,Matt Targett,2
+398,86e096b9-965f-4b13-bc0b-7dc91707f0d4,2025/26,485,232826,Anthony Gordon,Anthony Gordon,3
+399,bc7b3008-ecdf-482b-a820-20ef64676b4e,2025/26,486,449434,Anthony Elanga,Anthony Elanga,3
+400,7d0ce2be-20f7-4099-add3-2623af5b22d6,2025/26,487,201666,Harvey Barnes,Harvey Barnes,3
+401,701caef7-4a05-4908-8c32-05de68526194,2025/26,488,208706,Bruno Guimarães Rodriguez Moura,Bruno Guimarães,3
+402,bec3286a-79d9-4125-ae8e-4c789e476cd5,2025/26,489,114243,Jacob Murphy,Jacob Murphy,3
+403,423e1b12-0219-4921-9347-0631bb645a1c,2025/26,490,180974,Joelinton Cássio Apolinário de Lira,Joelinton,3
+404,6530cfe0-7569-4842-bbcf-bb9dfee916c9,2025/26,491,432422,Sandro Tonali,Sandro Tonali,3
+405,3858ec1b-1c61-4728-bcf3-15d955a16881,2025/26,494,200089,Joe Willock,Joe Willock,3
+406,bec0f8f2-2df7-40e7-87e2-c25495599010,2025/26,495,153127,Isaac Hayden,,3
+407,fede430f-ca86-4467-ae60-c0f052711f2c,2025/26,496,564510,Garang Kuol,,3
+408,fd38c29c-1522-4d3d-a93e-66cb66d14a11,2025/26,497,547719,Lewis Miley,Lewis Miley,3
+409,caea5c3e-561c-4856-b0bd-d1f3a2de121e,2025/26,498,461484,Joe White,,3
+410,d7c96669-436e-4944-b54d-59695cfd26c6,2025/26,500,538207,William Osula,William Osula,4
+411,e4e24720-d2ab-4a3b-a489-6cd5d1114cfd,2025/26,674,225321,Aaron Ramsdale,Aaron Ramsdale,1
+412,826f2eb6-c024-428d-8947-35add533b2c5,2025/26,753,19236,John Ruddy,,1
+413,bb980a5b-6f4c-4bb4-8f85-9c682f3370c6,2025/26,12,206325,Oleksandr Zinchenko,Oleksandr Zinchenko,2
+414,451e115e-1a94-4c54-9b7d-63f25fa9e973,2025/26,400,88248,Stefan Ortega Moreno,Stefan Ortega Moreno,1
+415,47e50346-47f4-4225-b164-b93dba66e562,2025/26,426,432714,James McAtee,James McAtee,3
+416,8c847126-728a-47e6-8521-13af156a6181,2025/26,502,85633,Matz Sels,Matz Sels,1
+417,4ed2bd00-dba2-458c-a4d3-1ffd9fbd8736,2025/26,503,475123,Carlos Miguel dos Santos Pereira,,1
+418,af5e5726-fb1e-4fdb-8879-a28afd3dde17,2025/26,504,224068,Matt Turner,Matt Turner,1
+419,881f4ab3-adab-4461-9561-4a736a1d3e31,2025/26,505,227444,Nikola Milenković,Nikola Milenkovic,2
+420,d0f8670d-03c3-4760-8678-d391c9455f38,2025/26,506,575476,Murillo Costa dos Santos,Murillo,2
+421,bfd0282a-2b61-49c9-98e7-a2f22f330e82,2025/26,507,159506,Ola Aina,Ola Aina,2
+422,2456c5b8-e6c9-4ea3-9269-41f7c6216476,2025/26,508,215136,Neco Williams,Neco Williams,2
+423,23018d09-1c46-4936-9727-40496371c8b8,2025/26,511,485047,Felipe Rodrigues da Silva,Morato,2
+424,d6be337c-9102-4aba-acf1-a150cba17751,2025/26,512,204822,Omar Richards,,2
+425,aecff7a0-6062-45b5-86d7-0c3961793ed6,2025/26,513,549067,Zach Abbott,Zach Abbott,2
+426,114c54aa-c2b2-4adf-b9e3-052f9113dfdf,2025/26,514,90585,Willy Boly,Willy Boly,2
+427,6bd06b24-334f-4fdb-9746-1d98ccfcfe3f,2025/26,516,209046,Callum Hudson-Odoi,Callum Hudson-Odoi,3
+428,b340a5b0-42ae-4f2a-8096-1b227edae50a,2025/26,517,215379,Elliot Anderson,Elliot Anderson,3
+429,1eb4ac7e-6158-4851-b363-d4ff6070ce72,2025/26,518,510500,João Pedro Ferreira da Silva,Jota Silva,3
+430,023da49d-2e7d-4907-9df5-f04db9b0fd41,2025/26,519,250199,Nicolás Domínguez,Nicolás Domínguez,3
+431,7e50df7b-2666-48ac-85ad-2ed37e8b6dcb,2025/26,520,243345,Lewis O'Brien,,3
+432,614dca87-6771-4409-b1d4-230660704518,2025/26,521,210462,Ibrahim Sangaré,Ibrahim Sangare,3
+433,8a50219f-55c4-404b-bc89-9754e0eb85de,2025/26,522,204968,Ryan Yates,Ryan Yates,3
+434,c48c5c98-df72-4edd-acd0-85450e59269a,2025/26,523,569014,Eric da Silva Moreira,Eric da Silva Moreira,3
+435,a3839c5a-f87e-48df-9a8d-dc0bc957b87b,2025/26,525,60689,Chris Wood,Chris Wood,4
+436,67150f6f-4550-46e1-ab06-5be560ba9de2,2025/26,527,210156,Taiwo Awoniyi,Taiwo Awoniyi,4
+437,2e9ab3a1-b490-479c-ba94-45eeb1b7bca8,2025/26,693,503301,Omari Hutchinson,Omari Hutchinson,3
+438,1612fa1c-cb9b-4980-837e-d768f86b0886,2025/26,543,535818,Simon Adingra,Simon Adingra,3
+439,2e9610c8-836f-402c-804e-0720c93a9009,2025/26,565,184254,Guglielmo Vicario,Guglielmo Vicario,1
+440,bc66bf7d-e1f5-48c5-b89d-ff0dbd008bd8,2025/26,566,214572,Brandon Austin,Brandon Austin,1
+441,159841f0-d0bc-4c77-89c1-ff5886c01ec1,2025/26,567,485055,Antonín Kinský,Antonín Kinsky,1
+442,681c11ac-7e56-493e-9ca1-72f90b878d01,2025/26,568,441164,Pedro Porro Sauceda,Pedro Porro,2
+443,359d703f-5c63-4bfe-8ccc-57d4ede0b37c,2025/26,569,221632,Cristian Romero,Cristian Romero,2
+444,0b8ecd30-19a8-4509-9f8d-09deaf8ac2ee,2025/26,570,135720,Kevin Danso,Kevin Danso,2
+445,517c88fc-d2e4-48f9-a244-13a2f0813e40,2025/26,571,115556,Ben Davies,Ben Davies,2
+446,c8c438ab-f065-4b03-9765-3002b42f3a58,2025/26,572,493125,Radu Drăgușin,Radu Dragusin,2
+447,c49b3106-4c26-46c9-bbb8-4e132b81910a,2025/26,573,232859,Djed Spence,Djed Spence,2
+448,b4d3e76d-0620-4853-b965-d10f7cac139e,2025/26,574,487053,Destiny Udogie,Iyenoma Destiny Udogie,2
+449,86a8b7af-747c-4791-8f50-dc0403622b73,2025/26,575,491279,Micky van de Ven,Micky van de Ven,2
+450,357b7d84-e65a-4563-88ab-112294f2872e,2025/26,576,548308,Ashley Phillips,,2
+451,5167d7b8-c362-4ebd-8d34-fc379f6ecaa3,2025/26,579,85971,Son Heung-min,Son Heung-Min,3
+452,d1f5f863-043f-4759-adbe-9489d6df04e1,2025/26,581,172780,James Maddison,James Maddison,3
+453,3155f865-690c-4281-b00c-fce26e784489,2025/26,582,460842,Mohammed Kudus,Mohammed Kudus,3
+454,7c870cd7-9d1e-4b81-bd53-117b5ce27c54,2025/26,583,445044,Dejan Kulusevski,Dejan Kulusevski,3
+455,c35eea94-ca8c-4a5c-abb5-39a702041a48,2025/26,584,511499,Mathys Tel,Mathys Tel,3
+456,4dba7c71-3721-48b7-8d06-f7a97d1e654c,2025/26,585,202993,Rodrigo Bentancur,Rodrigo Bentancur,3
+457,e642deb6-f398-4f23-8f6b-4517569c6521,2025/26,586,570526,Lucas Bergvall,Lucas Bergvall,3
+458,58fbf6e5-9ce2-410c-a1f9-e0d2f4607ad0,2025/26,587,227127,Yves Bissouma,Yves Bissouma,3
+459,3f7d0d15-bae9-4443-b8fd-602d0b46e83b,2025/26,588,550839,Wilson Odobert,Wilson Odobert,3
+460,5aaeed89-dd50-43b0-8bd5-0b00ffae7428,2025/26,589,235674,Manor Solomon,Manor Solomon,3
+461,78cef93a-5d90-47df-ae43-9951588f6c59,2025/26,590,436234,Bryan Gil Salvatierra,,3
+462,4c7e5c2a-dc4d-4126-a8d6-7cc8830fff8a,2025/26,591,547701,Archie Gray,Archie Gray,3
+463,5eee3996-1d93-4d7b-9e06-d7dcb289c696,2025/26,592,499721,Mikey Moore,Mikey Moore,3
+464,5627a160-9c95-443d-92f6-42bd33cb437c,2025/26,593,482442,Pape Matar Sarr,Pape Sarr,3
+465,19503768-2c69-4c5d-b12f-316a33e22977,2025/26,594,623095,Yang Min-hyeok,,3
+466,fe994675-7f34-4277-b6f3-6e738a132d08,2025/26,595,499726,Callum Olusesi,Callum Olusesi,3
+467,25e1b024-b4c4-4732-9894-b39b4415754e,2025/26,596,154566,Dominic Solanke-Mitchell,Dominic Solanke,4
+468,babad0a4-ef7c-4e3c-804d-048bdc6c91d4,2025/26,597,212319,Richarlison de Andrade,Richarlison,4
+469,84e499c3-6bed-49fa-8949-8b304244139f,2025/26,598,552427,Will Lankshear,Will Lankshear,4
+470,6eb78588-fb64-4370-9014-57f422cbdcd4,2025/26,599,490145,Dane Scarlett,Dane Scarlett,4
+471,4740a0a4-ae26-4421-9b41-4652ab59e9dd,2025/26,790,611917,Lucá Williams-Barnett,,3
+472,84fa1217-2dbe-4acc-a446-1f78327fe989,2025/26,796,232787,Conor Gallagher,Conor Gallagher,3
+473,755babc2-28eb-47e7-bda6-3c28588e49bf,2025/26,326,159533,Adama Traoré Diarra,Adama Traoré,3
+474,2b71ec62-c2bf-4ac3-99ab-166c358d7904,2025/26,600,84182,Alphonse Areola,Alphonse Areola,1
+475,53f6428c-e03e-4b83-9596-03cfaf24f761,2025/26,601,82143,Wes Foderingham,Wes Foderingham,1
+476,89bd4d8a-948b-40e5-8958-5c47b1c373ec,2025/26,604,109533,Emerson Palmieri dos Santos,Emerson,2
+477,dd74e658-57fa-4e99-ac94-889f064764fa,2025/26,605,214048,Maximilian Kilman,Max Kilman,2
+478,eb6fd9d0-63c5-4080-a5ab-0e9751ec993d,2025/26,606,233963,Konstantinos Mavropanos,Konstantinos Mavropanos,2
+479,9ddf23ec-f1ed-43e6-bd0b-c40e8f383ac3,2025/26,607,210494,Nayef Aguerd,Naif Aguerd,2
+480,a9fbdbd6-784f-4f5f-95a1-f43823a8fbd2,2025/26,608,536109,Ollie Scarles,Oliver Scarles,2
+481,9b78a208-c2e8-4f6d-908c-f001fec8c607,2025/26,609,462116,Jean-Clair Todibo,Jean-Clair Todibo,2
+482,96e5f281-158d-4a4d-8dee-93ed027fa325,2025/26,610,214590,Aaron Wan-Bissaka,Aaron Wan-Bissaka,2
+483,5d6d7fa0-1871-40aa-95df-b817b19c645a,2025/26,611,518438,Kaelan Casey,Kaelan Casey,2
+484,112a1260-0cb2-4248-b27b-68e25d2c087a,2025/26,612,224024,Lucas Tolentino Coelho de Lima,Lucas Paquetá,3
+485,3706fb38-9c0f-4fa6-a4d3-69171dad0499,2025/26,613,215439,Tomáš Souček,Tomas Soucek,3
+486,da40d2fc-9fb1-4653-874a-386c8feae25e,2025/26,615,450070,Crysencio Summerville,Crysencio Summerville,3
+487,6532b4fe-afc3-4fea-a648-f7a83cb442db,2025/26,616,213999,Edson Álvarez Velázquez,Edson Álvarez,3
+488,15a27285-1e19-4e00-970d-f2ca8c65d987,2025/26,617,149519,Maxwel Cornet,Maxwel Cornet,3
+489,d11092d2-02a1-483d-8581-ce070c6c41d9,2025/26,618,197024,Guido Rodríguez,Guido Rodríguez,3
+490,34fd9fbe-964e-4832-8c52-b64dac780c07,2025/26,619,577114,Luis Guilherme Lira dos Santos,Luis Guilherme,3
+491,528f0d18-f132-45d6-a245-4dc41004aa90,2025/26,620,490885,George Earthy,George Earthy,3
+492,56a218b5-0326-4ae2-b2f9-c21ae2995077,2025/26,621,229384,Andy Irving,Andy Irving,3
+493,2dddc136-dd1e-4405-9609-c0692c8a7479,2025/26,622,518442,Lewis Orford,Lewis Orford,3
+494,e82f741c-7aaf-4807-bbfc-ce5f4a0d98b9,2025/26,624,178186,Jarrod Bowen,Jarrod Bowen,4
+495,9dc9d7d5-adb7-4d08-afb8-4b30b62c446d,2025/26,625,91889,Niclas Füllkrug,Niclas Füllkrug,4
+496,2b064b3d-3801-4f5d-b158-269afc136611,2025/26,659,158534,Kyle Walker-Peters,Kyle Walker-Peters,2
+497,1f21671d-d143-49c8-938f-b90e1b57a10e,2025/26,671,75115,Callum Wilson,Callum Wilson,4
+498,c3d3ae83-1510-42da-9233-2f411397d2cf,2025/26,679,467189,Mads Hermansen,Mads Hermansen,1
+499,47914f38-fdf2-4070-a8e0-34617f66da30,2025/26,708,551226,Mateus Gonçalo Espanha Fernandes,Mateus Fernandes,3
+500,3359e9ae-5151-45b4-8e0c-77a2b0623e8d,2025/26,738,37096,Lukasz Fabianski,Lukasz Fabianski,1
+501,c5cf643d-e278-468a-8b57-8144d875ff4e,2025/26,747,602903,Ezra Mayers,Ezra Mayers,2
+502,a106c077-5b59-42d2-97d3-d938b4530fd4,2025/26,815,220362,Axel Disasi,Axel Disasi,2
+503,1a66fd6a-6710-4f29-a6c5-89c04a1049b0,2025/26,627,101982,Sam Johnstone,Sam Johnstone,1
+504,afbf49b6-75a5-4592-ab2c-d08295a2a391,2025/26,628,149065,José Malheiro de Sá,José Sá,1
+505,31d931b3-f4b5-4f98-92ad-9c612108061d,2025/26,629,79602,Daniel Bentley,Daniel Bentley,1
+506,2c539cb7-0919-4d3d-9446-d2d5d7f33f9c,2025/26,631,516939,Emmanuel Agbadou,Emmanuel Agbadou,2
+507,b066e645-c6a2-464e-b911-c0d83cb622ac,2025/26,632,87835,Matt Doherty,Matt Doherty,2
+508,f80b11d9-0005-4eed-a49f-0b013931db8b,2025/26,633,490721,Hugo Bueno López,Hugo Bueno,2
+509,b1c6dee8-393c-44d5-aab5-3369c66cf4a6,2025/26,634,501837,Yerson Mosquera Valdelamar,Yerson Mosquera,2
+510,00feecc2-b82f-4759-a986-d8c283132ebb,2025/26,635,483081,Rodrigo Martins Gomes,Rodrigo Gomes,2
+511,7c1cd5dc-9bd6-4518-b5a5-b90251db72a2,2025/26,636,231480,Santiago Ignacio Bueno,Santiago Bueno,2
+512,9949992d-a0a0-4d9e-81d6-83b903efc08c,2025/26,637,510362,Toti Gomes,Toti,2
+513,28f0d67c-3eee-4d55-b744-c63484af671b,2025/26,638,441271,Ki-Jana Hoever,Ki-Jana Hoever,2
+514,2cb1c2d6-7875-4bca-aaf3-f9a0db2e5f2d,2025/26,639,560248,Bastien Meupiyou Menadjou,,2
+515,4acb2de8-282d-41a8-9184-ef6a36d9c1ff,2025/26,640,641221,Pedro Cardoso de Lima,Pedro Lima,2
+516,e1d9a973-35a1-4fba-9980-59ebf61233f0,2025/26,641,517179,Alfie Pond,Alfie Pond,2
+517,4ebbd927-7869-42c7-a226-2ad79d9f6b61,2025/26,642,184754,Hwang Hee-chan,Hee-Chan Hwang,3
+518,16247559-28c9-47cb-849e-b0c75c2240b7,2025/26,643,509291,André Trindade da Costa Neto,André,3
+519,f18cd524-27df-453e-a1ff-a354597fc676,2025/26,644,231057,Jean-Ricner Bellegarde,Jean-Ricner Bellegarde,3
+520,85560e36-f11f-4635-b01b-aa5dbbf39dfe,2025/26,646,448089,João Victor Gomes da Silva,João Gomes,3
+521,cfa0cd66-03e4-4dac-b6ab-aaf0a86fddf8,2025/26,647,181284,Gonçalo Manuel Ganchinho Guedes,Gonçalo Guedes,3
+522,4a01ead9-a90f-4239-81ba-dfabf4f0011a,2025/26,648,433312,Marshall Munetsi,Marshall Munetsi,3
+523,82d86330-77c1-4de3-b44c-b66f83e9287c,2025/26,649,476502,Boubacar Traoré,Boubacar Traore,3
+524,ae32d960-6ef2-49be-9ddb-fb32ac08929d,2025/26,650,497606,Tawanda Chirewa,Tawanda Chirewa,3
+525,df260d38-74bc-4db1-b6a1-981114d38c59,2025/26,651,596054,Tom Edozie,Tom Edozie,3
+526,c210e153-763f-4bc6-96a7-063bc363159a,2025/26,652,593001,Enso González Medina,,3
+527,9dd5d807-1dfd-466a-8479-8ed7e06b22fb,2025/26,653,240299,Joe Hodge,,3
+528,2367f968-80af-48da-99cc-896d8e179fc2,2025/26,655,449988,Fábio Soares Silva,Fabio Silva,4
+529,520b1085-6580-44d1-b65c-7132e209cb65,2025/26,656,429414,Saša Kalajdžić,Sasa Kalajdzic,4
+530,9d887de9-69c3-4611-b5a7-3906aa107b80,2025/26,657,589507,Leon Chiwome,,4
+531,2198aa01-1c6c-4ef2-a972-673503c094f7,2025/26,658,531363,Nathan Fraser,,4
+532,b335ffd3-622f-49c4-a3a3-c24d28da56a4,2025/26,749,647671,Mateus Mané,Mateus Mané,4
+533,4fc6dec6-7b50-4852-a52b-5ba4c7db9034,2025/26,817,155511,Adam Armstrong,Adam Armstrong,4
+534,45c954c5-7a8e-4420-b0d7-2cd2367743a7,2025/26,13,563324,Brayden Clarke,,2
+535,778353c6-4ddf-40e8-a474-96ac57b79dae,2025/26,26,481655,Martín Zubimendi Ibáñez,Martín Zubimendi,3
+536,c9a47ffc-3016-4301-ad03-e3bcfe5043f4,2025/26,29,437742,Albert Sambi Lokonga,,3
+537,5dfc3e0c-26d2-47c0-b444-42500f664a8c,2025/26,662,500040,Cristhian Mosquera,Cristhian Mosquera,2
+538,2c0b785d-9175-415e-b7ee-cb10961a60a6,2025/26,666,224117,Viktor Gyökeres,Viktor Gyokeres,4
+539,8454fd25-b5e1-43c0-868e-638cea3bbabb,2025/26,700,616077,Max Dowman,Max Dowman,3
+540,a6b5ae28-d53d-4502-afe9-44c0c9db37f4,2025/26,711,646243,Andre Harriman-Annous,,3
+541,2b9337d7-0164-4b9e-969e-db2f0905a2cc,2025/26,725,448104,Piero Hincapié,Piero Hincapié,2
+542,be053f5a-34d8-4bc3-a672-da0c1dd36231,2025/26,759,616065,Marli Salmon,,2
+543,7e66bd94-3d78-463b-b062-cb3bf2da1cce,2025/26,33,72147,Marco Bizot,Marco Bizot,1
+544,c9f8e9f1-a6b9-43d2-b510-4795ddd9351a,2025/26,46,587178,Yasin Özcan,,2
+545,24757ac2-400b-4dcd-974d-225337584faf,2025/26,65,576756,Zépiqueno Redmond,,4
+546,4c5f3a6c-b926-4546-b5a0-5f5d33fc2c89,2025/26,688,481283,James Wright,,1
+547,e44fd2fe-5943-44e1-9ff5-4edce556a2aa,2025/26,699,230046,Douglas Luiz Soares de Paulo,Douglas Luiz,3
+548,a4550d4e-f6f6-4bc2-ba98-59bb9d17b54b,2025/26,701,569577,Triston Rowe,,2
+549,fcb8fa2a-d72a-4a6e-93dc-15b1a2df698a,2025/26,702,645618,Bradley Burrowes,Bradley Burrowes,3
+550,68f12412-b39c-4bd7-be8d-d2406c2b312e,2025/26,703,564505,Sam Proctor,,1
+551,55276dfb-832f-427c-a193-450715bf5569,2025/26,710,534836,Travis Patterson,,2
+552,c2cc4a44-59c2-4e9b-b724-7c670e762a77,2025/26,754,577285,George Hemmings,George Hemmings,3
+553,a90aba94-1559-4cba-b7a7-c9924d81565f,2025/26,757,516875,Ronnie Hollingshead,,1
+554,326ad64b-61aa-45cb-aeec-6b418032b7b0,2025/26,768,664015,Leon Routh,,2
+555,6ac72509-7e34-45fd-b9f8-26900e8adf0e,2025/26,781,618027,TJ Carroll,,2
+556,1e921cf9-1036-46eb-998c-afb94a60d6a6,2025/26,792,653481,Alysson Edward Franco da Rocha dos Santos,Alysson Edward,3
+557,3be1b83a-42f2-4ae8-a257-d8157749b5c9,2025/26,808,173879,Tammy Abraham,Tammy Abraham,4
+558,c63e6e33-3aa3-4d23-b62b-052db893898c,2025/26,183,518030,Max Weiß,,1
+559,2468d2cb-1943-47c2-8ce2-d5a32bc6b63d,2025/26,184,489571,Etienne Green,,1
+560,327507d4-d84c-49a9-aaa0-50c547faaf64,2025/26,185,51943,Václav Hladký,,1
+561,67813629-ed25-456c-b9b0-7e930f1bdc21,2025/26,186,192290,Connor Roberts,,2
+562,0490c4f8-083a-4462-b202-ab60e507362d,2025/26,188,247245,Hannes Delcroix,,2
+563,5bc96f0a-9920-48bb-af9e-27451b4bc2b8,2025/26,189,461567,Owen Dodgson,,2
+564,8812c842-5bef-4cd1-af43-5f3723c33c62,2025/26,190,478969,Hjalmar Ekdal,Hjalmar Ekdal,2
+565,4aa1d8ba-6831-42d3-a286-3938c0f8ca9f,2025/26,191,477717,Maxime Estève,Maxime Estève,2
+566,9951d846-9147-4ca0-b269-27c4137a500e,2025/26,192,494960,Quilindschy Hartman,Quilindschy Hartman,2
+567,7cb6336a-336a-45cd-8c7c-36e4e503dca9,2025/26,193,461188,Bashir Humphreys,Bashir Humphreys,2
+568,e68404d7-2152-4d57-9be8-b6ce18ba7418,2025/26,194,241231,Jordan Beyer,,2
+569,124db537-8df8-4353-952d-25094393b631,2025/26,195,549329,Lucas Pires Silva,Lucas Pires,2
+570,b71a5acf-9c2f-48aa-8d97-648cf8f07551,2025/26,196,450072,Shurandy Sambo,,2
+571,5b77be6e-0bb3-457f-bad5-4403f47235b1,2025/26,197,519895,Oliver Sonne,Oliver Sonne,2
+572,d41a0b68-0df4-4a96-84c8-8c0ad3bc6423,2025/26,201,183751,Manuel Benson Hedilazio,,3
+573,515a377e-fa30-4dfa-9826-e2ce13cfa78c,2025/26,202,179458,Jacob Bruun Larsen,Jacob Bruun Larsen,3
+574,ac4b4494-847c-4a93-8e3b-f01261646dfc,2025/26,203,578614,Enock Agyei,,3
+575,28f0f650-0881-473a-992f-f226fe6347b5,2025/26,204,250735,Darko Churlinov,,3
+576,f6b276eb-040b-462e-829b-e92375cf6019,2025/26,205,172567,Josh Cullen,Josh Cullen,3
+577,b2d79a38-4117-4421-ab94-826f5898e52c,2025/26,206,174592,Marcus Edwards,Marcus Edwards,3
+578,b78bc2a1-f104-4691-9ce2-2776c93df7c4,2025/26,208,487702,Luca Koleosho,,3
+579,b494f3b5-3cfe-4a72-b033-70c177835129,2025/26,209,167887,Josh Laurent,Josh Laurent,3
+580,d2854813-72ea-4db2-b5a4-1f58d42d0e15,2025/26,210,469272,Loum Tchaouna,Loum Tchaouna,3
+581,f6bc79c3-d0c9-41f1-8bb6-88d20ce94792,2025/26,211,447715,Aaron Ramsey,,3
+582,4e27e291-cc12-4140-b48d-73671c8b25c8,2025/26,212,576323,Oluwaseun Adewumi,,3
+583,ceabde74-5487-468d-b432-f8940c5af8e4,2025/26,213,551206,Jaydon Banel,Jaydon Banel,3
+584,43e9e607-27a0-46a3-8d71-2ced0f01a9fa,2025/26,214,437748,Mike Trésor Ndayishimiye,Mike Trésor,3
+585,556508c1-c458-487f-859f-5ecb7a845062,2025/26,215,431639,Zian Flemming,Zian Flemming,4
+586,f3c4d980-7893-46c2-b459-47f43451dad7,2025/26,216,492831,Zeki Amdouni,,4
+587,7d544fd0-af52-4656-ace1-4b683c3a2ff4,2025/26,217,435973,Lyle Foster,Lyle Foster,4
+588,842b8fac-de5b-4fec-af54-364f3d7cd0f7,2025/26,218,44699,Ashley Barnes,Ashley Barnes,4
+589,0951e249-0fa6-4e11-9e2d-d1d2156f8c7f,2025/26,219,220598,Michael Obafemi,,4
+590,daccf845-69c5-45a4-ac54-e344ba2e8ece,2025/26,722,216055,Florentino Ibrain Morris Luís,Florentino Luís,3
+591,63a1e33c-d7ef-4511-8798-9e574cfd7ccf,2025/26,776,647960,Oliver Pimlott,,3
+592,eb440bb2-7556-470e-9dbe-618751a5494a,2025/26,784,704232,George Brierley,,3
+593,c77da048-8150-4fbf-8384-899e1a9df8b4,2025/26,820,644593,Kian McMahon-Brown,,3
+594,751e7d9e-fd20-4d31-9e3c-5f8102f2d7c9,2025/26,74,494521,Adrien Truffert,Adrien Truffert,2
+595,56d2f6c5-0d4d-4a66-ae82-533f51b35299,2025/26,76,518906,Owen Bevan,,2
+596,c7528804-9623-4bdb-ad85-0f62c8d857c4,2025/26,100,560262,Junior Kroupi,Eli Junior Kroupi,4
+597,96208a93-4ee8-40f6-a03c-a2f5d26c2388,2025/26,685,242882,Bafodé Diakité,Bafode Diakite,2
+598,45af936c-cd99-491c-b5c6-905c20a14ba7,2025/26,697,489888,Amine Adli,Amine Adli,3
+599,8a23bf48-4959-4df0-a5f8-f77f853305b0,2025/26,713,551483,Álex Jiménez Sánchez,Alejandro Jiménez,2
+600,c6e10f61-8f06-4028-8d03-fe524e615dee,2025/26,721,620487,Veljko Milosavljevic,Veljko Milosavljevic,2
+601,522190bc-90c2-410d-85fd-e3e77951843c,2025/26,756,678552,Malcom DaCosta,,3
+602,b5913531-8486-40c3-bfea-b0243a1ff115,2025/26,799,658013,Charlie Stevens,,3
+603,487f0e75-49d1-4ab9-afe1-0bd8ecd1a25d,2025/26,801,614574,Alex Tóth,Alex Tóth,3
+604,de6141f8-37cb-4837-84d5-12f916f5e8dd,2025/26,806,436416,Christos Mandas,,1
+605,0fcb35d0-9ca4-4e84-ae2e-8fb6afb802ef,2025/26,807,499604,Rayan Vitor Simplício Rocha,Rayan,3
+606,21f95d65-4e8e-4bca-9cf9-b538ac33b2bd,2025/26,102,235448,Ellery Balcombe,,1
+607,73b82181-685e-4e83-aec5-17d2036a8ebc,2025/26,103,503300,Matthew Cox,,1
+608,06a7455e-20c3-4c63-8b9f-ba883dd303a2,2025/26,115,612534,Benjamin Fredrick,,2
+609,fe1675f8-b283-4a0b-b6ae-ac6b2d6c5eca,2025/26,122,543295,Antoni Milambo,Antoni Milambo,3
+610,ce96ad9b-997d-46d3-a93d-4cb784f16ad1,2025/26,124,56979,Jordan Henderson,Jordan Henderson,3
+611,0b7d0441-160a-4c1b-84bb-e6cea29184b5,2025/26,130,606689,Romelle Donovan,Romelle Donovan,3
+612,d41f09ef-6f87-4cc1-9f1a-ee796af3d065,2025/26,797,593174,Kaye Furo,,4
+613,844e8fb4-8934-482c-b81a-1971b2bbd95c,2025/26,810,559610,Luka Bentt,,3
+614,743e28fa-6d1f-44e8-a594-c903f011ae8f,2025/26,819,494556,Ollie Shield,,2
+615,7dae3789-efe3-4b18-8337-da34318d94f5,2025/26,823,649240,Joshua Stephenson,,2
+616,8b62be21-84f4-402b-82dc-dc61764f013e,2025/26,824,587433,Conor McManus,,2
+617,652842ef-86ad-4d96-acb9-ad34f7f6af7a,2025/26,826,547671,Riley Owen,,3
+618,5daf2c6c-97ba-41a1-96ae-09570f44f903,2025/26,140,209288,Tom McGill,,1
+619,bfc67171-cbc5-49fb-81b9-ee7120af739d,2025/26,142,240514,Kjell Scherpen,,1
+620,25e894d5-5fe6-4e70-9231-eb41f5fd051f,2025/26,143,204120,Olivier Boscagli,Olivier Boscagli,2
+621,013d5efd-ec7a-483b-be9f-0a514707655a,2025/26,144,550090,Diego Coppola,Diego Coppola,2
+622,75dcd00b-3ea1-42da-bb8a-25dbb04a0866,2025/26,145,465730,Maxim De Cuyper,Maxim De Cuyper,2
+623,2dd3ddd4-7a02-47b2-a523-352b8f31f216,2025/26,156,547720,Charlie Tasker,,2
+624,db100fc4-014e-4885-821d-e58e75ba7b2a,2025/26,165,516211,Abdallah Sima,,3
+625,c6677205-fea4-4d34-a658-598ec89e3c2f,2025/26,172,549074,Tom Watson,Tom Watson,3
+626,9858f4ff-8524-4a7a-a918-b885dbbe672e,2025/26,174,611695,Malick Yalcouyé,,3
+627,d8b398a5-c466-4f3e-82c1-3b674cffb7c8,2025/26,180,608181,Stefanos Tzimas,Stefanos Tzimas,4
+628,78b49aa9-73ed-4667-89db-8fd7b6a24104,2025/26,181,647850,Charalampos Kostoulas,Charalampos Kostoulas,4
+629,13be3147-4bef-4613-8472-82b94f305fcd,2025/26,744,556637,Nehemiah Oriola,Nehemiah Oriola,3
+630,c395b9a2-45d9-49af-b107-70fdf588034d,2025/26,761,604988,Freddie Simmonds,,2
+631,3a760bdc-2151-45df-b3e4-518c0d97e81d,2025/26,795,597320,Harry Howell,Harry Howell,3
+632,df2e5ec0-960b-42e4-b9c4-2d0593b49273,2025/26,222,549939,Mike Penders,,1
+633,9c195ceb-7acc-4b9d-a707-cd4ac3340f07,2025/26,223,471798,Gabriel Słonina,,1
+634,e51d19df-18b0-4a28-8c3b-ea5d199f2252,2025/26,231,574458,Mamadou Sarr,Mamadou Sarr,2
+635,faf51dbf-9abf-4c45-8be3-01866db48561,2025/26,238,624773,Estêvão Almeida de Oliveira Gonçalves,Estêvão,3
+636,07b70ca9-5991-4de8-91e1-48a13b9a2533,2025/26,239,463936,Jamie Bynoe-Gittens,Jamie Bynoe-Gittens,3
+637,703cf6e8-6b6f-43e6-bb9e-10415ec3bc79,2025/26,247,491007,Dário Luís Essugo,Dário Essugo,3
+638,b71957d8-d91d-462e-bbe3-a2404e270c3b,2025/26,248,611134,Kendry Páez Andrade,,3
+639,aae806e0-9c1d-434e-a9db-1e5f5787b3f0,2025/26,672,551210,Jorrel Hato,Jorrel Hato,2
+640,4521be15-24bd-4fbd-9440-5b6416d61b11,2025/26,743,611912,Landon Emenalo,,3
+641,3bd16c1f-a031-44b4-a50c-b6ba1805f7ed,2025/26,789,518335,Max Merrick,,1
+642,8cadc27c-78e8-42f7-998c-adecb9719d31,2025/26,803,499857,Teddy Sharman-Lowe,,1
+643,2cc3182b-648a-462b-ae1c-b6e3029764fc,2025/26,829,619734,Jesse Derry,,3
+644,29da4cc1-15b0-4153-b967-eca492bc9160,2025/26,833,671606,Mathis Eboué,,3
+645,68142031-e47a-4b3f-aa62-8fc82cfabcb7,2025/26,834,616286,Ryan Kavuma-McQueen,,3
+646,110b5e40-012d-40a1-a4f6-7a8dd3577e32,2025/26,254,121709,Walter Benítez,Walter Benítez,1
+647,9d4c256f-4e58-48e8-85b9-3220349b124f,2025/26,259,218364,Borna Sosa,Borna Sosa,2
+648,844f4bef-b076-4494-a416-6620adc76b35,2025/26,677,485337,Evann Guessand,Evann Guessand,3
+649,563ea4ef-6a1c-4f5c-83cf-f5df6b946cc0,2025/26,690,590014,Rio Cardines,,3
+650,d60ca0b4-6c07-4e7e-9dd6-1a8f5bb807cc,2025/26,712,488024,Yéremy Pino Santos,Yeremi Pino,3
+651,e8542eaf-c756-4ee5-9398-365773676f59,2025/26,723,651426,Jaydee Canvot,Jaydee Canvot,2
+652,0da7cad4-0eda-42bd-8235-fddd42a644ef,2025/26,732,660392,Christantus Uche,Christantus Uche,4
+653,4696ed36-622a-46dd-ae4a-f44988d9f0ab,2025/26,762,672492,Joél Drakes-Thomas,Joél Drakes-Thomas,3
+654,467d16d7-91c1-4e76-87ed-08fff566b19f,2025/26,773,643426,Dean Benamar,,2
+655,6774c343-7a31-4046-9f75-d8368d985e16,2025/26,780,631106,Ben Casey,,4
+656,4872d622-de0b-477e-82ce-ab2619781460,2025/26,793,591384,George King,,2
+657,960e06c6-602d-4b33-b050-428df9c4fd05,2025/26,798,502988,Danny Imray,,2
+658,950142b2-44d2-4f2b-a3fc-36ee6934d69f,2025/26,289,447325,Harry Tyrer,,1
+659,81fc2872-eb98-4f18-afed-6013f0bc66a1,2025/26,298,474907,Reece Welch,,2
+660,49b2de31-efe5-4781-8658-8ef59262a45d,2025/26,310,586309,Thierno Barry,Thierno Barry,4
+661,a1d3fbc5-6afa-4331-a53c-01fd44bddd7c,2025/26,667,499300,Adam Aznou,,2
+662,61fd040a-2a9b-4046-bf92-682d3b5ee405,2025/26,704,461446,Tyler Onyango,,3
+663,fd6b0bfa-e94a-4356-8849-6e503548ef11,2025/26,705,491745,Elijah Campbell,,2
+664,74591a67-54a5-4eaa-bec2-37a0b6ba973e,2025/26,728,513466,Merlin Röhl,Merlin Röhl,3
+665,a60aea8e-bf25-4dd9-8d15-eef355251f1e,2025/26,779,629068,Braiden Graham,,4
+666,299dfcf6-8fe4-418c-8c6f-3903d20c4779,2025/26,664,86873,Benjamin Lecomte,,1
+667,01b1421f-9874-4630-a023-e175c6c710d1,2025/26,727,218328,Samuel Chukwueze,Samuel Chukwueze,3
+668,2c5e3c83-a97a-486a-8107-dcfb3f27e0a5,2025/26,731,560552,Kevin Santos Lopes de Macedo,Kevin,3
+669,44ba52ac-2afe-4eb4-83b0-492817ba10b1,2025/26,737,631786,Jonah Kusi-Asare,Jonah Kusi-Asare,4
+670,0410c4b4-c5ae-4964-9c28-23c0514a101b,2025/26,770,619536,Seth Ridgeon,,3
+671,7d302ab3-7eb6-479f-91dc-0cbe50fe9418,2025/26,786,505079,Alfie McNally,,1
+672,f6bc9a94-bd54-4442-a82b-ff3618209116,2025/26,339,437495,Illan Meslier,,1
+673,f811b131-bd7c-4398-b921-a5a5799561a2,2025/26,340,97846,Alex Cairns,,1
+674,bfa7b9dc-bd5a-4874-8671-c0ed83dfeb0c,2025/26,341,59735,Karl Darlow,Karl Darlow,1
+675,a2802682-bc33-4a6b-b2c1-724a93d6830e,2025/26,342,226182,Jayden Bogle,Jayden Bogle,2
+676,2dd169d2-509a-4993-ba91-6349e20df845,2025/26,343,222694,Pascal Struijk,Pascal Struijk,2
+677,a4512a38-c9e8-4276-8cae-77d2afe58aa6,2025/26,344,434752,Jaka Bijol,Jaka Bijol,2
+678,0be24c77-a34a-4723-a43a-b959d525f313,2025/26,345,437738,Sebastiaan Bornauw,Sebastiaan Bornauw,2
+679,2730357e-9a2a-4b63-ae77-345a50627fca,2025/26,346,113564,Sam Byram,Sam Byram,2
+680,08cab054-adb9-4f26-9e36-9f18897f3b16,2025/26,347,243526,Gabriel Gudmundsson,Gabriel Gudmundsson,2
+681,2145cb57-1e29-45d2-bcce-4cd84f6243b5,2025/26,348,214225,Joe Rodon,Joe Rodon,2
+682,66763589-c3aa-486e-a6a4-ff7de250212e,2025/26,349,492368,Isaac Schmidt,,2
+683,469b1e86-8e93-4bb9-8bd0-fd9ddcb1075f,2025/26,350,427637,Brenden Aaronson,Brenden Aaronson,3
+684,61ca5bdd-7e14-447c-8e47-54b3349e7b09,2025/26,351,492859,Wilfried Gnonto,Wilfried Gnonto,3
+685,8d8f7c6c-be45-45ff-8d3b-b9ae64e07b9e,2025/26,353,200617,Daniel James,Daniel James,3
+686,7b5cc5b5-7aae-4a8d-9ed1-e567f802cc6a,2025/26,354,199598,Ethan Ampadu,Ethan Ampadu,3
+687,d038aa1f-d61b-4957-ae14-813f44862f63,2025/26,355,248937,Sam Greenwood,,3
+688,f61fc53a-22f9-4be7-9679-f9db4c5516d2,2025/26,356,486520,Ilia Gruev,Ilia Gruev,3
+689,a78de008-6ea6-4db6-88fc-94b74016f042,2025/26,357,433952,Largie Ramazani,,3
+690,f5980244-5e18-4a4d-99d0-95cf10b83b4d,2025/26,358,248056,Tanaka Ao,Ao Tanaka,3
+691,20b2400f-41ec-4778-8975-36a3caa497ba,2025/26,359,536119,Charlie Crew,,3
+692,534c4433-20e0-4a65-a210-f561bb424741,2025/26,360,462635,Joe Gelhardt,,3
+693,4c156eaf-44c1-468d-9757-35331d66ebe7,2025/26,361,470294,Darko Gyabi,,3
+694,44fe132a-5fa0-4510-9433-1457a994a5a8,2025/26,362,235826,Joël Piroe,Joël Piroe,4
+695,3c3d363f-5a99-4862-818f-330ad7a70482,2025/26,363,106617,Patrick Bamford,,4
+696,3f7d4955-3c72-41cb-a9d5-b304175a295f,2025/26,364,565297,Mateo Joseph Fernández-Regatillo,,4
+697,f1b76ad1-eb2c-4609-8e11-c4c75a9c0b5d,2025/26,365,174594,Lukas Nmecha,Lukas Nmecha,4
+698,af06eb0f-d679-4b50-b0e1-14cab602991d,2025/26,660,466525,Anton Stach,Anton Stach,3
+699,342c7c81-08f2-4ead-a6e9-eeb112ad9d48,2025/26,665,201595,Lucas Estella Perri,Lucas Perri,1
+700,388f57c9-3041-47f7-8b9a-e517164d0b7b,2025/26,698,435997,Noah Okafor,Noah Okafor,3
+701,9fa07b42-5eab-47dd-adea-14e198ee9c94,2025/26,741,600882,Harry Gray,,4
+702,db1fc670-1800-46cf-9e4b-52a48c7cd414,2025/26,787,565863,Sam Chambers,,3
+703,339b006a-a61c-499f-844e-2c386bcb912e,2025/26,837,643970,Jayden Lienou,,2
+704,5cc0d215-d5d4-45b3-af5b-bd01530e0311,2025/26,838,577978,Rhys Chadwick,,3
+705,8c7bf2ec-b723-4cee-b203-717a8f6af630,2025/26,839,592740,Alfie Cresswell,,3
+706,64b1a57c-753c-4b0e-9c5f-86bbaaa374a4,2025/26,367,449027,Giorgi Mamardashvili,Giorgi Mamardashvili,1
+707,c50eefc4-0ce3-4575-83aa-7f746377fb98,2025/26,368,586268,Ármin Pécsi,,1
+708,84d38cc9-bc39-4672-8b53-faf8a5100a96,2025/26,369,155503,Freddie Woodman,Freddie Woodman,1
+709,85aac69a-bc63-40d0-8755-354a03fd69aa,2025/26,370,216094,Jeremie Frimpong,Jeremie Frimpong,2
+710,4c6a6f18-c1ea-455d-954f-c922e26a2530,2025/26,380,489580,Calvin Ramsay,,2
+711,327e3d79-232d-4484-b1f1-43aaa0942e81,2025/26,382,494595,Florian Wirtz,Florian Wirtz,3
+712,84b69e98-390d-476c-9d22-4fff6ced5ad0,2025/26,661,510663,Hugo Ekitiké,Hugo Ekitike,4
+713,26e44f55-b45e-40e6-9e19-ae50bd7ef048,2025/26,686,611922,Rio Ngumoha,Rio Ngumoha,3
+714,391904fa-ad1d-4b28-9d9a-6dd11809b9e5,2025/26,692,647681,Giovanni Leoni,,2
+715,b60acbd9-f275-486a-adcb-1605a7034843,2025/26,746,596042,Kieran Morrison,,3
+716,4ec14890-71ba-4e28-af6c-00ce47c8410a,2025/26,760,519440,Wellity Lucky,,2
+717,ab475111-a65b-495f-891c-d90a71aa0489,2025/26,830,677945,Will Wright,,4
+718,abb828d9-75cb-46c0-a5cd-3d4917f6da5e,2025/26,832,718875,Talla Ndiaye,,2
+719,72c2916b-461c-41b9-aad4-0cfbd4866cc5,2025/26,182,432720,James Trafford,James Trafford,1
+720,a9964c35-21a3-4eff-a609-0b960532b723,2025/26,417,466052,Rayan Cherki,Mathis Cherki,3
+721,48976bbe-e0a6-4695-b993-e2231c2bddfe,2025/26,427,433036,Tijjani Reijnders,Tijjani Reijnders,3
+722,008f6059-3542-4558-8535-60c083e77012,2025/26,428,566164,Sverre Nypan,,3
+723,da4d28b6-6b8e-41c9-b410-11fd8543dfb8,2025/26,736,204936,Gianluigi Donnarumma,Gianluigi Donnarumma,1
+724,2acd128c-7464-4303-aba2-44a9f4c8cd47,2025/26,739,590039,Divine Mukasa,Divine Mukasa,3
+725,948b65ef-e9d3-403a-87af-0473b44c428d,2025/26,740,566213,Stephen Mfuni,,2
+726,b695d829-61fd-4513-8199-4ab553767fb5,2025/26,742,616288,Ryan McAidoo,,3
+727,71e87d67-e5e2-42ae-bc39-bf79a1f6fb34,2025/26,763,516234,Charlie Gray,,3
+728,54468bd1-fd06-4348-9c84-3166c4cf40a8,2025/26,764,580921,Reigan Heskey,,3
+729,2d43fc58-918d-4162-ab81-ca56878f2e46,2025/26,435,461537,Dermot Mee,,1
+730,3b9090fd-c44a-4113-b1be-4e97fb690015,2025/26,439,661712,Diego León Blanco,,2
+731,85119164-5ae7-4f6f-80b1-092a42162193,2025/26,681,485711,Benjamin Sesko,Benjamin Sesko,4
+732,bb7748e2-2ef7-4421-8859-c247f34a47c3,2025/26,733,465247,Senne Lammens,Senne Lammens,1
+733,a455a99c-7d01-45c4-a87b-9a60e64d8d46,2025/26,755,576628,Shea Lacey,Shea Lacey,3
+734,ff5ce571-a1e3-41d5-b275-b30305063708,2025/26,769,576620,Bendito Mantato,Bendito Mantato,3
+735,bd8e0743-5b08-4f54-8d1e-c20451e3ded3,2025/26,771,519913,Tyler Fletcher,Tyler Fletcher,3
+736,1fc7bcd4-95a7-4375-8fc6-717d8724ae57,2025/26,827,576634,Jim Thwaites,,3
+737,ebb5d965-7b31-4fcd-b112-cec4474abe3e,2025/26,471,81441,Mark Gillespie,,1
+738,1e94f3f7-b3a9-4a9b-908e-efdca4903a94,2025/26,482,441024,Harrison Ashby,,2
+739,e48f8c8d-4ddd-47fe-8ded-e1c27e46b2c4,2025/26,492,640108,Antoñito Cordero Campillo,,3
+740,c8edcf75-9425-4ebc-90b1-3bf2f679e115,2025/26,501,599303,Sean Neave,,4
+741,ef6b540e-642d-4b54-95d8-a1c563ddd79e,2025/26,684,465642,Malick Thiaw,Malick Thiaw,2
+742,dd466680-ba84-408d-89b0-c7e483d597b3,2025/26,689,623110,Seung-Soo Park,,3
+743,c04f867b-36d2-434d-a473-384c086a4651,2025/26,714,470313,Nick Woltemade,Nick Woltemade,4
+744,bdbd5de0-b151-4a6f-9e5e-a46bc128c8f0,2025/26,765,553746,Leo Shahar,,2
+745,0724a32b-dee2-4dc8-aeef-99df3f5c293f,2025/26,772,666607,Sam Alabi,,3
+746,c62d4152-8c36-4bc7-87f3-320f6f7092bf,2025/26,509,451432,David Mota Veiga Teixeira do Carmo,,2
+747,7cbdcb07-d703-40df-98b5-5e101234a66e,2025/26,510,575458,Jair Paula da Cunha Filho,Jair,2
+748,e8567870-86fe-4347-8ba0-117b5faaab95,2025/26,524,495161,Marko Stamenić,,3
+749,f54fb77a-5b11-4bc9-826b-aaa232a30ff1,2025/26,526,482973,Igor Jesus Maciel da Cruz,Igor Jesus,4
+750,45f173af-3825-4fe8-a590-5d88bd90b2c4,2025/26,669,456512,Dan Ndoye,Dan Ndoye,3
+751,7aec56ec-d366-4387-8805-091972b29540,2025/26,675,107265,Angus Gunn,Angus Gunn,1
+752,62bd7bd2-92b2-48fb-8a6a-117defecfe5e,2025/26,696,465680,Arnaud Kalimuendo,Arnaud Kalimuendo Muinga,4
+753,4147179e-ef8a-4411-90ae-c1e6f013aab9,2025/26,715,221389,John Victor Maciel Furtado,John Victor,1
+754,492147bd-d7b8-464e-9e3b-af7bb5a4a224,2025/26,716,500151,Nicolò Savona,Nicolò Savona,2
+755,e2bc2802-2f16-4e94-8238-7d3f8ac255c0,2025/26,729,560441,Luis Eduardo Soares da Silva,,2
+756,440cb15b-01cb-471a-a5d8-92ce0759188d,2025/26,734,476887,Dilane Bakwa,Dilane Bakwa,3
+757,5475cca1-baf6-4309-a30c-584b716f39d2,2025/26,805,469130,Lorenzo Lucca,Lorenzo Lucca,4
+758,99f870a9-636c-448f-b815-32781c98a884,2025/26,814,470315,Luca Netz,Luca Netz,2
+759,128d3053-fc28-44af-b0d8-2a235f95a35e,2025/26,835,568159,Archie Whitehall,,3
+760,1a6336d2-5c95-42e9-aef2-3500c474ac39,2025/26,836,590040,Jimmy Sinclair,,3
+761,a4685873-562e-4e63-8bd6-d964a8342518,2025/26,841,687076,Lamin Sillah,,4
+762,6c23d615-5f8e-4b9e-9c94-ce4a37ac31be,2025/26,528,232571,Anthony Patterson,,1
+763,75420585-e994-4f50-ac88-3a0a6cd67521,2025/26,529,74854,Simon Moore,,1
+764,2912cab1-b49c-427d-a2f3-46c96d4ca77e,2025/26,530,490000,Blondy Nna Noukeu,,1
+765,4a0710a2-b07d-4519-9416-714f8642b646,2025/26,531,223827,Daniel Ballard,Dan Ballard,2
+766,5d9ac816-8619-4d2f-b167-9f64ea8e0180,2025/26,532,487676,Trai Hume,Trai Hume,2
+767,11c5fb5d-554f-46d4-a3f0-43103e82d6b4,2025/26,533,220684,Aji Alese,,2
+768,2441d011-1e93-4a32-b7d0-1418f1a9594d,2025/26,534,232820,Joe Anderson,,2
+769,4711c6c7-796d-4590-8718-5c0c137bf953,2025/26,535,461195,Dennis Cirkin,Dennis Cirkin,2
+770,e3f07bf9-da8a-47b0-b7ea-10e99cb1c7ed,2025/26,536,477547,Leo Fuhr Hjelde,,2
+771,f0ffe8c3-0d4c-4896-a6bf-6698f03b7745,2025/26,537,492066,Niall Huggins,,2
+772,ba823f3c-13c6-4954-bf15-7d17a0c1dd9f,2025/26,538,514613,Zak Johnson,,2
+773,bc328d2f-bd7c-4e75-9a00-4cc0beb398fe,2025/26,539,167512,Luke O'Nien,Luke O'Nien,2
+774,2e17063c-4c61-48a4-9071-8656d80b8d86,2025/26,540,465702,Timothée Pembélé,,2
+775,a5326f15-e26f-435d-8afa-4162227a9125,2025/26,541,434399,Reinildo Mandava,Reinildo,2
+776,de2f7a1e-0cd0-4e31-a0ac-339781606f30,2025/26,542,519634,Jenson Seelt,Jenson Seelt,2
+777,bbbc56f9-32e4-49c6-9feb-a3468e1c684f,2025/26,544,547027,Habib Diarra,Habib Diarra,3
+778,ba096756-1a44-4b69-b556-cc908f90bc45,2025/26,545,124165,Patrick Roberts,Patrick Roberts,3
+779,240bccd6-3440-49d9-b4b6-42c0155ae6f5,2025/26,546,626844,Milan Aleksić,,3
+780,d4219aa9-a443-42da-a605-2fdf63d60e9d,2025/26,547,484420,Enzo Le Fée,Enzo Le Fée,3
+781,b8cc856e-9652-4708-8371-9de05b04f0ee,2025/26,548,461199,Romaine Mundle,Romaine Mundle,3
+782,068b1f72-1d9f-4053-8da4-1f5f9db3d9ca,2025/26,549,223336,Dan Neil,Dan Neil,3
+783,a228ca2d-32c8-45e6-8063-6e6b888eb965,2025/26,550,215460,Ian Poveda-Ocampo,,3
+784,664c3d00-a241-494d-9293-817fabf72bd2,2025/26,551,554197,Chris Rigg,Chris Rigg,3
+785,e102e6cf-97e9-42b1-854a-56adc897ff0f,2025/26,552,577669,Noah Sadiki,Noah Sadiki,3
+786,6200c731-d783-4738-821f-bf7faead0e61,2025/26,553,549912,Chemsdine Talbi,Chemsdine Talbi,3
+787,eb844860-49db-4984-a05d-0b0e30d7371f,2025/26,554,477851,Abdoullah Ba,,3
+788,e03467ef-1c66-4910-a2b5-4cfe0992c55e,2025/26,555,171422,Alan Browne,,3
+789,553cf544-4aaa-445d-9c2d-5a34bbc631e9,2025/26,556,458297,Pierre Ekwah Elimby,,3
+790,354368e9-44f7-498c-aa89-35d943e3709b,2025/26,557,547410,Harrison Jones,,3
+791,0012a9df-b0af-4082-90a5-869320cc273a,2025/26,558,493837,Jay Matete,,3
+792,0772d2e7-67aa-4543-8045-03d7408dd2ea,2025/26,559,500696,Nectarios Triantis,,3
+793,e6c49be6-27e1-42ce-bc31-fdf83587c25c,2025/26,560,437505,Wilson Isidor,Wilson Isidor,4
+794,05d1cd37-3413-413e-a5fd-39e6399b4b6d,2025/26,561,564406,Eliezer Mayenda Dossou,Eliezer Mayenda,4
+795,5ba36b87-0826-4e5e-a854-754167085581,2025/26,562,611975,Ahmed Abdullahi,,4
+796,c9182152-dade-4124-a3b4-35ca86288c6c,2025/26,563,551153,Luís Hemir Silva Semedo,,4
+797,3705b102-1562-4193-bcc4-8311d85fae1a,2025/26,564,440955,Nazarii Rusyn,,4
+798,b37ab2f2-36b1-4b02-bfe1-5cf9b94756b1,2025/26,668,84450,Granit Xhaka,Granit Xhaka,3
+799,53719956-8c27-4a5d-8dc9-c13ba9c77e3a,2025/26,670,498016,Robin Roefs,Robin Roefs,1
+800,e560e6c4-b226-4e09-9305-e0f0f89ec7c8,2025/26,678,105717,Arthur Masuaku,Arthur Masuaku,2
+801,640f552c-5304-4212-a861-92b6428b71ad,2025/26,683,201895,Omar Alderete,Omar Alderete,2
+802,32c9ecd1-ba4e-448e-91d8-2e503e65b2e8,2025/26,694,200834,Nordi Mukiele,Nordi Mukiele,2
+803,320c3b76-7ee1-42cc-a9c7-a54804af8ddd,2025/26,724,247955,Lutsharel Geertruida,Lutsharel Geertruida,2
+804,d2aa0676-ff0a-49eb-92f9-d4bae6c7c62e,2025/26,730,441264,Brian Brobbey,Brian Brobbey,4
+805,a49eec77-b57e-4882-a728-48590b2139d2,2025/26,735,110504,Bertrand Traoré,Bertrand Traoré,3
+806,33bbd9f6-6965-4b86-b586-b594340bd213,2025/26,774,232356,Jenson Jones,,2
+807,9352800b-9bac-479e-833e-9356775ab624,2025/26,775,604211,Tymur Tutierov,,3
+808,7c358e50-fa29-4835-ac10-5d6ee8468bc0,2025/26,800,699989,Djiamgone Jocelin Ta Bi,Djiamgone Jocelin Ta Bi,3
+809,2203a9c7-e0af-4fae-9246-040b64f08202,2025/26,812,515046,Melker Ellborg,Melker Ellborg,1
+810,f40d8384-4acc-4821-bd89-10a1474e0227,2025/26,813,536661,Nilson Angulo,Nilson Angulo,3
+811,33d26514-c254-46a5-a204-3edc654ad7a1,2025/26,821,570929,Jack Whittaker,,3
+812,2b1150fd-f2a5-480f-90d2-7de6a0ed51d2,2025/26,822,571087,Jaydon Jones,,3
+813,895f52bd-21ff-4984-b8ff-1da590f0f6d6,2025/26,577,553299,Takai Kōta,,2
+814,918248bd-6402-486f-a13a-0f4250427ee7,2025/26,578,610799,Luka Vušković,,2
+815,5f86cb6b-ae70-4315-8d4b-ba0bf1882b9f,2025/26,673,154296,João Maria Lobo Alves Palhares Costa Palhinha Gonçalves,João Palhinha,3
+816,608f0e7e-848a-4d91-a61f-c97d4916834c,2025/26,717,493362,Xavi Simons,Xavi Simons,3
+817,077808be-c653-4c78-ae95-999d586127c5,2025/26,726,247693,Randal Kolo Muani,Randal Kolo Muani,4
+818,34bb5bca-8ae3-4ddb-8361-41da8c3dc2c3,2025/26,745,640419,Jun'ai Byfield,Jun'ai Byfield,2
+819,b5a7034d-e9e5-4cd8-839a-22efab30c311,2025/26,750,499716,James Rowswell,James Rowswell,2
+820,27ef929f-dc05-43ae-b7a3-b1e79f21b545,2025/26,751,590035,Yusuf Akhamrich,,3
+821,538499c9-8845-4af1-9ba4-20c8f37dff9a,2025/26,804,616221,João Victor de Souza Menezes,Souza,2
+822,7327cc8d-a821-456b-946c-dd5374f643eb,2025/26,811,536134,Rio Kyerematen,,3
+823,d1f67d0d-11a3-4d82-a60b-90f0479f0e50,2025/26,818,613232,James Wilson,,4
+824,b5cd5a56-41f7-4134-853f-62dff3140ddd,2025/26,602,483364,Krisztián Hegyi,,1
+825,47d990fb-4762-441d-9981-5afd8ed15938,2025/26,603,613804,El Hadji Malick Diouf,El Hadji Malick Diouf,2
+826,97976de7-0e71-4bfd-a2d9-87c80343f187,2025/26,623,490142,Freddie Potts,Freddie Potts,3
+827,1474abcc-b607-4ad4-a5ac-61315e2e36d6,2025/26,626,565431,Callum Marshall,Callum Marshall,4
+828,8daad36b-7102-4288-85f6-67531e40d176,2025/26,718,564940,Soungoutou Magassa,Soungoutou Magassa,3
+829,76655ede-839c-47b5-a12a-de89ce660f33,2025/26,752,643473,Airidas Golambeckis,,2
+830,9c938ca6-ca55-4cd8-a941-e48dfd05cc84,2025/26,758,630699,Mohamadou Kanté,Mohamadou Kanté,3
+831,f6b5bcd7-a984-492a-a100-a71b5fbc1622,2025/26,785,530335,Pablo Felipe Pereira de Jesus,Pablo,4
+832,88fc83b5-bf09-4936-8834-f9d9d476350d,2025/26,791,247670,Valentín Castellanos,Valentín Castellanos,4
+833,6847702c-365b-4701-b202-70d7b140e906,2025/26,802,572702,Keiber Lamadrid,,3
+834,e656fc13-f025-4478-9384-9b26fcf40b8c,2025/26,825,553742,Finlay Herrick,,1
+835,38938b13-e94e-4d1b-9a66-57cc4a59849f,2025/26,645,643135,Fer López González,Fernando López,3
+836,a5410f19-37f7-4f7c-8fea-3801901f8d58,2025/26,663,230376,Jhon Arias,Jhon Arias,3
+837,93faf8ab-dc87-4b45-9d60-dd1aa1dc1a6a,2025/26,682,497949,David Møller Wolfe,David Møller Wolfe,2
+838,640ab1dd-d21b-4a35-94ff-a15d8778a6df,2025/26,695,523705,Jackson Tchatchoua,Jackson Tchatchoua,2
+839,d938f509-22b2-42c4-8a7b-38c0a2557740,2025/26,709,431248,Ladislav Krejcí,Ladislav Krejcí,2
+840,3cefae93-5bb1-490c-b1a5-8033f33fb092,2025/26,720,488213,Tolu Arokodare,Tolu Arokodare,4
+841,d84b9e5b-c325-4493-a7f0-508cdb7eff97,2025/26,766,601956,Saheed Olagunju,,2
+842,c8f02a4a-57c7-40dc-bcfc-211079c6a04c,2025/26,767,605319,Luke Rawlings,,3
+843,af80dc86-4ab4-4d2d-942c-fad5285fc083,2025/26,777,514362,Temple Ojinnaka,,3
+844,fc0a2c59-4da8-4694-b676-b23c1709857e,2025/26,778,589121,Ethan Sutherland,,3
+845,05aaece7-7936-476f-b24f-d773e9f536c7,2025/26,809,685628,Jerome Abbey,,3
+846,c62e7cd9-965a-4a3a-9647-229ae006068b,2025/26,816,209041,Angel Gomes,Angel Gomes,3
+847,a73e128b-3fe2-4723-8273-3871b0f388af,2025/26,828,491460,Alfie Brooks,,1
+848,24830da7-016e-4f23-a67d-75d1737e8938,2025/26,831,627888,Josh Gracey,,1
+849,0c265a4a-81e6-46d2-b15f-1160dc3515ea,2025/26,39,578545,Kosta Nedeljkovic,Kosta Nedeljkovic,2
+850,4e9c70cd-90c8-4a6b-b724-f5ea42ed012d,2025/26,177,465390,Kaine Kesler-Hayden,,2
+851,7183ccec-0ea9-4ec1-bc31-32c5a55bd384,2025/26,180,220583,Luke Woolfenden,Luke Woolfenden,2
+852,aada56f0-7a6a-4c3f-8297-9c6560186191,2025/26,300,108813,Christian Walton,Christian Walton,1
+853,605c313b-b25e-41b9-8578-b9e11a545472,2025/26,301,112520,Alex Palmer,Alex Palmer,1
+854,1ea6d7fc-080b-4ca4-af8d-d56469226c16,2025/26,304,216616,Dara O'Shea,Dara O'Shea,2
+855,88563d26-fdb6-4255-8558-cd35401b1e47,2025/26,305,455084,Leif Davis,Leif Davis,2
+856,43614d52-643f-4896-bb81-935141b2adf1,2025/26,306,449429,Jacob Greaves,Jacob Greaves,2
+857,c5cedf3c-3401-4c4a-b95a-74dcf8a51156,2025/26,307,222018,Ben Johnson,Ben Johnson,2
+858,958160b8-1c1b-42f6-9926-09bd848b0439,2025/26,311,149929,Wes Burns,Wes Burns,3
+859,d92e7a7e-c294-4520-91d5-da6f8f36fd0a,2025/26,312,231899,Jack Taylor,Jack Taylor,3
+860,d6bb65df-f588-4aea-97a2-bcd2c3df9fed,2025/26,313,443261,Jack Clarke,Jack Clarke,3
+861,7eb721cb-3e6b-4f7a-8619-396390087e74,2025/26,314,229164,Chiedozie Ogbene,Chiedozie Ogbene,3
+862,79a8c4cb-57b4-4560-87e0-fb36aa54d359,2025/26,315,531442,Abdul Fatawu,Abdul Fatawu,3
+863,fa56513c-1a2f-44df-9b8a-f3d0d91190db,2025/26,317,222625,George Hirst,George Hirst,4
+864,4817d2cb-729d-4ed5-80b3-8ba056309bf8,2025/26,318,481624,Jaden Philogene,Jaden Philogene-Bidace,3
+865,bfa1586d-9b41-4dc1-adf4-2435f827fd65,2025/26,319,172453,Sam Szmodics,Sammie Szmodics,3
+866,9e499139-1482-4023-9786-1a39a293dddb,2025/26,322,462387,Ali Al-Hamadi,Ali Al-Hamadi,4
+867,e9cd5ef7-9417-43f8-885e-7fbb625e5f1a,2025/26,323,461587,Kasey McAteer,Kasey McAteer,3
+868,2113ea99-01a3-4d0f-ab90-8cf8d7a22b52,2025/26,354,432987,Vitezslav Jaros,Vítezslav Jaros,1
+869,c3489e6f-c72b-463e-9e6b-19e3668f8c70,2025/26,355,464353,Harvey Davies,,1
+870,c647944c-f0e3-49ce-82ed-353de29fbf59,2025/26,410,649208,Jeremy Monga,Jeremy Monga,3
 871,a9b733b1-f28a-4ee6-9925-aacc58107500,2022/23,,,Harry Wilson,Harry Wilson,3
 872,cc48ff04-fda2-4ab5-b65d-7a7fe526fb2f,2022/23,,,Moisés Caicedo,Moisés Caicedo,3
 873,ae038a6e-37a4-4610-ba9e-4cb35f66b3bd,2019/20,,,Ben Mee,Ben Mee,2
