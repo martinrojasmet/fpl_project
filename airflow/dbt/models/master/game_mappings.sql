@@ -6,19 +6,23 @@
 with intial_gm as (
     {% if not is_incremental() %}
     select
-        season,
+        id,
         game_id,
         fpl_game_id,
         understat_game_id
     from {{ ref('fpl_db_master_game_mappings') }}
     {% else %}
     select
-        season,
+        id,
         game_id,
         fpl_game_id,
         understat_game_id
     from {{ this }}
     {% endif %}
+)
+, max_id as (
+    select max(id) as max_id
+    from intial_gm
 )
 , dist_fpl_games as (
     select distinct
@@ -65,10 +69,11 @@ with intial_gm as (
 )
 , all_gm as (
     select
-        coalesce(d.season, p.season) as season,
+        d.id,
         coalesce(d.game_id, p.game_id) as game_id,
         coalesce(d.fpl_game_id, p.fpl_game_id) as fpl_game_id,
-        coalesce(d.understat_game_id, p.understat_game_id) as understat_game_id
+        coalesce(d.understat_game_id, p.understat_game_id) as understat_game_id,
+        row_number() over() as rn
     from pipeline_gm p
     {% if not is_incremental() %}
     full outer join intial_gm d
@@ -77,9 +82,28 @@ with intial_gm as (
     {% endif %}
         on d.game_id = p.game_id
 )
+, all_gm_rn as (
+    select
+        *,
+        case 
+            when id is null then
+                row_number() over ( 
+                    partition by case when id is null then 1 else 0 end
+                    order by rn
+                )
+            else null
+        end as new_rn
+    from all_gm
+)
+, final_gm as (
+    select
+        coalesce(a.id, m.max_id + a.new_rn) as id,
+        a.game_id,
+        a.fpl_game_id,
+        a.understat_game_id
+    from all_gm_rn a
+    cross join max_id m
+)
 
-select
-    game_id,
-    fpl_game_id,
-    understat_game_id
-from all_gm
+select *
+from final_gm
