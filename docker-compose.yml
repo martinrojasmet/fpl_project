@@ -83,7 +83,6 @@ services:
     volumes:
       - .:/code
       - ./airflow/dags:/opt/airflow/dags
-      - ./airflow/plugins:/opt/airflow/plugins
       - ./airflow/.dbt/profiles.yml:/home/airflow/.dbt/profiles.yml
     depends_on:
       airflow-init:
