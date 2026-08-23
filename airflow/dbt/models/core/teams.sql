@@ -16,6 +16,12 @@ with initial_teams as (
     from {{ this }}
     {% endif %}
 )
+, active_teams as (
+    select team_id,
+        bool_or(season = {{ fpl_current_season() }}) as is_active
+    from {{ ref('team_mappings') }}
+    group by 1
+)
 , ranked_teams as (
     select
         team_id as id,
@@ -47,8 +53,18 @@ with initial_teams as (
     {% endif %}
         on i.id = p.id
 )
+, active_all_teams as (
+    select
+        all_t.id,
+        all_t.name,
+        coalesce(act_t.is_active, false) as is_active
+    from all_teams all_t
+    left join active_teams act_t
+        on all_t.id = act_t.team_id
+)
 
 select
-    d.id,
-    d.name
-from all_teams d
+    id,
+    name,
+    is_active
+from active_all_teams

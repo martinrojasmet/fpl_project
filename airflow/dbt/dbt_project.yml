@@ -40,7 +40,28 @@ models:
     master:
       +schema: master
       +materialized: incremental
+    analytics:
+      +schema: analytics
+      +materialized: view
 
+vars:
+  player_games_rolling_metrics:
+    - points
+    - minutes_played
+    - goals_scored
+    - expected_goals_understat
+    - goals_conceded
+    - assists
+    - expected_assists_understat
+    - yellow_cards
+    - red_card
+    - clean_sheet
+    - key_passes
+    - own_goals
+    - penalties_missed
+    - penalties_saved
+    - saves
+    - bonus_points
 
 seeds:
   fpl_dbt:

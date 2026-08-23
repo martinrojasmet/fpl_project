@@ -9,6 +9,8 @@ sources:
       - name: understat_player_games
       - name: fpl_teams
       - name: fpl_players
+      - name: fpl_upcoming_games
+      - name: fpl_player_teams
   - name: master
     schema: master
     tables:
