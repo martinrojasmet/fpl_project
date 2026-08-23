@@ -140,12 +140,43 @@ ALTER TABLE ONLY raw.understat_player_games
     ADD CONSTRAINT understat_player_games_name_understat_game_id_key UNIQUE (name, understat_game_id);
 
 
+CREATE TABLE raw.fpl_upcoming_games (
+    id serial PRIMARY KEY,
+    run_id text NOT NULL,
+    fpl_game_id integer NOT NULL,
+    fpl_code integer NOT NULL,
+    season text NOT NULL,
+    gameweek integer NOT NULL,
+    datetime timestamp(3) without time zone,
+    home_team_fpl_id integer NOT NULL,
+    away_team_fpl_id integer NOT NULL,
+    home_team_difficulty integer NOT NULL,
+    away_team_difficulty integer NOT NULL
+);
+ALTER TABLE raw.fpl_upcoming_games OWNER TO postgres;
+ALTER TABLE ONLY raw.fpl_upcoming_games
+    ADD CONSTRAINT fpl_upcoming_games_season_home_team_fpl_id_away_team_fpl_id_key UNIQUE (season, home_team_fpl_id, away_team_fpl_id);
+
+CREATE TABLE raw.fpl_player_teams (
+    id serial PRIMARY KEY,
+    run_id text NOT NULL,
+    season text NOT NULL,
+    datetime timestamp(3) without time zone NOT NULL,
+    opta_id text NOT NULL,
+    fpl_player_seasonal_id integer NOT NULL,
+    name text,
+    fpl_team_id integer NOT NULL
+);
+ALTER TABLE raw.fpl_player_teams OWNER TO postgres;
+ALTER TABLE ONLY raw.fpl_player_teams
+    ADD CONSTRAINT fpl_player_teams_datetime_opta_id_fpl_team_id_key UNIQUE (datetime, opta_id, fpl_team_id);
+
 -- MASTER
 
 CREATE TABLE master.player_mappings (
     id serial PRIMARY KEY,
     season text,
-    player_id uuid,
+    player_id uuid DEFAULT gen_random_uuid(),
     fpl_seasonal_id integer,
     opta_id text,
     fpl_name text,
@@ -159,7 +190,7 @@ ALTER TABLE ONLY master.player_mappings
 CREATE TABLE master.team_mappings (
     id serial PRIMARY KEY,
     season text,
-    team_id uuid,
+    team_id uuid DEFAULT gen_random_uuid(),
     fpl_team_id integer,
     fpl_name text,
     understat_name text
