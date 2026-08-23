@@ -122,3 +122,19 @@ def get_last_understat_game_id() -> int:
     """
     result = db.fetch_one(sql)
     return result[0] if result and result[0] is not None else 0
+
+def add_fpl_upcoming_games(fpl_upcoming_games_df: pd.DataFrame):
+    db = get_db()
+    if fpl_upcoming_games_df.empty:
+        logger.warning("FPL upcoming games DataFrame is empty, skipping insert")
+        return
+
+    db.insert_df('raw.fpl_upcoming_games', fpl_upcoming_games_df, ['season', 'home_team_fpl_id', 'away_team_fpl_id'], on_conflict='update')
+
+def add_fpl_player_teams(fpl_player_teams_df: pd.DataFrame):
+    db = get_db()
+    if fpl_player_teams_df.empty:
+        logger.warning("FPL player teams DataFrame is empty, skipping insert")
+        return
+
+    db.insert_df('raw.fpl_player_teams', fpl_player_teams_df, ['datetime', 'opta_id', 'fpl_team_id'], on_conflict='coalesce')

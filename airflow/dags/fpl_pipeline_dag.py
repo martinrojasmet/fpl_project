@@ -1,8 +1,10 @@
 from airflow.decorators import dag, task_group
 from tasks.understat import (add_understat_data_task, match_understat_players_task)
 from tasks.fpl import (add_fpl_players_task, add_fpl_teams_task, add_fpl_player_games_task, 
-                       add_fpl_games_task, download_fpl_basic_data_task, download_fpl_games_task)
+                       add_fpl_games_task, download_fpl_basic_data_task, download_fpl_games_task,
+                       add_fpl_upcoming_games_task, add_fpl_player_teams_task)
 from datetime import datetime
+from airflow.models.baseoperator import cross_downstream
 
 @dag(
     dag_id='fpl_pipeline_dag',
@@ -15,6 +17,8 @@ def fpl_pipeline_dag():
     def extract_data():
         add_fpl_players = add_fpl_players_task()
         add_fpl_teams = add_fpl_teams_task()
+        add_upcoming_games = add_fpl_upcoming_games_task()
+        add_fpl_player_teams = add_fpl_player_teams_task()
         # add_understat_data = add_understat_data_task()
         # add_fpl_player_games= add_fpl_player_games_task()
         # add_fpl_games = add_fpl_games_task()
@@ -26,7 +30,10 @@ def fpl_pipeline_dag():
         # add_fpl_teams >> add_understat_data
         # add_fpl_players >> add_fpl_player_games
         # add_fpl_players >> add_fpl_games
-
+        cross_downstream(
+            [add_fpl_teams, add_fpl_players],
+            [add_fpl_player_teams, add_upcoming_games],
+        )
     @task_group(group_id='transform_data')
     def transform_data():
         # match_understat_players = match_understat_players_task()

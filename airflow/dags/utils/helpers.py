@@ -17,6 +17,12 @@ def get_current_season():
     else:
         return f"{now.year - 1}/{str(now.year)[-2:]}"
 
+def get_season(datetime=datetime.now()) -> str:
+    if datetime.month >= 8:
+        return f"{datetime.year}/{str(datetime.year + 1)[-2:]}"
+    else:
+        return f"{datetime.year - 1}/{str(datetime.year)[-2:]}"
+
 def normalize_name(value):
     import html
     import unicodedata

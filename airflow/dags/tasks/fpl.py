@@ -9,10 +9,11 @@ from pydantic import BaseModel, Field
 import os
 
 from utils.helpers import (get_current_season, intermediate_mapping_matching, 
-                           fuzzy_string_matching, ai_matching, fetch_player_fpl_api)
-from utils.storage.raw import (add_fpl_player_games, add_fpl_games, add_fpl_players,
+                           fuzzy_string_matching, ai_matching, fetch_player_fpl_api,
+                           get_season)
+from utils.storage.raw import (add_fpl_player_games, add_fpl_games, add_fpl_player_teams, add_fpl_players,
                                get_last_gameweek_available_for_season, add_fpl_players,
-                               add_fpl_teams)
+                               add_fpl_teams, add_fpl_upcoming_games)
 from utils.storage.master import (add_fpl_player_mapping, add_new_fpl_player_mapping, get_fpl_players, get_players,
                                   get_teams, get_fpl_team_mapping, add_fpl_team_mapping, add_new_fpl_team_mapping,
                                   get_fpl_players_seasonal_id_for_season)
@@ -327,9 +328,89 @@ def add_fpl_games_task(**kwargs):
     games_df = pd.DataFrame(games)
     add_fpl_games(games_df, run_id)
 
+@task
+def add_fpl_upcoming_games_task(**kwargs):
+    run_id = kwargs.get("run_id")
+
+    url = 'https://fantasy.premierleague.com/api/fixtures'
+
+    response = requests.get(url)
+    upcoming_games_data = response.json()
+
+    upcoming_games = []
+
+    for game in upcoming_games_data:
+        if game.get('finished') is False:
+            kickoff_str = game.get('kickoff_time')
+            kickoff_dt = datetime.fromisoformat(kickoff_str.replace('Z', '+00:00')) if kickoff_str else None
+            season = get_season(kickoff_dt) if kickoff_dt else get_current_season()
+            row = {
+                'fpl_game_id': game.get('id'),
+                'fpl_code': game.get('code'),
+                'season': season,
+                'gameweek': game.get('event'),
+                'datetime': game.get('kickoff_time'),
+                'home_team_fpl_id': game.get('team_h'),
+                'away_team_fpl_id': game.get('team_a'),
+                'home_team_difficulty': game.get('team_h_difficulty'),
+                'away_team_difficulty': game.get('team_a_difficulty')
+            }
+            upcoming_games.append(row)
+            if kickoff_dt == None:
+                print(f"Warning: Missing kickoff time for game {game.get('id')}")
+
+    upcoming_games_df = pd.DataFrame(upcoming_games)
+    # upcoming_games_df['season'] = season
+    upcoming_games_df['run_id'] = run_id
+
+    upcoming_games_df = upcoming_games_df[
+        [
+            'run_id',
+            'fpl_game_id',
+            'fpl_code',
+            'season',
+            'gameweek',
+            'datetime',
+            'home_team_fpl_id',
+            'away_team_fpl_id',
+            'home_team_difficulty',
+            'away_team_difficulty'
+        ]
+    ]
+
+    add_fpl_upcoming_games(upcoming_games_df)
+
+@task
+def add_fpl_player_teams_task(**kwargs):
+    run_id = kwargs.get("run_id")
+    season = get_current_season()
+
+    url = 'https://fantasy.premierleague.com/api/bootstrap-static/'
+
+    response = requests.get(url)
+    data = response.json()
+    elements = data['elements']
+    current_datetime = datetime.now().isoformat()
+
+    player_teams = []
+
+    for element in elements:
+        row = {
+            'run_id': run_id,
+            'season': season,
+            'datetime': current_datetime,
+            'opta_id': element.get('code'),
+            'fpl_player_seasonal_id': element.get('id'),
+            'name': f"{element.get('first_name')} {element.get('second_name')}",
+            'fpl_team_id': element.get('team')
+        }
+        player_teams.append(row)
+
+    player_teams_df = pd.DataFrame(player_teams)
+    add_fpl_player_teams(player_teams_df)
 
 # Download FPL data tasks
-datetime = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+current_datetime = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
 data_folder_path = "./data/fpl"
 
 @task
@@ -346,7 +427,7 @@ def download_fpl_basic_data_task():
     basic_response.raise_for_status()
     basic_data = basic_response.json()
 
-    datetime_folder_path = os.path.join(data_folder_path, datetime)
+    datetime_folder_path = os.path.join(data_folder_path, current_datetime)
     fpl_basic_json_path = os.path.join(datetime_folder_path, "fpl_basic_data.json")
     os.makedirs(os.path.dirname(fpl_basic_json_path), exist_ok=True)
 
@@ -378,7 +459,7 @@ def download_fpl_games_task():
         for game in gameweek_data:
             games.append(game)
 
-    datetime_folder_path = os.path.join(data_folder_path, datetime)
+    datetime_folder_path = os.path.join(data_folder_path, current_datetime)
     fpl_games_json_path = os.path.join(datetime_folder_path, "fpl_games.json")
     os.makedirs(os.path.dirname(fpl_games_json_path), exist_ok=True)
 
