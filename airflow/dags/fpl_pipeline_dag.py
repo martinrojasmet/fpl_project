@@ -3,6 +3,8 @@ from tasks.understat import (add_understat_data_task, match_understat_players_ta
 from tasks.fpl import (add_fpl_players_task, add_fpl_teams_task, add_fpl_player_games_task, 
                        add_fpl_games_task, download_fpl_basic_data_task, download_fpl_games_task,
                        add_fpl_upcoming_games_task, add_fpl_player_teams_task)
+from tasks.analytics import point_prediction
+from airflow.operators.bash import BashOperator
 from datetime import datetime
 from airflow.models.baseoperator import cross_downstream
 
@@ -12,44 +14,46 @@ from airflow.models.baseoperator import cross_downstream
     start_date=datetime(2024, 1, 1),
     catchup=False
 )
-def fpl_pipeline_dag():
-    @task_group(group_id='extract_data')
-    def extract_data():
+def pipeline_dag():
+    @task_group(group_id='extract_load_data')
+    def extract_load_data():
         add_fpl_players = add_fpl_players_task()
         add_fpl_teams = add_fpl_teams_task()
-        add_upcoming_games = add_fpl_upcoming_games_task()
         add_fpl_player_teams = add_fpl_player_teams_task()
-        # add_understat_data = add_understat_data_task()
-        # add_fpl_player_games= add_fpl_player_games_task()
-        # add_fpl_games = add_fpl_games_task()
 
-        # add_fpl_players, add_fpl_teams >> add_fpl_player_games, add_fpl_games
-        # add_fpl_players >> add_fpl_player_games
-        # add_fpl_players >> add_fpl_games
+        add_understat_data = add_understat_data_task()
+        add_fpl_player_games= add_fpl_player_games_task()
+        add_fpl_games = add_fpl_games_task()
 
-        # add_fpl_teams >> add_understat_data
-        # add_fpl_players >> add_fpl_player_games
-        # add_fpl_players >> add_fpl_games
+        add_upcoming_games = add_fpl_upcoming_games_task()
+        
         cross_downstream(
-            [add_fpl_teams, add_fpl_players],
-            [add_fpl_player_teams, add_upcoming_games],
+            [add_fpl_teams, add_fpl_players, add_fpl_player_teams],
+            [add_understat_data, add_fpl_player_games, add_fpl_games],
         )
+        
     @task_group(group_id='transform_data')
     def transform_data():
-        # match_understat_players = match_understat_players_task()
+        match_understat_players = match_understat_players_task()
+        run_dbt_task = BashOperator(
+            task_id="run_dbt",
+            bash_command="cd /code && dbt run",
+        )
 
-        pass
+        match_understat_players >> run_dbt_task
 
-    @task_group(group_id='load_data')
-    def load_data():
-        # Add your load tasks here
-        pass
+    @task_group(group_id='analysis')
+    def analysis():
+        point_prediction_task = point_prediction()
 
     # Pipeline flow
-    extract = extract_data()
+    extract = extract_load_data()
     transform = transform_data()
-    load = load_data()
-    extract >> transform >> load
+    prediction = analysis()
+    # load = load_data()
+
+    extract >> transform >> prediction
+
 
 @dag(
     dag_id='download_fpl_data',
@@ -61,28 +65,6 @@ def download_fpl_data_dag():
     download_fpl_basic_data_task()
     download_fpl_games_task()
 
-fpl_dag = fpl_pipeline_dag()
-download_fpl_data = download_fpl_data_dag()
-
-
-# @dag(
-#     dag_id='add_new_players',
-#     schedule=None,
-#     start_date=datetime(2024, 1, 1),
-#     catchup=False
-# )
-# def add_fpl_players_dag():
-#     add_fpl_players_task()
-
-# @dag(
-#     dag_id='add_fpl_teams_dag',
-#     schedule=None,
-#     start_date=datetime(2024, 1, 1),
-#     catchup=False
-# )
-# def add_fpl_teams_dag():
-#     add_fpl_teams_task()
-
 # @dag(
 #     dag_id='trial_dag',
 #     schedule=None,
@@ -90,9 +72,7 @@ download_fpl_data = download_fpl_data_dag()
 #     catchup=False
 # )
 # def trial_dag():
-#     match_understat_players_task()
-#     add_fpl_players_task()
+#     point_prediction_training_input()
 
-# add_players_dag = add_fpl_players_dag()
-# add_fpl_teams = add_fpl_teams_dag()
-# trial_dag_instance = trial_dag()
+fpl_dag = pipeline_dag()
+download_fpl_data = download_fpl_data_dag()
