@@ -9,3 +9,4 @@ pydantic
 google-genai
 pandas
 apache-airflow-providers-postgres
+scikit-learn

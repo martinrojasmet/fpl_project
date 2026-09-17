@@ -198,3 +198,17 @@ CREATE TABLE master.team_mappings (
 ALTER TABLE master.team_mappings OWNER TO postgres;
 ALTER TABLE ONLY master.team_mappings
     ADD CONSTRAINT team_mappings_team_id_season_key UNIQUE (team_id, season);
+
+-- ANALYTICS
+CREATE TABLE analytics.point_prediction (
+    id serial PRIMARY KEY,
+    player_id uuid NOT NULL,
+    fpl_game_id integer NOT NULL,
+    datetime timestamp(3) without time zone,
+    team_id uuid NOT NULL,
+    opponent_team_id uuid NOT NULL,
+    predicted_points double precision NOT NULL
+);
+ALTER TABLE analytics.point_prediction OWNER TO postgres;
+ALTER TABLE ONLY analytics.point_prediction
+    ADD CONSTRAINT point_prediction_player_id_fpl_game_id_key UNIQUE (player_id, fpl_game_id);
