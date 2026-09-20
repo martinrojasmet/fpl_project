@@ -4,8 +4,8 @@ CREATE SCHEMA core;
 ALTER SCHEMA core OWNER TO postgres;
 
 
--- CREATE SCHEMA analytics;
--- ALTER SCHEMA analytics OWNER TO postgres;
+ CREATE SCHEMA analytics;
+ ALTER SCHEMA analytics OWNER TO postgres;
 
 
 CREATE SCHEMA raw;
